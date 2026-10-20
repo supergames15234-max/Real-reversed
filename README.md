@@ -15,12 +15,12 @@ A complete **static** analysis of Real's installer, main application, agent serv
 | 1 — Triage | PE/entropy/strings analysis of all 7 binaries; packing identification; persistence & Defender-exclusion behavior |
 | 2 — Near-source recovery | 396/419 embedded frontend assets recovered from the Tauri binary (full SvelteKit UI, Monaco editor, VSCode extension, provider integrations) |
 | 2b — Vault crypto | Full local-vault key derivation + unwrapping scheme derived from disassembly and **verified offline against real vault data**: argon2id (64 MiB, t=3, p=1) → AES-256-GCM → base64-wrapped master key (REPORT §5b) |
-| 3 — Packed payloads | `bin\Real.exe` / `bin\Real.dll` / `bin\Spoofer.exe` use a **custom private packer** (not VMProtect/Themida/Enigma). Static-only analysis is exhausted; **memory-dump-based unpacking from an isolated VM is the documented next step** (see REPORT §7) |
+| 3 — Packed payloads | **Unpacked statically.** `bin\Real.dll` (not a PE) = whole-file repeating-key XOR → **full engine module recovered** (Luau compiler+IR, `RealVM`, DrawingLib/Filesystem/WebSocket script APIs, libcurl, ImGui+D3D11 overlay, Roblox XML serializer). `bin\Real.exe` / `bin\Spoofer.exe` = boot-stub shells that aPLib-decompress **8 chunks each** into `.real`/`.byfron`; payloads identified as **Oreans WinLicense**-protected (incl. leaked `IL86.pdb` Oreans-VM PDB path). See REPORT §7 |
 
 ## Key findings (summary)
 
 - **Architecture:** Tauri 2 + WRY + tao shell, SvelteKit UI served from `http://tauri.localhost`, Monaco editor, per-file IPC bridge (`ipc\*.txt`: `execute.txt`, `attach.txt`, `open_tab.txt`, `sync_from_vscode.txt`), companion MCP server (`real-mcp.exe`) for VSCode/Cursor extensions.
-- **Packer:** three core payloads packed with a private custom packer (synthetic section names: `.real`, `.boot`, `.byfron` — the last named after Byfron, Roblox's anticheat). Payloads exist decrypted only in process memory.
+- **Packer (two layers, both broken statically):** the shell payloads are decompressed at runtime by an inline **aPLib depacker stub** (8 self-terminating streams → `.real`/`.byfron` raw=0 sections); `bin\Real.dll` is a whole-file **repeating-key XOR** (`4D 5A` known-plaintext → key verified against its PE signature). The unpacked shell payloads are additionally **Oreans WinLicense**-protected; the shipped DLL decrypts to an ordinary readable PE (engine module).
 - **Behavior:** registers scheduled task `Real\Launch` → `Update.exe --via-task`; self-manages Windows Defender exclusions for its install/temp dirs; posts `/installer/report` telemetry; auth-token-gated installer flow.
 - **Network surface:** Roblox account-automation endpoints (auth/users/avatar/accountinformation/presence/friends/economy…), vendor APIs (`api.projectreal.gg/live`, `dl./cdn.projectreal.live`), script hubs (ScriptBlox, rscripts.net, robloxscripts.com, WEAO), Luarmor V4 bootstrapper.
 - **Vault format (on-disk):**
@@ -37,12 +37,14 @@ Full details: **[REPORT.md](REPORT.md)**.
 
 ```
 Real-Reversed/
-├── REPORT.md              # consolidated phase-1/2 deliverable
+├── REPORT.md              # consolidated phase-1/2/3 deliverable
 ├── ipc-commands.json      # Tauri plugin command surface + host/package URL inventory
 ├── disasm/                # annotated capstone disassembly excerpts (vault crypto, accounts loop)
 ├── ui-assets/             # 396 recovered embedded frontend assets (+ _manifest.json)
 ├── tools/                 # analysis tooling (Node.js, capstone-wasm + hash-wasm)
-└── package.json
+├── package.json
+├── LICENSE                # MIT
+└── .gitignore             # secret-material exclusions (*.bin, *.dpapi, *.key, …)
 ```
 
 ## Tooling
@@ -55,6 +57,9 @@ All tools are Node.js scripts using [`capstone-wasm`](https://www.npmjs.com/pack
 | `tools/inspect-layout.js`, `tools/debug-decode.js`, `tools/test-decode.js` | asset-layout forensics |
 | `tools/disasm-annot.js` | annotated disassembler for arbitrary file-offset ranges |
 | `tools/disasm-range.js` | quick disassembler with VA labels |
+| `tools/unxor-pe.js` | repeating-key-XOR PE unwrapper (MZ-crib auto-derived key + PE-signature verify) |
+| `tools/pe-forensics.js` | PE section/entropy/entry-point audit |
+| `tools/aplib-depack.js` | chunked aPLib depacker (replicates the shell boot stub) |
 | `tools/xref-scan.js`, `tools/enc-sym.js`, `tools/pool-scan.js` | RIP-relative cross-reference scanning for string VAs |
 | `tools/find-vault-crypto.js` | locate vault/KDF strings in the binary and auto-xref them |
 | `tools/probe3.js`, `tools/probe4.js` | misc disasm probes |
@@ -65,11 +70,11 @@ Scripts were written against a local install path — replace the `C:/Users/[nam
 
 - **No license circumvention, no cracking of access gates, no clone/re-implementation of the executor.** The goal is documentation and defensive awareness (this software defeats AV/Defender visibility and injects into Roblox).
 - Personal/secret material (account data, vault keys, credentials) is absent from this repository by design — only generic on-disk *format* descriptions are included.
-- Phase 3 (packed-payload inspection) requires a **disposable isolated VM**; the documented method is process-memory dumping after self-unpacking, then standard static analysis of the dumps (`0peration-safe, no live execution on host`).
+- Protected-payload analysis stayed **static throughout** (byte-level: XOR unwrap, aPLib depack, disassembly) — nothing in this repository was executed, and no game/anticheat was touched. The remaining WinLicense-protected layers would only be probed further (optionally, from a dump) in a disposable isolated VM.
 
 ## Status
 
 - Phase 1 (triage): complete
 - Phase 2 (asset recovery): complete — 396/419 assets in `ui-assets/`
-- Vault crypto scheme: wire format identified from disassembly (see REPORT §5)
-- Phase 3 (packed payloads): documented, awaiting isolated VM environment
+- Vault crypto scheme: **verified offline** (see REPORT §5b)
+- Phase 3 (packed payloads): **complete, static only** — DLL decrypted to a full readable PE; both shells depacked via aPLib; payloads identified as WinLicense/further-unpacking-left-for-VM work (see REPORT §7)

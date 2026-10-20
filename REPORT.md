@@ -32,11 +32,10 @@
 | `bin\real-mcp.exe` | 1.7MB | No | MCP agent server (local tool bridge) |
 | `bin\luau-lsp.exe` | 16.9MB | No | Standard open-source Luau LSP |
 
-### Packing evidence (the "decrypted" part)
-- `bin\Real.exe`: nameless sections, ~7.96–7.98 entropy sections, custom `.real` (12.9MB virtual, 0 raw → materializes at runtime) + `.boot` (6.9MB unpack stub), stripped imports, no meaningful strings (strings triage yields ≤5% readable fragments).
-- `bin\Real.dll`: same scheme; PE parse rejects standard offsets (non-standard/obfuscated header).
-- `bin\Spoofer.exe`: same scheme + section `.byfron`; only readable string `@.byfron`.
-- Conclusion: **a private, custom packer** (not VMProtect/Themida/Enigma — those strings conspicuous by absence). Payloads exist only decrypted in process memory at runtime; unwrapping requires *dynamic* dump from an isolated environment (see §7).
+### Packing evidence (the "decrypted" part) — REVISED after phase 3
+- `bin\Real.exe` / `bin\Spoofer.exe`: 12-section shell images — ten nameless sections (~7.5–8.0 entropy) plus capability sections with **raw = 0** (`.real` 0xC4E000 / `.byfron` 0x546000 virtual size — materialize only at runtime), the compressed payload in `.boot` (6.9 MB / 2.97 MB), `.idata`, `.tls`, `.rsrc`, stub `.reloc`. Entry point = `.boot + 0x58` in both files (identical stub bytes).
+- `bin\Real.dll`: not a PE at all in shipped form — a whole-file repeating-key-XOR'd image that only materializes after decryption (see §7 for the key derivation).
+- Conclusion: a **private two-layer packer**: (a) self-contained boot stubs deCOMPRESSING an aPLib stream into the raw=0 payload sections, and (b) a repeating-XOR obfuscation of the DLL. The *payloads* behind the boot stubs are additionally **Oreans WinLicense**-protected. Both layers were broken **statically** — no dynamic dump was required for the packer itself (see §7).
 
 ## 3. Persistence & defensive posture
 
@@ -131,18 +130,51 @@ if starts_with(token, "enc:v1:")   // VA 0x140190be0 → generic prefix check VA
 
 **IPC command surface:** standard Tauri plugin commands (window/event/image/opener/resources) are visible; app-specific commands are *not* invoked through Tauri's plugin IPC from the frontend — they ride through the file-based `ipc\` bridge + MCP (`real-mcp.exe`) + direct WebView2 navigation.
 
-## 7. Remaining unknowns & phase-3 plan (packed payloads)
+## 7. Phase-3 result: the three packed payloads — unpacked statically (DONE)
 
-Vault crypto: **fully resolved statically** — see §5b (was an open question at phase-1 time; no app execution needed).
+All three products in `bin\` were fully unwrapped **without executing anything** (pure byte-level static work). Vault crypto (§5b) was likewise resolved statically.
 
-Static-only limits: `bin\Real.exe`, `bin\Real.dll`, `bin\Spoofer.exe` cannot be statically unpacked here; strings triage confirmed <5% readable content. What remains:
-1. **Isolated VM run + memory dump** — launch each packed binary in a disposable VM (no Roblox present), dump the self-unpacked image from memory (`MiniDumpWriteDump` or hollowing-aware dumpers), sanitize/rebuild IAT, then normal static analysis.
-2. **Ghidra** on dumped images → pseudocode for injection routines, spoofer BIOS table reads, executor Luau VM.
-3. Confidence notes: payloads likely re-obfuscate APIs; expect syscall stubs + syscall induction; spoofer will touch `NtQuerySystemInformation`, WMI and SMBIOS tables.
+### 7.1 `bin\Real.dll` — repeating-key XOR → full PE (engine module)
+
+- Shipped file is **not a PE**; it is a whole-file repeating-key XOR of a valid 32-bit DLL image.
+- Key derived by known-plaintext (the canonical 16-byte DOS header `4D 5A 90 00 03 00 00 00 04 00 00 00 FF FF`): **8-byte repeating key `55 17 AF E5 E3 64 41 4E`** — confirmed by 16+ consistent positions and by the unwrapped `e_lfanew = 0x108` landing exactly on a `PE\0\0` signature.
+- The key itself is **not stored verbatim** in any sibling module (checked root `Real.exe`, `bin\Real.exe`, `Spoofer.exe`, `luau-lsp.exe`, `real-mcp.exe`) — the loader materializes it at runtime.
+- Decrypted image: **PE32+, imageBase `0x180000000`, 7 real sections, entry `0x31ebbc`**: `.text` 3.6 MB (entropy 6.52 — plain code), `.rdata`, `.data`, `.pdata`, `.fptable`, `.rsrc`, `.reloc`. No export directory; 16 import DLLs: `CRYPT32, bcrypt, WS2_32, d3d11, KERNEL32, USER32, GDI32, ADVAPI32, SHELL32, ole32, IMM32, D3DCOMPILER_47, dcomp, WININET, IPHLPAPI, Secur32`.
+- **What it is:** the executor's engine/UI module, near-fully recoverable statically:
+  - Luau compiler + IR: C++ RTTI mangled names expose `real::ir::foldTablesInBlock`, `real::ir::stableLocalBindings`, a `RealVM` type with `Location`-tracking vectors, full Luau syntax/`DebugLuau*` flag strings;
+  - script APIs: `Filesystem` (Open/Save/Load/Read/Write/Append file dialogs + async `*fileAsync`), `DrawingLib` (`QueueImageUri`), `WebSocket` client (`MakeYieldError`, `QueueIncoming`), `Yielding::YieldThread` (coroutines);
+  - rendering: dear **ImGui + D3D11** overlay (vertex/PS shader HLSL text in `.rdata`, `ImGuiBackendFlags_RendererHasTextures` strings, font paths `arial/tahoma/segoeui/lucon/consola/verdana/IBMPlexSans`);
+  - networking: embedded **libcurl** (schannel/SOCKS4 error strings, `SEC_E_ILLEGAL_MESSAGE` text, TLS-version warnings);
+  - Roblox surface: XML place serializer template `<roblox xmlns:xmime=...`, `ModuleScript expected` (instance APIs), and HWID gathering (`SOFTWARE\Microsoft\Cryptography`, `MachineGuid`).
+
+### 7.2 `bin\Real.exe` / `bin\Spoofer.exe` — boot stub + aPLib → payloads (WinLicense core)
+
+- Entry stub (identical bytes in both, EP = `.boot + 0x58`): computes the payload-section base from its own address (`EP − 0xC4E058` / `EP − 0x546058`), probes a flag at `payload_base + 0x4f7bf2`, and on zero runs a **chunked aPLib depack loop**: `[count byte = 8]`, then 8 self-terminating aPLib streams; each depacked chunk advances a write cursor; final `ret` target = `payload_base + 0x4f7bf2` (the payload's own entry).
+- The inline depacker is the canonical aPLib decompressor — identified by the `mov dl,0x80` tag-bit register, `adc dl,dl` bit reads, and the aPLib length-class constants `0x7d00` (32000) / `0x500` (1280) / `0x7f` (127).
+- Unpack results (verified — output length equals the raw=0 section's virtual size **to the byte**):
+
+| File | chunks | per-chunk output | total output | packed consumed |
+|---|---|---|---|---|
+| `bin\Real.exe` | 8 | 0x189C00 (1,612,800) | 0xC4E000 (`12902400`) | 0x69E67E of 0x69E7C7 avail |
+| `bin\Spoofer.exe` | 8 | 0xA8C00 (691,200) | 0x546000 (`5529600`) | 0x2E4B0A of 0x2E4BC7 avail |
+
+- Payload identification: both are **Oreans WinLicense**-protected images. Markers in the unpacked blobs: registry keys `Software\WinLicense`, `SOFTWARE\WLkt`, `WinLicenseVersion`, `WinLicenseDriverVersion`, `WinLicenseInstance`, `WLSoftwareVersion`, `WLProtectionDateTime`, `SplashClassName`, `/checkprotection`, `/skipactivexreg`, the WinLicense crash-handler contact text, and the leaked internal PDB path **`c:\miniprojects\x86il\il86\x64\release\IL86.pdb`** (Oreans' x86 instruction library used by their code-virtualization engine). The Spoofer payload additionally begins with a small self-modifying deobfuscation stub (`and r13,0x90 / xor r13,0x40 / mov byte [rbx],0 …`).
+- Payload entropy profile (post-aPLib): ~5.0–6.8 blocks — compressed deobfuscation layers, not standard code; strings density ~1.5–5.6 K ≥6-char strings, with WinLicense markers intact.
+- `.real` probe/`jmp rax` → payload entry RVAs: `0xCB000 + 0x4F7BF2` (Real.exe) — i.e. the payload entry lands at VA `0x1405C2BF2` in the shell's address space; `.byfron` payload entry = `0x63000 + 0x4f7bf2`.
+- Root `Real.exe` (16.9 MB shell studied in phases 1–2) is **not** packed: standard 6-section PE, readable `.text` 0x7BBE00; the `luau-lsp.exe` (open-source Luau LSP) and `real-mcp.exe` (MCP helper) in `bin\` are normal stock PEs.
+
+### 7.3 What remains after static unpacking (the honest ceiling)
+
+- The WinLicense payloads: code sections are oreans-virtualized and API-obfuscated. Static triage beyond identification = not practical here; behavior goes through the data/APIs already documented (§2–5).
+- Optional verification-only (if[!] a VM is provisioned later): run each shell in a disposable VM and confirm the aPLib dump matches memory (gold-check `payload_base + 0x4f7bf2`), then dump+deobfuscate application APIs — but **no output of this session requires it**.
 
 ## 8. Repro/extractor tooling (this session)
 
 - `Real-Reversed\tools\extract-tauri-assets.js` — Tauri v2 asset extractor (layout: `<path-string><brotli stream>` in `.rdata`)
 - `Real-Reversed\tools\inspect-layout.js`, `debug-decode.js`, `test-decode.js` — layout forensics
+- `Real-Reversed\tools\unxor-pe.js` — repeating-key-XOR PE unwrapper (MZ-crib auto-derivation + PE-signature verification) — recovers `bin\Real.dll` (key `55 17 AF E5 E3 64 41 4E`, e_lfanew 0x108)
+- `Real-Reversed\tools\pe-forensics.js` — PE section/entropy/EP audit for any number of files (used on all five `bin\` products + root shell)
+- `Real-Reversed\tools\aplib-depack.js` — chunked aPLib depacker replicating the shell boot stub (`[count=8][8 streams]`, output = `.real`/`.byfron` payload)
+- `Real-Reversed\tools\disasm-annot.js` — capstone annotated disassembler (start/len/out args, honors `REAL_EXE_PATH`)
 - `Real-Reversed\ui-assets\_manifest.json` — extraction manifest (extracted + skipped)
 - `Real-Reversed\ipc-commands.json` — plugin command surface + URL inventory
