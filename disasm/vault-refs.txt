@@ -1,0 +1,646 @@
+
+===== "key_enc_with_password_b64" occurrences: 0x85c70f
+  occ file 0x85c70f VA 0x14085d50f (.rdata)
+  rip-rel refs: 0x18c4c9, 0x18cf01, 0x224497
+  --- context for ref insnEnd 0x18c4c9 (VA 0x14018d0c9) ---
+    0x14018d0b1  jmp 0xfffffffffffffe89
+    0x14018d0b6  mov r9d, 0x19
+    0x14018d0bc  mov rcx, rbp
+    0x14018d0bf  mov rdx, rsi
+    0x14018d0c2  lea r8, [rip + 0x6d0446]  --> "..."@0x14085d50f: "key_enc_with_password_b64answers_salt_b64key_enc_with_answers_b64has_d"
+    0x14018d0c9  call 0xffffffffffea649f
+    0x14018d0ce  test al, al
+    0x14018d0d0  je 0x98
+    0x14018d0d2  cmp qword ptr [rsp + 0x50], -1
+    0x14018d0d8  jne 0xa44
+    0x14018d0de  mov rdx, qword ptr [rsp + 0x140]
+    0x14018d0e6  mov rcx, r13
+    0x14018d0e9  call 0x53691f
+    0x14018d0ee  mov rax, qword ptr [rsp + 0x70]
+    0x14018d0f3  mov rbp, qword ptr [rsp + 0x78]
+    0x14018d0f8  cmp rax, -1
+    0x14018d0fc  mov rdx, qword ptr [rsp + 0xf8]
+    0x14018d104  je 0x236
+    0x14018d10a  mov rcx, qword ptr [rsp + 0x80]
+    0x14018d112  mov qword ptr [rsp + 0x1a8], rcx
+    0x14018d11a  mov rcx, qword ptr [rsp + 0x68]
+    0x14018d11f  mov rsi, rax
+    0x14018d122  call 0xfffffffffffa0abf
+  --- context for ref insnEnd 0x18cf01 (VA 0x14018db01) ---
+    0x14018dae9  add byte ptr [rbp + rcx*4 + 5], cl
+    0x14018daed  dec dword ptr [rcx - 0x24]
+    0x14018daf0  add byte ptr [rcx], dh
+    0x14018daf2  leave 
+    0x14018daf3  jmp 0x32
+    0x14018daf5  mov byte ptr [rsp + 0x30], dil
+    0x14018dafa  lea rcx, [rip + 0x6cfa0e]  --> "..."@0x14085d50f: "key_enc_with_password_b64answers_salt_b64key_enc_with_answers_b64has_d"
+    0x14018db01  mov edx, 0x19
+    0x14018db06  jmp 0x76
+    0x14018db08  lea rdx, [rip + 0x6d25d1]
+    0x14018db0f  lea r8, [rip + 0xdc49da]
+    0x14018db16  mov ecx, 1
+    0x14018db1b  call 0x62c947
+    0x14018db20  mov rbp, rax
+    0x14018db23  jmp 0xfffffffffffff870
+    0x14018db28  mov byte ptr [rsp + 0x30], dil
+    0x14018db2d  lea rcx, [rip + 0x6cf9f4]  --> "..."@0x14085d528: "answers_salt_b64key_enc_with_answers_b64has_device_keysrc\commands\acc"
+    0x14018db34  mov edx, 0x10
+    0x14018db39  jmp 0x76
+    0x14018db3b  mov byte ptr [rsp + 0x30], dil
+    0x14018db40  lea rcx, [rip + 0x6cf9f1]  --> "..."@0x14085d538: "key_enc_with_answers_b64has_device_keysrc\commands\accounts\encryption"
+    0x14018db47  mov edx, 0x18
+    0x14018db4c  jmp 0x76
+    0x14018db4e  mov byte ptr [rsp + 0x30], dil
+    0x14018db53  lea rcx, [rip + 0x6cf9f6]  --> "..."@0x14085d550: "has_device_keysrc\commands\accounts\encryption.rs"
+    0x14018db5a  mov edx, 0xe
+  --- context for ref insnEnd 0x224497 (VA 0x140225097) ---
+    0x14022507f  wait 
+    0x140225080  add byte ptr [rax], al
+    0x140225082  add byte ptr [rbp - 0x75], cl
+    0x140225085  and byte ptr [rcx - 0x75], r9b
+    0x140225089  sub byte ptr [rax - 0x77], r9b
+    0x14022508d  and al, 0x20
+    0x140225090  lea rdx, [rip + 0x638478]  --> "..."@0x14085d50f: "key_enc_with_password_b64answers_salt_b64key_enc_with_answers_b64has_d"
+    0x140225097  lea rcx, [rsp + 0x28]
+    0x14022509c  mov r8d, 0x19
+    0x1402250a2  call 0xfffffffffff93a61
+    0x1402250a7  test rax, rax
+    0x1402250aa  jne 0x9f
+    0x1402250ac  mov r9, qword ptr [r14 + 0x38]
+    0x1402250b0  mov rax, qword ptr [r14 + 0x40]
+    0x1402250b4  mov qword ptr [rsp + 0x20], rax
+    0x1402250b9  lea rdx, [rip + 0x638468]  --> "..."@0x14085d528: "answers_salt_b64key_enc_with_answers_b64has_device_keysrc\commands\acc"
+    0x1402250c0  lea rcx, [rsp + 0x28]
+    0x1402250c5  mov r8d, 0x10
+    0x1402250cb  call 0xfffffffffff93a61
+    0x1402250d0  test rax, rax
+    0x1402250d3  jne 0x9f
+    0x1402250d5  mov r9, qword ptr [r14 + 0x50]
+    0x1402250d9  mov rax, qword ptr [r14 + 0x58]
+    0x1402250dd  mov qword ptr [rsp + 0x20], rax
+    0x1402250e2  lea rdx, [rip + 0x63844f]  --> "..."@0x14085d538: "key_enc_with_answers_b64has_device_keysrc\commands\accounts\encryption"
+    0x1402250e9  lea rcx, [rsp + 0x28]
+    0x1402250ee  mov r8d, 0x18
+
+===== "password_salt_b64" occurrences: 0x85c6fe
+  occ file 0x85c6fe VA 0x14085d4fe (.rdata)
+  rip-rel refs: 0x18c44b, 0x18cedc, 0x22446a
+  --- context for ref insnEnd 0x18c44b (VA 0x14018d04b) ---
+    0x14018d033  jmp 0xffffffffffffff07
+    0x14018d038  mov r9d, 0x11
+    0x14018d03e  mov rcx, rbp
+    0x14018d041  mov rdx, rsi
+    0x14018d044  lea r8, [rip + 0x6d04b3]  --> "..."@0x14085d4fe: "password_salt_b64key_enc_with_password_b64answers_salt_b64key_enc_with"
+    0x14018d04b  call 0xffffffffffea651d
+    0x14018d050  test al, al
+    0x14018d052  je 0x83
+    0x14018d054  cmp r12, -1
+    0x14018d058  jne 0xa9d
+    0x14018d05e  mov rdx, qword ptr [rsp + 0x140]
+    0x14018d066  mov rcx, r13
+    0x14018d069  call 0x53699d
+    0x14018d06e  mov r12, qword ptr [rsp + 0x70]
+    0x14018d073  mov rbp, qword ptr [rsp + 0x78]
+    0x14018d078  cmp r12, -1
+    0x14018d07c  je 0x2b4
+    0x14018d082  mov rsi, qword ptr [rsp + 0x80]
+    0x14018d08a  mov rcx, qword ptr [rsp + 0x40]
+    0x14018d08f  mov rdx, qword ptr [rsp + 0xe8]
+    0x14018d097  call 0xfffffffffffa0b3d
+    0x14018d09c  mov qword ptr [rsp + 0x40], r12
+    0x14018d0a1  mov qword ptr [rsp + 0x1b0], rbp
+  --- context for ref insnEnd 0x18cedc (VA 0x14018dadc) ---
+    0x14018dac4  mov edx, esi
+    0x14018dac6  call 0x61c5fc
+    0x14018dacb  jmp 0xfffffffffffff3a6
+    0x14018dad0  mov byte ptr [rsp + 0x30], dil
+    0x14018dad5  lea rcx, [rip + 0x6cfa22]  --> "..."@0x14085d4fe: "password_salt_b64key_enc_with_password_b64answers_salt_b64key_enc_with"
+    0x14018dadc  mov edx, 0x11
+    0x14018dae1  jmp 0x9b
+    0x14018dae3  lea rdx, [rip + 0x6d25f6]
+    0x14018daea  lea r8, [rip + 0xdc49ff]
+    0x14018daf1  xor ecx, ecx
+    0x14018daf3  jmp 0x57
+    0x14018daf5  mov byte ptr [rsp + 0x30], dil
+    0x14018dafa  lea rcx, [rip + 0x6cfa0e]  --> "..."@0x14085d50f: "key_enc_with_password_b64answers_salt_b64key_enc_with_answers_b64has_d"
+    0x14018db01  mov edx, 0x19
+    0x14018db06  jmp 0x9b
+    0x14018db08  lea rdx, [rip + 0x6d25d1]
+    0x14018db0f  lea r8, [rip + 0xdc49da]
+    0x14018db16  mov ecx, 1
+    0x14018db1b  call 0x62c96c
+    0x14018db20  mov rbp, rax
+    0x14018db23  jmp 0xfffffffffffff895
+    0x14018db28  mov byte ptr [rsp + 0x30], dil
+    0x14018db2d  lea rcx, [rip + 0x6cf9f4]  --> "..."@0x14085d528: "answers_salt_b64key_enc_with_answers_b64has_device_keysrc\commands\acc"
+    0x14018db34  mov edx, 0x10
+    0x14018db39  jmp 0x9b
+  --- context for ref insnEnd 0x22446a (VA 0x14022506a) ---
+    0x140225052  enter 0, 0
+    0x140225056  mov r9, qword ptr [r14 + 8]
+    0x14022505a  mov rax, qword ptr [r14 + 0x10]
+    0x14022505e  mov qword ptr [rsp + 0x20], rax
+    0x140225063  lea rdx, [rip + 0x638494]  --> "..."@0x14085d4fe: "password_salt_b64key_enc_with_password_b64answers_salt_b64key_enc_with"
+    0x14022506a  lea rcx, [rsp + 0x28]
+    0x14022506f  mov r8d, 0x11
+    0x140225075  call 0xfffffffffff93a8e
+    0x14022507a  test rax, rax
+    0x14022507d  jne 0xcc
+    0x140225083  mov r9, qword ptr [r14 + 0x20]
+    0x140225087  mov rax, qword ptr [r14 + 0x28]
+    0x14022508b  mov qword ptr [rsp + 0x20], rax
+    0x140225090  lea rdx, [rip + 0x638478]  --> "..."@0x14085d50f: "key_enc_with_password_b64answers_salt_b64key_enc_with_answers_b64has_d"
+    0x140225097  lea rcx, [rsp + 0x28]
+    0x14022509c  mov r8d, 0x19
+    0x1402250a2  call 0xfffffffffff93a8e
+    0x1402250a7  test rax, rax
+    0x1402250aa  jne 0xcc
+    0x1402250ac  mov r9, qword ptr [r14 + 0x38]
+    0x1402250b0  mov rax, qword ptr [r14 + 0x40]
+    0x1402250b4  mov qword ptr [rsp + 0x20], rax
+    0x1402250b9  lea rdx, [rip + 0x638468]  --> "..."@0x14085d528: "answers_salt_b64key_enc_with_answers_b64has_device_keysrc\commands\acc"
+    0x1402250c0  lea rcx, [rsp + 0x28]
+
+===== "key_enc_with_answers_b64" occurrences: 0x85c738
+  occ file 0x85c738 VA 0x14085d538 (.rdata)
+  rip-rel refs: 0x18c5ff, 0x18cf47, 0x2244e9
+  --- context for ref insnEnd 0x18c5ff (VA 0x14018d1ff) ---
+    0x14018d1e7  jmp 0xfffffffffffffd53
+    0x14018d1ec  mov r9d, 0x18
+    0x14018d1f2  mov rcx, rbp
+    0x14018d1f5  mov rdx, rsi
+    0x14018d1f8  lea r8, [rip + 0x6d0339]  --> "..."@0x14085d538: "key_enc_with_answers_b64has_device_keysrc\commands\accounts\encryption"
+    0x14018d1ff  call 0xffffffffffea6369
+    0x14018d204  test al, al
+    0x14018d206  je 0x92
+    0x14018d208  cmp qword ptr [rsp + 0x58], -1
+    0x14018d20e  jne 0x954
+    0x14018d214  mov rdx, qword ptr [rsp + 0x140]
+    0x14018d21c  mov rcx, r13
+    0x14018d21f  call 0x5367e9
+    0x14018d224  mov rax, qword ptr [rsp + 0x70]
+    0x14018d229  mov rbp, qword ptr [rsp + 0x78]
+    0x14018d22e  cmp rax, -1
+    0x14018d232  je 0x100
+    0x14018d238  mov rcx, qword ptr [rsp + 0x80]
+    0x14018d240  mov qword ptr [rsp + 0x110], rcx
+    0x14018d248  mov rcx, qword ptr [rsp + 0x28]
+    0x14018d24d  mov rdx, qword ptr [rsp + 0x38]
+    0x14018d252  mov rsi, rax
+    0x14018d255  call 0xfffffffffffa0989
+    0x14018d25a  mov qword ptr [rsp + 0x58], rsi
+  --- context for ref insnEnd 0x18cf47 (VA 0x14018db47) ---
+    0x14018db2f  or eax, 0x6cf9f4
+    0x14018db34  mov edx, 0x10
+    0x14018db39  jmp 0x30
+    0x14018db3b  mov byte ptr [rsp + 0x30], dil
+    0x14018db40  lea rcx, [rip + 0x6cf9f1]  --> "..."@0x14085d538: "key_enc_with_answers_b64has_device_keysrc\commands\accounts\encryption"
+    0x14018db47  mov edx, 0x18
+    0x14018db4c  jmp 0x30
+    0x14018db4e  mov byte ptr [rsp + 0x30], dil
+    0x14018db53  lea rcx, [rip + 0x6cf9f6]  --> "..."@0x14085d550: "has_device_keysrc\commands\accounts\encryption.rs"
+    0x14018db5a  mov edx, 0xe
+    0x14018db5f  call 0x62ca11
+    0x14018db64  jmp 0xfffffffffffffed6
+    0x14018db69  int3 
+    0x14018db6a  int3 
+    0x14018db6b  int3 
+    0x14018db6c  int3 
+    0x14018db6d  int3 
+    0x14018db6e  int3 
+    0x14018db6f  int3 
+    0x14018db70  push rsi
+    0x14018db71  push rdi
+    0x14018db72  push rbx
+    0x14018db73  sub rsp, 0x50
+    0x14018db77  mov rsi, rcx
+    0x14018db7a  lea rdi, [rsp + 0x30]
+    0x14018db7f  mov rcx, rdi
+    0x14018db82  call 0xfffffffffff68cd1
+    0x14018db87  mov rbx, qword ptr [rdi + 8]
+    0x14018db8b  mov r8, qword ptr [rdi + 0x10]
+    0x14018db8f  mov qword ptr [rsp + 0x20], 0xd
+    0x14018db98  lea r9, [rip + 0xd32963]  --> "..."@0x140ec0502: "accounts.json"
+    0x14018db9f  mov rcx, rsi
+    0x14018dba2  mov rdx, rbx
+  --- context for ref insnEnd 0x2244e9 (VA 0x1402250e9) ---
+    0x1402250d1  test eax, eax
+    0x1402250d3  jne 0x4d
+    0x1402250d5  mov r9, qword ptr [r14 + 0x50]
+    0x1402250d9  mov rax, qword ptr [r14 + 0x58]
+    0x1402250dd  mov qword ptr [rsp + 0x20], rax
+    0x1402250e2  lea rdx, [rip + 0x63844f]  --> "..."@0x14085d538: "key_enc_with_answers_b64has_device_keysrc\commands\accounts\encryption"
+    0x1402250e9  lea rcx, [rsp + 0x28]
+    0x1402250ee  mov r8d, 0x18
+    0x1402250f4  call 0xfffffffffff93a0f
+    0x1402250f9  test rax, rax
+    0x1402250fc  jne 0x4d
+    0x1402250fe  mov r9b, byte ptr [r14 + 0x62]
+    0x140225102  lea rdx, [rip + 0x638447]  --> "..."@0x14085d550: "has_device_keysrc\commands\accounts\encryption.rs"
+    0x140225109  lea rcx, [rsp + 0x28]
+    0x14022510e  mov r8d, 0xe
+    0x140225114  call 0xfffffffffff93c0f
+    0x140225119  test rax, rax
+    0x14022511c  je 0xb3
+    0x14022511e  mov r15, rax
+    0x140225121  mov rcx, qword ptr [rsp + 0x48]
+    0x140225126  mov rdx, qword ptr [rsp + 0x50]
+    0x14022512b  call 0xffffffffffeac3cf
+    0x140225130  lea rbx, [rsp + 0x60]
+    0x140225135  mov qword ptr [rbx], r15
+    0x140225138  lea r14, [rsp + 0x90]
+    0x140225140  mov rcx, r14
+    0x140225143  mov rdx, rbx
+
+===== "has_device_key" occurrences: 0x85c750
+  occ file 0x85c750 VA 0x14085d550 (.rdata)
+  rip-rel refs: 0x18c68c, 0x18cf5a, 0x224509
+  --- context for ref insnEnd 0x18c68c (VA 0x14018d28c) ---
+    0x14018d274  jmp 0xfffffffffffffcc6
+    0x14018d279  mov r9d, 0xe
+    0x14018d27f  mov rcx, rbp
+    0x14018d282  mov rdx, rsi
+    0x14018d285  lea r8, [rip + 0x6d02c4]  --> "..."@0x14085d550: "has_device_keysrc\commands\accounts\encryption.rs"
+    0x14018d28c  call 0xffffffffffea62dc
+    0x14018d291  test al, al
+    0x14018d293  je 0x57
+    0x14018d295  cmp byte ptr [rsp + 0x48], 2
+    0x14018d29a  jne 0x8da
+    0x14018d2a0  mov rsi, r15
+    0x14018d2a3  mov rdx, qword ptr [rsp + 0x140]
+    0x14018d2ab  mov rcx, r13
+    0x14018d2ae  call 0x535bfc
+    0x14018d2b3  cmp byte ptr [rsp + 0x70], 0
+    0x14018d2b8  jne 0x1e7
+    0x14018d2be  mov al, byte ptr [rsp + 0x71]
+    0x14018d2c2  mov byte ptr [rsp + 0x48], al
+    0x14018d2c6  jmp 0xfffffffffffffcc6
+    0x14018d2cb  mov rcx, qword ptr [rsp + 0x140]
+    0x14018d2d3  call 0x535bcc
+    0x14018d2d8  test rax, rax
+    0x14018d2db  mov rsi, r15
+    0x14018d2de  je 0xfffffffffffffcc6
+    0x14018d2e4  mov rbp, rax
+    0x14018d2e7  mov byte ptr [rsp + 0x30], dil
+  --- context for ref insnEnd 0x18cf5a (VA 0x14018db5a) ---
+    0x14018db42  or eax, 0x6cf9f1
+    0x14018db47  mov edx, 0x18
+    0x14018db4c  jmp 0x1d
+    0x14018db4e  mov byte ptr [rsp + 0x30], dil
+    0x14018db53  lea rcx, [rip + 0x6cf9f6]  --> "..."@0x14085d550: "has_device_keysrc\commands\accounts\encryption.rs"
+    0x14018db5a  mov edx, 0xe
+    0x14018db5f  call 0x62c9fe
+    0x14018db64  jmp 0xfffffffffffffec3
+    0x14018db69  int3 
+    0x14018db6a  int3 
+    0x14018db6b  int3 
+    0x14018db6c  int3 
+    0x14018db6d  int3 
+    0x14018db6e  int3 
+    0x14018db6f  int3 
+    0x14018db70  push rsi
+    0x14018db71  push rdi
+    0x14018db72  push rbx
+    0x14018db73  sub rsp, 0x50
+    0x14018db77  mov rsi, rcx
+    0x14018db7a  lea rdi, [rsp + 0x30]
+    0x14018db7f  mov rcx, rdi
+    0x14018db82  call 0xfffffffffff68cbe
+    0x14018db87  mov rbx, qword ptr [rdi + 8]
+    0x14018db8b  mov r8, qword ptr [rdi + 0x10]
+    0x14018db8f  mov qword ptr [rsp + 0x20], 0xd
+    0x14018db98  lea r9, [rip + 0xd32963]  --> "..."@0x140ec0502: "accounts.json"
+    0x14018db9f  mov rcx, rsi
+    0x14018dba2  mov rdx, rbx
+    0x14018dba5  call 0x4d747e
+    0x14018dbaa  mov rcx, qword ptr [rdi]
+    0x14018dbad  mov rdx, rbx
+    0x14018dbb0  add rsp, 0x50
+    0x14018dbb4  pop rbx
+    0x14018dbb5  pop rdi
+    0x14018dbb6  pop rsi
+  --- context for ref insnEnd 0x224509 (VA 0x140225109) ---
+    0x1402250f1  add byte ptr [rax], al
+    0x1402250f3  add al, ch
+    0x1402250f5  out 0x39, eax
+    0x1402250f7  stc 
+    0x1402250f8  dec dword ptr [rax - 0x7b]
+    0x1402250fb  sal byte ptr [rbp + 0x20], 0x45
+    0x1402250ff  mov cl, byte ptr [rsi + 0x62]
+    0x140225102  lea rdx, [rip + 0x638447]  --> "..."@0x14085d550: "has_device_keysrc\commands\accounts\encryption.rs"
+    0x140225109  lea rcx, [rsp + 0x28]
+    0x14022510e  mov r8d, 0xe
+    0x140225114  call 0xfffffffffff93bef
+    0x140225119  test rax, rax
+    0x14022511c  je 0x93
+    0x14022511e  mov r15, rax
+    0x140225121  mov rcx, qword ptr [rsp + 0x48]
+    0x140225126  mov rdx, qword ptr [rsp + 0x50]
+    0x14022512b  call 0xffffffffffeac3af
+    0x140225130  lea rbx, [rsp + 0x60]
+    0x140225135  mov qword ptr [rbx], r15
+    0x140225138  lea r14, [rsp + 0x90]
+    0x140225140  mov rcx, r14
+    0x140225143  mov rdx, rbx
+    0x140225146  call 0xffffffffffebd0af
+    0x14022514b  mov rcx, rbx
+    0x14022514e  call 0xffffffffffeba0bf
+    0x140225153  mov rax, qword ptr [r14 + 0x10]
+    0x140225157  mov qword ptr [rdi + 0x10], rax
+    0x14022515b  movups xmm0, xmmword ptr [r14]
+    0x14022515f  movups xmmword ptr [rdi], xmm0
+
+===== "EncSettings" occurrences: 0x85c6e8, 0x85f2c2, 0xec82ab
+  occ file 0x85c6e8 VA 0x14085d4e8 (.rdata)
+  rip-rel refs: 0x2243cf
+  --- context for ref insnEnd 0x2243cf (VA 0x140224fcf) ---
+    0x140224fb7  adc byte ptr [rdx], al
+    0x140224fb9  add byte ptr [rax], al
+    0x140224fbb  add byte ptr [rcx + rcx*4 + 0x3a], cl
+    0x140224fbf  mov qword ptr [rsp + 0x20], 7
+    0x140224fc8  lea r8, [rip + 0x638519]  --> "..."@0x14085d4e8: "EncSettingsinitializedpassword_salt_b64key_enc_with_password_b64answer"
+    0x140224fcf  lea r15, [rsp + 0x38]
+    0x140224fd4  mov r9d, 0xb
+    0x140224fda  mov rcx, r15
+    0x140224fdd  call 0xfffffffffff93ac9
+    0x140224fe2  mov al, byte ptr [r15]
+    0x140224fe5  cmp al, 2
+    0x140224fe7  jne 0x3c
+    0x140224fe9  mov r15, qword ptr [rsp + 0x40]
+    0x140224fee  jmp 0x16a
+    0x140224ff3  mov edx, dword ptr [rsp + 0x39]
+    0x140224ff7  mov r8d, dword ptr [rsp + 0x3c]
+    0x140224ffc  lea rcx, [rsp + 0x28]
+    0x140225001  mov dword ptr [rcx + 4], r8d
+    0x140225005  mov dword ptr [rcx + 1], edx
+    0x140225008  mov rdx, qword ptr [rsp + 0x40]
+    0x14022500d  mov byte ptr [rcx], al
+    0x14022500f  mov qword ptr [rcx + 8], rdx
+    0x140225013  mov r9b, byte ptr [r14 + 0x60]
+    0x140225017  lea rdx, [rip + 0x6384d5]  --> "..."@0x14085d4f3: "initializedpassword_salt_b64key_enc_with_password_b64answers_salt_b64k"
+    0x14022501e  mov r8d, 0xb
+    0x140225024  call 0xfffffffffff93d29
+    0x140225029  test rax, rax
+  occ file 0x85f2c2 VA 0x1408600c2 (.rdata)
+  rip-rel refs: (none)
+
+===== "argon2id" occurrences: 0x882390
+  occ file 0x882390 VA 0x140883190 (.rdata)
+  rip-rel refs: 0x247231, 0x24ce79
+  --- context for ref insnEnd 0x247231 (VA 0x140247e31) ---
+    0x140247e19  push -0x7fffffed
+    0x140247e1e  mov ebx, 0x1370
+    0x140247e23  add dword ptr [rdi], ecx
+    0x140247e25  test dword ptr [rbx + 0x4c000000], ebp
+    0x140247e2b  lea eax, [rip + 0x63b35f]  --> "..."@0x140883190: "argon2id"
+    0x140247e31  mov r9d, 8
+    0x140247e37  mov rcx, rdi
+    0x140247e3a  call 0xffffffffffe89a37
+    0x140247e3f  test al, al
+    0x140247e41  mov r15, qword ptr [rsp + 0x58]
+    0x140247e46  je 0x105
+    0x140247e4c  lea rax, [rbx + 0x1328]
+    0x140247e53  lea r8, [rsp + 0x330]
+    0x140247e5b  mov qword ptr [r8], rax
+    0x140247e5e  lea rax, [rip - 0x2239a5]
+    0x140247e65  mov qword ptr [r8 + 8], rax
+    0x140247e69  lea rdx, [rip + 0x63b378]
+    0x140247e70  lea rdi, [rsp + 0x1a0]
+    0x140247e78  mov rcx, rdi
+    0x140247e7b  call 0xffffffffffdf7547
+    0x140247e80  mov rsi, qword ptr [rdi]
+    0x140247e83  mov r14, qword ptr [rdi + 8]
+    0x140247e87  mov rdi, qword ptr [rdi + 0x10]
+    0x140247e8b  jmp 0xeaf
+  --- context for ref insnEnd 0x24ce79 (VA 0x14024da79) ---
+    0x14024da61  sbb eax, 0x48fffff2
+    0x14024da66  mov dword ptr [rsp + 0x38], ebp
+    0x14024da6a  mov rcx, r14
+    0x14024da6d  call 0x4c1b7f
+    0x14024da72  lea rdx, [rip + 0x635717]  --> "..."@0x140883190: "argon2id"
+    0x14024da79  lea rbp, [rsp + 0x120]
+    0x14024da81  mov r8d, 8
+    0x14024da87  mov rcx, rbp
+    0x14024da8a  call 0xffffffffffdf121f
+    0x14024da8f  mov r8, qword ptr [rbx + 0x1440]
+    0x14024da96  mov r9, qword ptr [rbx + 0x1448]
+    0x14024da9d  lea rdx, [rip + 0xce3392]
+    0x14024daa4  lea r14, [rsp + 0x210]
+    0x14024daac  mov rcx, r14
+    0x14024daaf  call 0xfffffffffff4b37f
+    0x14024dab4  mov byte ptr [rbx + 0x14d0], 1
+    0x14024dabb  movups xmm0, xmmword ptr [rbp]
+    0x14024dabf  movups xmmword ptr [rbx + 0x1488], xmm0
+    0x14024dac6  mov rax, qword ptr [rbp + 0x10]
+    0x14024daca  mov qword ptr [rbx + 0x1498], rax
+    0x14024dad1  movups xmm0, xmmword ptr [r14]
+
+===== "argon2-0.5.3\src\lib.rs" occurrences: 0x7deb6c
+  occ file 0x7deb6c VA 0x1407df96c (.rdata)
+  rip-rel refs: (none)
+
+===== "argon2-0.5.3\src\params.rs" occurrences: 0x7decac
+  occ file 0x7decac VA 0x1407dfaac (.rdata)
+  rip-rel refs: (none)
+
+===== "Wrong password or data corrupted" occurrences: 0x880360
+  occ file 0x880360 VA 0x140881160 (.rdata)
+  rip-rel refs: 0x18ff4f
+  --- context for ref insnEnd 0x18ff4f (VA 0x140190b4f) ---
+    0x140190b37  xor byte ptr [rcx + rcx*4 - 0x16], cl
+    0x140190b3b  call 0xfffffffffff40969
+    0x140190b40  lea r13, [rsp + 0xe8]
+    0x140190b48  lea rdx, [rip + 0x6f0611]  --> "..."@0x140881160: "Wrong password or data corrupted"
+    0x140190b4f  mov r8d, 0x20
+    0x140190b55  mov rcx, r13
+    0x140190b58  call 0xffffffffffeae149
+    0x140190b5d  mov rax, qword ptr [r13 + 0x10]
+    0x140190b61  mov qword ptr [rsp + 0x110], rax
+    0x140190b69  movups xmm0, xmmword ptr [r13]
+    0x140190b6e  movaps xmmword ptr [rsp + 0x100], xmm0
+    0x140190b76  mov qword ptr [rsi + 0x18], rax
+    0x140190b7a  movups xmmword ptr [rsi + 8], xmm0
+    0x140190b7e  mov qword ptr [rsi], 1
+    0x140190b85  mov al, byte ptr [rip + 0xe4f5b9]
+    0x140190b8b  mov rcx, r15
+    0x140190b8e  mov rdx, r14
+    0x140190b91  call 0xfffffffffff40969
+    0x140190b96  mov rcx, qword ptr [rsp + 0x48]
+    0x140190b9b  mov rdx, qword ptr [rsp + 0x28]
+    0x140190ba0  call 0xfffffffffff40969
+    0x140190ba5  jmp 0xfffffffffffffd71
+
+===== "Account vault key has an invalid length" occurrences: 0xec154e
+  occ file 0xec154e VA 0x140ec234e (.rdata)
+  rip-rel refs: 0x18f799
+  --- context for ref insnEnd 0x18f799 (VA 0x140190399) ---
+    0x140190381  adc al, 0
+    0x140190383  add byte ptr [rax - 0x75], cl
+    0x140190386  and al, 0x60
+    0x140190389  mov rdx, rbx
+    0x14019038c  jmp 0x3b
+    0x14019038e  lea rcx, [rdi + 8]
+    0x140190392  lea rdx, [rip + 0xd31fb5]  --> "..."@0x140ec234e: "Account vault key has an invalid lengthLegacy account vault key was in"
+    0x140190399  mov r8d, 0x27
+    0x14019039f  call 0xffffffffffeae8ff
+    0x1401903a4  mov eax, 1
+    0x1401903a9  mov qword ptr [rdi], rax
+    0x1401903ac  lea rcx, [rsp + 0x40]
+    0x1401903b1  call 0x142f
+    0x1401903b6  mov rcx, rbx
+    0x1401903b9  mov rdx, r14
+    0x1401903bc  call 0xfffffffffff4111f
+    0x1401903c1  mov rcx, qword ptr [rsp + 0x88]
+    0x1401903c9  mov rdx, rsi
+    0x1401903cc  add rsp, 0xa8
+    0x1401903d3  pop rbx
+    0x1401903d4  pop rdi
+    0x1401903d5  pop rsi
+    0x1401903d6  pop r12
+    0x1401903d8  pop r14
+    0x1401903da  pop r15
+    0x1401903dc  jmp 0xfffffffffff4111f
+    0x1401903e1  mov rax, qword ptr [rsp + 0x28]
+    0x1401903e6  lea r14, [rsp + 0x80]
+    0x1401903ee  mov qword ptr [r14], rax
+    0x1401903f1  lea r15, [rsp + 0x48]
+    0x1401903f6  mov rcx, r15
+
+===== "enc_settings.json" occurrences: 0xec14a4
+  occ file 0xec14a4 VA 0x140ec22a4 (.rdata)
+  rip-rel refs: 0x1933af
+  --- context for ref insnEnd 0x1933af (VA 0x140193faf) ---
+    0x140193f97  mov rbx, qword ptr [rdi + 8]
+    0x140193f9b  mov r8, qword ptr [rdi + 0x10]
+    0x140193f9f  mov qword ptr [rsp + 0x20], 0x11
+    0x140193fa8  lea r9, [rip + 0xd2e2f5]  --> "..."@0x140ec22a4: "enc_settings.jsonaccount-vault.dpapi^"
+    0x140193faf  mov rcx, rsi
+    0x140193fb2  mov rdx, rbx
+    0x140193fb5  call 0x4d1029
+    0x140193fba  mov rcx, qword ptr [rdi]
+    0x140193fbd  mov rdx, rbx
+    0x140193fc0  add rsp, 0x50
+    0x140193fc4  pop rbx
+    0x140193fc5  pop rdi
+    0x140193fc6  pop rsi
+    0x140193fc7  jmp 0xfffffffffff3d509
+    0x140193fcc  int3 
+    0x140193fcd  int3 
+    0x140193fce  int3 
+    0x140193fcf  int3 
+    0x140193fd0  mov rcx, qword ptr [rdx]
+    0x140193fd3  mov rax, qword ptr [rdx + 8]
+    0x140193fd7  mov rax, qword ptr [rax + 0x18]
+    0x140193fdb  lea rdx, [rip + 0xd350c2]  --> "..."@0x140ec90a4: "struct EncSettingsstruct SocialLinksstruct BodyColorsstruct AvatarScal"
+    0x140193fe2  mov r8d, 0x12
+    0x140193fe8  jmp rax
+    0x140193feb  int3 
+    0x140193fec  int3 
+    0x140193fed  int3 
+    0x140193fee  int3 
+    0x140193fef  int3 
+    0x140193ff0  push r14
+    0x140193ff2  push rsi
+    0x140193ff3  push rdi
+    0x140193ff4  push rbx
+    0x140193ff5  sub rsp, 0x58
+    0x140193ff9  mov rsi, rcx
+    0x140193ffc  call 0x53bf09
+    0x140194001  movzx eax, al
+    0x140194004  lea rcx, [rip + 0xdde901]
+    0x14019400b  movsxd rax, dword ptr [rcx + rax*4]
+
+===== "device-key-v1" occurrences: 0xebea43, 0xebea64
+  occ file 0xebea43 VA 0x140ebf843 (.rdata)
+  rip-rel refs: 0x2d164b, 0x2d3a9c
+  --- context for ref insnEnd 0x2d164b (VA 0x1402d224b) ---
+    0x1402d2233  and al, 0x28
+    0x1402d2236  mov qword ptr [rsp + 0x20], r14
+    0x1402d223b  mov qword ptr [rsp + 0x38], 0x10
+    0x1402d2244  lea rdx, [rip + 0xbed5f8]  --> "..."@0x140ebf843: "device-key-v1DEVICE_KEY_NOT_FOUNDdevice-key-v1.dpapiDEVICE_STORE_KEY"
+    0x1402d224b  lea rdi, [rsp + 0x68]
+    0x1402d2250  mov r8d, 0xd
+    0x1402d2256  mov rcx, rdi
+    0x1402d2259  mov r9, rsi
+    0x1402d225c  call 0x167d
+    0x1402d2261  mov rax, qword ptr [rdi]
+    0x1402d2264  cmp rax, -1
+    0x1402d2268  je 0x9e
+    0x1402d226a  movups xmm0, xmmword ptr [rsp + 0x70]
+    0x1402d226f  movups xmmword ptr [rbx + 0x10], xmm0
+    0x1402d2273  mov qword ptr [rbx + 8], rax
+    0x1402d2277  and qword ptr [rbx], 0
+    0x1402d227b  jmp 0xc9
+    0x1402d227d  lea rcx, [rsp + 0x70]
+    0x1402d2282  lea rdx, [rip + 0x5a6223]  --> "..."@0x1408784ac: "DEVICE_KEYPAIR_LOAD_FAILEDDEVICE_PROOF_TIMEDEVICE_PROOF_SIGNDEVICE_PRO"
+    0x1402d2289  mov r8d, 0x1a
+    0x1402d228f  call 0xffffffffffd6ca4d
+    0x1402d2294  mov rax, qword ptr [rsp + 0x80]
+    0x1402d229c  mov qword ptr [rsp + 0x290], rax
+    0x1402d22a4  movups xmm0, xmmword ptr [rsp + 0x70]
+  --- context for ref insnEnd 0x2d3a9c (VA 0x1402d469c) ---
+    0x1402d4684  mov cl, 0xbe
+    0x1402d4686  add byte ptr [rax - 0x77], cl
+    0x1402d4689  and al, 0x20
+    0x1402d468c  mov qword ptr [rsp + 0x28], 0x14
+    0x1402d4695  lea rdx, [rip + 0xbeb1a7]  --> "..."@0x140ebf843: "device-key-v1DEVICE_KEY_NOT_FOUNDdevice-key-v1.dpapiDEVICE_STORE_KEY"
+    0x1402d469c  lea r15, [rsp + 0x38]
+    0x1402d46a1  mov r8d, 0xd
+    0x1402d46a7  mov rcx, r15
+    0x1402d46aa  mov r9, rsi
+    0x1402d46ad  call 0xffffffffffffc2cc
+    0x1402d46b2  mov r14, qword ptr [r15 + 8]
+    0x1402d46b6  mov rbx, qword ptr [r15 + 0x10]
+    0x1402d46ba  mov rdx, qword ptr [r15 + 0x18]
+    0x1402d46be  cmp dword ptr [r15], 1
+    0x1402d46c2  jne 0x55
+    0x1402d46c4  mov qword ptr [rdi + 8], r14
+    0x1402d46c8  mov qword ptr [rdi + 0x10], rbx
+    0x1402d46cc  mov qword ptr [rdi + 0x18], rdx
+    0x1402d46d0  and qword ptr [rdi], 0
+    0x1402d46d4  jmp 0x154
+    0x1402d46d9  mov rcx, rbx
+    0x1402d46dc  call 0xffffffffffdc297c
+    0x1402d46e1  mov r9, rdx
+    0x1402d46e4  lea rdx, [rip + 0x5a363d]
+    0x1402d46eb  lea rsi, [rsp + 0x38]
+    0x1402d46f0  mov rcx, rsi
+    0x1402d46f3  mov r8, rax
+    0x1402d46f6  call 0xffffffffffdea8bc
+  occ file 0xebea64 VA 0x140ebf864 (.rdata)
+  rip-rel refs: 0x2d3c7f
+  --- context for ref insnEnd 0x2d3c7f (VA 0x1402d487f) ---
+    0x1402d4867  mov rbx, qword ptr [rdi + 8]
+    0x1402d486b  mov r8, qword ptr [rdi + 0x10]
+    0x1402d486f  mov qword ptr [rsp + 0x20], 0x13
+    0x1402d4878  lea r9, [rip + 0xbeafe5]  --> "..."@0x140ebf864: "device-key-v1.dpapiDEVICE_STORE_KEY"
+    0x1402d487f  mov rcx, rsi
+    0x1402d4882  mov rdx, rbx
+    0x1402d4885  call 0x390759
+    0x1402d488a  mov rcx, qword ptr [rdi]
+    0x1402d488d  mov rdx, rbx
+    0x1402d4890  add rsp, 0x50
+    0x1402d4894  pop rbx
+    0x1402d4895  pop rdi
+    0x1402d4896  pop rsi
+    0x1402d4897  jmp 0xffffffffffdfcc39
+    0x1402d489c  int3 
+    0x1402d489d  int3 
+    0x1402d489e  int3 
+    0x1402d489f  int3 
+    0x1402d48a0  push rsi
+    0x1402d48a1  push rdi
+    0x1402d48a2  push rbx
+    0x1402d48a3  sub rsp, 0x50
+    0x1402d48a7  mov rsi, rcx
+    0x1402d48aa  lea rdi, [rsp + 0x30]
+    0x1402d48af  mov rcx, rdi
+    0x1402d48b2  call 0xffffffffffe21f99
+    0x1402d48b7  mov rbx, qword ptr [rdi + 8]
+    0x1402d48bb  mov r8, qword ptr [rdi + 0x10]
+    0x1402d48bf  mov qword ptr [rsp + 0x20], 4
+    0x1402d48c8  lea r9, [rip + 0x5a42e3]  --> "..."@0x140878bb2: "authsource=deeplinkSTATE_MISMATCH"
+    0x1402d48cf  mov rcx, rsi
+    0x1402d48d2  mov rdx, rbx
+    0x1402d48d5  call 0x390759
+    0x1402d48da  mov rcx, qword ptr [rdi]

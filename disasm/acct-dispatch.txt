@@ -1,0 +1,973 @@
+0x140004c00  outsb dx, byte ptr [rsi]
+0x140004c01  adc byte ptr [rbp - 0x75], cl
+0x140004c04  jbe 0x1e  =>file=0x1e VA=0x140000c1e
+0x140004c06  lea r12, [rbx + 1]
+0x140004c0a  lea rcx, [r12 - 1]
+0x140004c0f  cmp rcx, rbp
+0x140004c12  jae 0x136  =>file=0x136 VA=0x140000d36
+0x140004c18  cmp rcx, r14
+0x140004c1b  jae 0x6eb  =>file=0x6eb VA=0x1400012eb
+0x140004c21  movzx eax, byte ptr [r13 + r12 - 1]
+0x140004c27  movzx eax, byte ptr [rdi + rax + 0x80]
+0x140004c2f  add r15d, eax
+0x140004c32  mov rcx, qword ptr [rdi + 8]
+0x140004c36  mov rdx, qword ptr [rdi + 0x10]
+0x140004c3a  mov r8, r15
+0x140004c3d  lea r9, [rip + 0xece3e4]  [tgt 0x140ed3028]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004c44  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140004c49  mov r15d, dword ptr [rax]
+0x140004c4c  cmp r15d, dword ptr [rdi + 0x190]
+0x140004c53  ja 0x10e  =>file=0x10e VA=0x140000d0e
+0x140004c59  test r15d, r15d
+0x140004c5c  je 0x187  =>file=0x187 VA=0x140000d87
+0x140004c62  cmp r15d, dword ptr [rdi + 0x194]
+0x140004c69  ja 0x10e  =>file=0x10e VA=0x140000d0e
+0x140004c6f  mov cl, byte ptr [rdi + 0x78]
+0x140004c72  mov r8, r15
+0x140004c75  shr r8, cl
+0x140004c78  add r8, -2
+0x140004c7c  mov rcx, qword ptr [rdi + 0x20]
+0x140004c80  mov rdx, qword ptr [rdi + 0x28]
+0x140004c84  lea r9, [rip + 0xece3cd]  [tgt 0x140ed3058]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004c8b  call 0x740  =>file=0x740 VA=0x140001340
+0x140004c90  mov rcx, qword ptr [rax + 8]
+0x140004c94  mov rdx, qword ptr [rax + 0x10]
+0x140004c98  xor r8d, r8d
+0x140004c9b  lea r9, [rip + 0xece3ce]  [tgt 0x140ed3070]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004ca2  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140004ca7  mov ebp, dword ptr [rax]
+0x140004ca9  mov rcx, qword ptr [rdi + 0x38]
+0x140004cad  mov rdx, qword ptr [rdi + 0x40]
+0x140004cb1  mov r8d, ebp
+0x140004cb4  lea r9, [rip + 0xece385]  [tgt 0x140ed3040]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004cbb  call 0x770  =>file=0x770 VA=0x140001370
+0x140004cc0  mov eax, dword ptr [rax]
+0x140004cc2  mov r8, r12
+0x140004cc5  sub r8, rax
+0x140004cc8  lea rcx, [rsp + 0x68]
+0x140004ccd  mov edx, ebp
+0x140004ccf  mov r9, r12
+0x140004cd2  call 0x7a0  =>file=0x7a0 VA=0x1400013a0
+0x140004cd7  cmp qword ptr [rsp + 0x68], rbx
+0x140004cdc  ja 0x109  =>file=0x109 VA=0x140000d09
+0x140004cde  mov rax, qword ptr [rsp + 0x78]
+0x140004ce3  mov qword ptr [rsp + 0x50], rax
+0x140004ce8  movups xmm0, xmmword ptr [rsp + 0x68]
+0x140004ced  movaps xmmword ptr [rsp + 0x40], xmm0
+0x140004cf2  mov eax, 1
+0x140004cf7  mov qword ptr [rsp + 0x80], rax
+0x140004cff  test sil, 1
+0x140004d03  jne 0x637  =>file=0x637 VA=0x140001237
+0x140004d09  mov rbp, qword ptr [rsp + 0x38]
+0x140004d0e  inc r12
+0x140004d11  jmp 0xa  =>file=0xa VA=0x140000c0a
+0x140004d16  mov r15d, dword ptr [rdi + 0x198]
+0x140004d1d  test r15, r15
+0x140004d20  je 0x171  =>file=0x171 VA=0x140000d71
+0x140004d22  cmp r15d, dword ptr [rdi + 0x194]
+0x140004d29  jbe 0x204  =>file=0x204 VA=0x140000e04
+0x140004d2f  xor esi, esi
+0x140004d31  jmp 0x27a  =>file=0x27a VA=0x140000e7a
+0x140004d36  mov rcx, qword ptr [rsp + 0x30]
+0x140004d3b  mov rax, qword ptr [rsp + 0x80]
+0x140004d43  mov qword ptr [rcx], rax
+0x140004d46  jmp 0x5fc  =>file=0x5fc VA=0x1400011fc
+0x140004d4b  mov r15d, dword ptr [rdi + 0x198]
+0x140004d52  test r15, r15
+0x140004d55  je 0x171  =>file=0x171 VA=0x140000d71
+0x140004d57  mov qword ptr [rsp + 0x30], r13
+0x140004d5c  cmp r15d, dword ptr [rdi + 0x194]
+0x140004d63  jbe 0x4a4  =>file=0x4a4 VA=0x1400010a4
+0x140004d69  xor r13d, r13d
+0x140004d6c  jmp 0x512  =>file=0x512 VA=0x140001112
+0x140004d71  call 0x7e0  =>file=0x7e0 VA=0x1400013e0
+0x140004d76  mov qword ptr [r13 + 8], rax
+0x140004d7a  mov qword ptr [r13], 2
+0x140004d82  jmp 0x60e  =>file=0x60e VA=0x14000120e
+0x140004d87  mov rcx, qword ptr [rsp + 0x30]
+0x140004d8c  mov rax, qword ptr [rsp + 0x80]
+0x140004d94  mov qword ptr [rcx], rax
+0x140004d97  movaps xmm0, xmmword ptr [rsp + 0x40]
+0x140004d9c  jmp 0x601  =>file=0x601 VA=0x140001201
+0x140004da1  mov cl, byte ptr [rdi + 0x78]
+0x140004da4  shr r15, cl
+0x140004da7  add r15, -2
+0x140004dab  mov rcx, qword ptr [rdi + 0x20]
+0x140004daf  mov rdx, qword ptr [rdi + 0x28]
+0x140004db3  lea r9, [rip + 0xece29e]  [tgt 0x140ed3058]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004dba  mov r8, r15
+0x140004dbd  call 0x740  =>file=0x740 VA=0x140001340
+0x140004dc2  mov rcx, qword ptr [rax + 8]
+0x140004dc6  mov rdx, qword ptr [rax + 0x10]
+0x140004dca  lea r9, [rip + 0xece29f]  [tgt 0x140ed3070]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004dd1  xor r8d, r8d
+0x140004dd4  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140004dd9  mov esi, dword ptr [rax]
+0x140004ddb  mov rcx, qword ptr [rdi + 0x38]
+0x140004ddf  mov rdx, qword ptr [rdi + 0x40]
+0x140004de3  lea r9, [rip + 0xece256]  [tgt 0x140ed3040]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004dea  mov r8d, esi
+0x140004ded  call 0x770  =>file=0x770 VA=0x140001370
+0x140004df2  mov eax, dword ptr [rax]
+0x140004df4  mov r8, rbx
+0x140004df7  sub r8, rax
+0x140004dfa  lea rdi, [rsp + 0x68]
+0x140004dff  jmp 0x47a  =>file=0x47a VA=0x14000107a
+0x140004e04  mov cl, byte ptr [rdi + 0x78]
+0x140004e07  mov r8, r15
+0x140004e0a  shr r8, cl
+0x140004e0d  add r8, -2
+0x140004e11  mov rcx, qword ptr [rdi + 0x20]
+0x140004e15  mov rdx, qword ptr [rdi + 0x28]
+0x140004e19  lea r9, [rip + 0xece238]  [tgt 0x140ed3058]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004e20  call 0x740  =>file=0x740 VA=0x140001340
+0x140004e25  mov rcx, qword ptr [rax + 8]
+0x140004e29  mov rdx, qword ptr [rax + 0x10]
+0x140004e2d  lea r9, [rip + 0xece23c]  [tgt 0x140ed3070]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004e34  xor r8d, r8d
+0x140004e37  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140004e3c  mov ebp, dword ptr [rax]
+0x140004e3e  mov rcx, qword ptr [rdi + 0x38]
+0x140004e42  mov rdx, qword ptr [rdi + 0x40]
+0x140004e46  lea r9, [rip + 0xece1f3]  [tgt 0x140ed3040]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004e4d  mov r8d, ebp
+0x140004e50  call 0x770  =>file=0x770 VA=0x140001370
+0x140004e55  mov eax, dword ptr [rax]
+0x140004e57  mov r8, rbx
+0x140004e5a  sub r8, rax
+0x140004e5d  lea rcx, [rsp + 0x68]
+0x140004e62  mov edx, ebp
+0x140004e64  mov rbp, qword ptr [rsp + 0x38]
+0x140004e69  mov r9, rbx
+0x140004e6c  call 0x7a0  =>file=0x7a0 VA=0x1400013a0
+0x140004e71  mov rax, qword ptr [rdi + 0x50]
+0x140004e75  mov esi, 1
+0x140004e7a  mov r12, qword ptr [r14 + 0x10]
+0x140004e7e  mov r14, qword ptr [r14 + 0x18]
+0x140004e82  mov r10, qword ptr [rdi + 0x58]
+0x140004e86  mov rcx, qword ptr [r10 + 0x10]
+0x140004e8a  dec rcx
+0x140004e8d  and rcx, 0xfffffffffffffff0
+0x140004e91  lea rdx, [rax + rcx]
+0x140004e95  add rdx, 0x10
+0x140004e99  mov qword ptr [rsp + 0x28], rbp
+0x140004e9e  mov qword ptr [rsp + 0x20], rbx
+0x140004ea3  lea rbx, [rsp + 0x40]
+0x140004ea8  mov rcx, rbx
+0x140004eab  mov r8, r12
+0x140004eae  mov r9, r14
+0x140004eb1  call qword ptr [r10 + 0x20]
+0x140004eb5  mov rax, qword ptr [rbx]
+0x140004eb8  test rax, rax
+0x140004ebb  je 0x2d5  =>file=0x2d5 VA=0x140000ed5
+0x140004ebd  cmp eax, 1
+0x140004ec0  jne 0x2de  =>file=0x2de VA=0x140000ede
+0x140004ec2  mov rcx, qword ptr [rsp + 0x58]
+0x140004ec7  mov qword ptr [r13 + 0x18], rcx
+0x140004ecb  movups xmm0, xmmword ptr [rsp + 0x48]
+0x140004ed0  movups xmmword ptr [r13 + 8], xmm0
+0x140004ed5  mov qword ptr [r13], rax
+0x140004ed9  jmp 0x60e  =>file=0x60e VA=0x14000120e
+0x140004ede  mov qword ptr [rsp + 0x30], r13
+0x140004ee3  lea rbx, [rsp + 0x40]
+0x140004ee8  mov rax, qword ptr [rbx + 8]
+0x140004eec  lea r13, [rip + 0xece135]  [tgt 0x140ed3028]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004ef3  cmp rax, qword ptr [rsp + 0x38]
+0x140004ef8  jae 0x62d  =>file=0x62d VA=0x14000122d
+0x140004efe  mov rbp, rax
+0x140004f01  cmp rax, r14
+0x140004f04  jae 0x717  =>file=0x717 VA=0x140001317
+0x140004f0a  movzx eax, byte ptr [r12 + rbp]
+0x140004f0f  movzx eax, byte ptr [rdi + rax + 0x80]
+0x140004f17  add r15d, eax
+0x140004f1a  mov rcx, qword ptr [rdi + 8]
+0x140004f1e  mov rdx, qword ptr [rdi + 0x10]
+0x140004f22  mov r8, r15
+0x140004f25  mov r9, r13
+0x140004f28  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140004f2d  mov r15d, dword ptr [rax]
+0x140004f30  cmp r15d, dword ptr [rdi + 0x190]
+0x140004f37  ja 0x39c  =>file=0x39c VA=0x140000f9c
+0x140004f39  test r15d, r15d
+0x140004f3c  je 0x62d  =>file=0x62d VA=0x14000122d
+0x140004f42  cmp r15d, dword ptr [rdi + 0x194]
+0x140004f49  jbe 0x3a7  =>file=0x3a7 VA=0x140000fa7
+0x140004f4b  mov rax, qword ptr [rdi + 0x50]
+0x140004f4f  mov r10, qword ptr [rdi + 0x58]
+0x140004f53  mov rcx, qword ptr [r10 + 0x10]
+0x140004f57  dec rcx
+0x140004f5a  and rcx, 0xfffffffffffffff0
+0x140004f5e  lea rdx, [rax + rcx]
+0x140004f62  add rdx, 0x10
+0x140004f66  mov rax, qword ptr [rsp + 0x38]
+0x140004f6b  mov qword ptr [rsp + 0x28], rax
+0x140004f70  mov qword ptr [rsp + 0x20], rbp
+0x140004f75  mov rcx, rbx
+0x140004f78  mov r8, r12
+0x140004f7b  mov r9, r14
+0x140004f7e  call qword ptr [r10 + 0x20]
+0x140004f82  cmp qword ptr [rsp + 0x40], 0
+0x140004f88  je 0x622  =>file=0x622 VA=0x140001222
+0x140004f8e  mov rax, qword ptr [rsp + 0x48]
+0x140004f93  cmp rax, rbp
+0x140004f96  ja 0x2f3  =>file=0x2f3 VA=0x140000ef3
+0x140004f9c  inc rbp
+0x140004f9f  mov rax, rbp
+0x140004fa2  jmp 0x2f3  =>file=0x2f3 VA=0x140000ef3
+0x140004fa7  mov cl, byte ptr [rdi + 0x78]
+0x140004faa  mov r8, r15
+0x140004fad  shr r8, cl
+0x140004fb0  inc rbp
+0x140004fb3  add r8, -2
+0x140004fb7  mov rcx, qword ptr [rdi + 0x20]
+0x140004fbb  mov rdx, qword ptr [rdi + 0x28]
+0x140004fbf  lea r9, [rip + 0xece092]  [tgt 0x140ed3058]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004fc6  call 0x740  =>file=0x740 VA=0x140001340
+0x140004fcb  mov rcx, qword ptr [rax + 8]
+0x140004fcf  mov rdx, qword ptr [rax + 0x10]
+0x140004fd3  xor r8d, r8d
+0x140004fd6  lea r9, [rip + 0xece093]  [tgt 0x140ed3070]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004fdd  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140004fe2  mov esi, dword ptr [rax]
+0x140004fe4  mov rcx, qword ptr [rdi + 0x38]
+0x140004fe8  mov rdx, qword ptr [rdi + 0x40]
+0x140004fec  mov r8d, esi
+0x140004fef  lea r9, [rip + 0xece04a]  [tgt 0x140ed3040]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140004ff6  call 0x770  =>file=0x770 VA=0x140001370
+0x140004ffb  mov eax, dword ptr [rax]
+0x140004ffd  mov r8, rbp
+0x140005000  sub r8, rax
+0x140005003  lea rcx, [rsp + 0x68]
+0x140005008  mov edx, esi
+0x14000500a  mov r9, rbp
+0x14000500d  call 0x7a0  =>file=0x7a0 VA=0x1400013a0
+0x140005012  mov esi, 1
+0x140005017  mov rax, rbp
+0x14000501a  jmp 0x2f3  =>file=0x2f3 VA=0x140000ef3
+0x14000501f  mov cl, byte ptr [rdi + 0x78]
+0x140005022  shr r8, cl
+0x140005025  add r8, -2
+0x140005029  mov rcx, qword ptr [rdi + 0x20]
+0x14000502d  mov rdx, qword ptr [rdi + 0x28]
+0x140005031  lea r9, [rip + 0xece020]  [tgt 0x140ed3058]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140005038  call 0x740  =>file=0x740 VA=0x140001340
+0x14000503d  mov rcx, qword ptr [rax + 8]
+0x140005041  mov rdx, qword ptr [rax + 0x10]
+0x140005045  lea r9, [rip + 0xece024]  [tgt 0x140ed3070]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x14000504c  xor r8d, r8d
+0x14000504f  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140005054  mov esi, dword ptr [rax]
+0x140005056  mov rcx, qword ptr [rdi + 0x38]
+0x14000505a  mov rdx, qword ptr [rdi + 0x40]
+0x14000505e  lea r9, [rip + 0xecdfdb]  [tgt 0x140ed3040]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140005065  mov r8d, esi
+0x140005068  call 0x770  =>file=0x770 VA=0x140001370
+0x14000506d  mov eax, dword ptr [rax]
+0x14000506f  mov r8, rbx
+0x140005072  sub r8, rax
+0x140005075  lea rdi, [rsp + 0x40]
+0x14000507a  mov rcx, rdi
+0x14000507d  mov edx, esi
+0x14000507f  mov r9, rbx
+0x140005082  call 0x7a0  =>file=0x7a0 VA=0x1400013a0
+0x140005087  mov qword ptr [r13], 1
+0x14000508f  movups xmm0, xmmword ptr [rdi]
+0x140005092  movups xmmword ptr [r13 + 8], xmm0
+0x140005097  mov rax, qword ptr [rdi + 0x10]
+0x14000509b  mov qword ptr [r13 + 0x18], rax
+0x14000509f  jmp 0x60e  =>file=0x60e VA=0x14000120e
+0x1400050a4  mov cl, byte ptr [rdi + 0x78]
+0x1400050a7  mov r8, r15
+0x1400050aa  shr r8, cl
+0x1400050ad  add r8, -2
+0x1400050b1  mov rcx, qword ptr [rdi + 0x20]
+0x1400050b5  mov rdx, qword ptr [rdi + 0x28]
+0x1400050b9  lea r9, [rip + 0xecdf98]  [tgt 0x140ed3058]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x1400050c0  call 0x740  =>file=0x740 VA=0x140001340
+0x1400050c5  mov rcx, qword ptr [rax + 8]
+0x1400050c9  mov rdx, qword ptr [rax + 0x10]
+0x1400050cd  lea r9, [rip + 0xecdf9c]  [tgt 0x140ed3070]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x1400050d4  xor r8d, r8d
+0x1400050d7  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x1400050dc  mov ebp, dword ptr [rax]
+0x1400050de  mov rcx, qword ptr [rdi + 0x38]
+0x1400050e2  mov rdx, qword ptr [rdi + 0x40]
+0x1400050e6  lea r9, [rip + 0xecdf53]  [tgt 0x140ed3040]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x1400050ed  mov r8d, ebp
+0x1400050f0  call 0x770  =>file=0x770 VA=0x140001370
+0x1400050f5  mov eax, dword ptr [rax]
+0x1400050f7  mov r8, rbx
+0x1400050fa  sub r8, rax
+0x1400050fd  lea rcx, [rsp + 0x40]
+0x140005102  mov edx, ebp
+0x140005104  mov r9, rbx
+0x140005107  call 0x7a0  =>file=0x7a0 VA=0x1400013a0
+0x14000510c  mov r13d, 1
+0x140005112  mov rsi, qword ptr [r14 + 0x10]
+0x140005116  mov rbp, qword ptr [r14 + 0x18]
+0x14000511a  inc rbx
+0x14000511d  lea r14, [rip + 0xecdf04]  [tgt 0x140ed3028]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140005124  lea r12, [rsp + 0x40]
+0x140005129  lea rcx, [rbx - 1]
+0x14000512d  cmp rcx, qword ptr [rsp + 0x38]
+0x140005132  jae 0x5f4  =>file=0x5f4 VA=0x1400011f4
+0x140005138  cmp rcx, rbp
+0x14000513b  jae 0x6f7  =>file=0x6f7 VA=0x1400012f7
+0x140005141  movzx eax, byte ptr [rsi + rbx - 1]
+0x140005146  movzx eax, byte ptr [rdi + rax + 0x80]
+0x14000514e  add r15d, eax
+0x140005151  mov rcx, qword ptr [rdi + 8]
+0x140005155  mov rdx, qword ptr [rdi + 0x10]
+0x140005159  mov r8, r15
+0x14000515c  mov r9, r14
+0x14000515f  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140005164  mov r15d, dword ptr [rax]
+0x140005167  cmp r15d, dword ptr [rdi + 0x190]
+0x14000516e  ja 0x5ec  =>file=0x5ec VA=0x1400011ec
+0x140005170  test r15d, r15d
+0x140005173  je 0x5f4  =>file=0x5f4 VA=0x1400011f4
+0x140005175  cmp r15d, dword ptr [rdi + 0x194]
+0x14000517c  ja 0x5ec  =>file=0x5ec VA=0x1400011ec
+0x14000517e  mov cl, byte ptr [rdi + 0x78]
+0x140005181  mov r8, r15
+0x140005184  shr r8, cl
+0x140005187  add r8, -2
+0x14000518b  mov rcx, qword ptr [rdi + 0x20]
+0x14000518f  mov rdx, qword ptr [rdi + 0x28]
+0x140005193  lea r9, [rip + 0xecdebe]  [tgt 0x140ed3058]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x14000519a  call 0x740  =>file=0x740 VA=0x140001340
+0x14000519f  mov rcx, qword ptr [rax + 8]
+0x1400051a3  mov rdx, qword ptr [rax + 0x10]
+0x1400051a7  xor r8d, r8d
+0x1400051aa  lea r9, [rip + 0xecdebf]  [tgt 0x140ed3070]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x1400051b1  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x1400051b6  mov r13d, dword ptr [rax]
+0x1400051b9  mov rcx, qword ptr [rdi + 0x38]
+0x1400051bd  mov rdx, qword ptr [rdi + 0x40]
+0x1400051c1  mov r8d, r13d
+0x1400051c4  lea r9, [rip + 0xecde75]  [tgt 0x140ed3040]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x1400051cb  call 0x770  =>file=0x770 VA=0x140001370
+0x1400051d0  mov eax, dword ptr [rax]
+0x1400051d2  mov r8, rbx
+0x1400051d5  sub r8, rax
+0x1400051d8  mov rcx, r12
+0x1400051db  mov edx, r13d
+0x1400051de  mov r9, rbx
+0x1400051e1  call 0x7a0  =>file=0x7a0 VA=0x1400013a0
+0x1400051e6  mov r13d, 1
+0x1400051ec  inc rbx
+0x1400051ef  jmp 0x529  =>file=0x529 VA=0x140001129
+0x1400051f4  mov rcx, qword ptr [rsp + 0x30]
+0x1400051f9  mov qword ptr [rcx], r13
+0x1400051fc  movups xmm0, xmmword ptr [rsp + 0x40]
+0x140005201  movups xmmword ptr [rcx + 8], xmm0
+0x140005205  mov rax, qword ptr [rsp + 0x50]
+0x14000520a  mov qword ptr [rcx + 0x18], rax
+0x14000520e  add rsp, 0x88
+0x140005215  pop rbx
+0x140005216  pop rbp
+0x140005217  pop rdi
+0x140005218  pop rsi
+0x140005219  pop r12
+0x14000521b  pop r13
+0x14000521d  pop r14
+0x14000521f  pop r15
+0x140005221  ret 
+0x140005222  mov rax, qword ptr [rsp + 0x30]
+0x140005227  and qword ptr [rax], 0
+0x14000522b  jmp 0x60e  =>file=0x60e VA=0x14000120e
+0x14000522d  mov rcx, qword ptr [rsp + 0x30]
+0x140005232  mov qword ptr [rcx], rsi
+0x140005235  jmp 0x643  =>file=0x643 VA=0x140001243
+0x140005237  mov rcx, qword ptr [rsp + 0x30]
+0x14000523c  mov qword ptr [rcx], 1
+0x140005243  movups xmm0, xmmword ptr [rsp + 0x68]
+0x140005248  movups xmmword ptr [rcx + 8], xmm0
+0x14000524c  mov rax, qword ptr [rsp + 0x78]
+0x140005251  jmp 0x60a  =>file=0x60a VA=0x14000120a
+0x140005253  mov cl, byte ptr [rdi + 0x78]
+0x140005256  shr r8, cl
+0x140005259  inc rbx
+0x14000525c  jmp 0x425  =>file=0x425 VA=0x140001025
+0x140005261  mov cl, byte ptr [rdi + 0x78]
+0x140005264  shr r15, cl
+0x140005267  inc rbx
+0x14000526a  add r15, -2
+0x14000526e  mov rcx, qword ptr [rdi + 0x20]
+0x140005272  mov rdx, qword ptr [rdi + 0x28]
+0x140005276  lea r9, [rip + 0xecdddb]  [tgt 0x140ed3058]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x14000527d  mov r8, r15
+0x140005280  call 0x740  =>file=0x740 VA=0x140001340
+0x140005285  mov rcx, qword ptr [rax + 8]
+0x140005289  mov rdx, qword ptr [rax + 0x10]
+0x14000528d  lea r9, [rip + 0xecdddc]  [tgt 0x140ed3070]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x140005294  xor r8d, r8d
+0x140005297  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x14000529c  mov esi, dword ptr [rax]
+0x14000529e  mov rcx, qword ptr [rdi + 0x38]
+0x1400052a2  mov rdx, qword ptr [rdi + 0x40]
+0x1400052a6  lea r9, [rip + 0xecdd93]  [tgt 0x140ed3040]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\dfa.rs"
+0x1400052ad  mov r8d, esi
+0x1400052b0  call 0x770  =>file=0x770 VA=0x140001370
+0x1400052b5  mov eax, dword ptr [rax]
+0x1400052b7  mov r8, rbx
+0x1400052ba  sub r8, rax
+0x1400052bd  lea rdi, [rsp + 0x68]
+0x1400052c2  mov rcx, rdi
+0x1400052c5  mov edx, esi
+0x1400052c7  mov r9, rbx
+0x1400052ca  call 0x7a0  =>file=0x7a0 VA=0x1400013a0
+0x1400052cf  mov rcx, qword ptr [rsp + 0x30]
+0x1400052d4  mov qword ptr [rcx], 1
+0x1400052db  movups xmm0, xmmword ptr [rdi]
+0x1400052de  movups xmmword ptr [rcx + 8], xmm0
+0x1400052e2  mov rax, qword ptr [rdi + 0x10]
+0x1400052e6  jmp 0x60a  =>file=0x60a VA=0x14000120a
+0x1400052eb  lea r8, [rip + 0x7d8036]  [tgt 0x1407dd328]  *ptr,len=87: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\automaton.rs"
+0x1400052f2  mov rdx, r14
+0x1400052f5  jmp 0x710  =>file=0x710 VA=0x140001310
+0x1400052f7  lea r8, [rip + 0x7d802a]  [tgt 0x1407dd328]  *ptr,len=87: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\automaton.rs"
+0x1400052fe  mov rdx, rbp
+0x140005301  jmp 0x710  =>file=0x710 VA=0x140001310
+0x140005303  lea r8, [rip + 0x7d801e]  [tgt 0x1407dd328]  *ptr,len=87: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\automaton.rs"
+0x14000530a  mov rcx, rbx
+0x14000530d  mov rdx, r15
+0x140005310  call 0x79fb20  =>file=0x79fb20 VA=0x1407a0720
+0x140005315  ud2 
+0x140005317  lea r8, [rip + 0x7d800a]  [tgt 0x1407dd328]  *ptr,len=87: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\automaton.rs"
+0x14000531e  mov rcx, rbp
+0x140005321  jmp 0x6f2  =>file=0x6f2 VA=0x1400012f2
+0x140005323  lea r8, [rip + 0x7d7ffe]  [tgt 0x1407dd328]  *ptr,len=87: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\automaton.rs"
+0x14000532a  mov rcx, rbx
+0x14000532d  jmp 0x6fe  =>file=0x6fe VA=0x1400012fe
+0x14000532f  int3 
+0x140005330  xor ecx, ecx
+0x140005332  jmp 0x7f0  =>file=0x7f0 VA=0x1400013f0
+0x140005337  int3 
+0x140005338  int3 
+0x140005339  int3 
+0x14000533a  int3 
+0x14000533b  int3 
+0x14000533c  int3 
+0x14000533d  int3 
+0x14000533e  int3 
+0x14000533f  int3 
+0x140005340  sub rsp, 0x28
+0x140005344  cmp r8, rdx
+0x140005347  jae 0x758  =>file=0x758 VA=0x140001358
+0x140005349  imul rax, r8, 0x18
+0x14000534d  add rcx, rax
+0x140005350  mov rax, rcx
+0x140005353  add rsp, 0x28
+0x140005357  ret 
+0x140005358  mov rcx, r8
+0x14000535b  mov r8, r9
+0x14000535e  call 0x79fb20  =>file=0x79fb20 VA=0x1407a0720
+0x140005363  ud2 
+0x140005365  int3 
+0x140005366  int3 
+0x140005367  int3 
+0x140005368  int3 
+0x140005369  int3 
+0x14000536a  int3 
+0x14000536b  int3 
+0x14000536c  int3 
+0x14000536d  int3 
+0x14000536e  int3 
+0x14000536f  int3 
+0x140005370  sub rsp, 0x28
+0x140005374  mov rax, rcx
+0x140005377  mov ecx, r8d
+0x14000537a  cmp rdx, rcx
+0x14000537d  jbe 0x788  =>file=0x788 VA=0x140001388
+0x14000537f  lea rax, [rax + rcx*4]
+0x140005383  add rsp, 0x28
+0x140005387  ret 
+0x140005388  mov r8, r9
+0x14000538b  call 0x79fb20  =>file=0x79fb20 VA=0x1407a0720
+0x140005390  ud2 
+0x140005392  int3 
+0x140005393  int3 
+0x140005394  int3 
+0x140005395  int3 
+0x140005396  int3 
+0x140005397  int3 
+0x140005398  int3 
+0x140005399  int3 
+0x14000539a  int3 
+0x14000539b  int3 
+0x14000539c  int3 
+0x14000539d  int3 
+0x14000539e  int3 
+0x14000539f  int3 
+0x1400053a0  sub rsp, 0x28
+0x1400053a4  cmp r8, r9
+0x1400053a7  ja 0x7b8  =>file=0x7b8 VA=0x1400013b8
+0x1400053a9  mov dword ptr [rcx + 0x10], edx
+0x1400053ac  mov qword ptr [rcx], r8
+0x1400053af  mov qword ptr [rcx + 8], r9
+0x1400053b3  add rsp, 0x28
+0x1400053b7  ret 
+0x1400053b8  lea rcx, [rip + 0xeca1e9]  [tgt 0x140ecf5a8] str="invalid match span"
+0x1400053bf  lea r8, [rip + 0xeca1fa]  [tgt 0x140ecf5c0]  *ptr,len=89: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\util\search.rs"
+0x1400053c6  mov edx, 0x25
+0x1400053cb  call 0x79faf0  =>file=0x79faf0 VA=0x1407a06f0
+0x1400053d0  ud2 
+0x1400053d2  int3 
+0x1400053d3  int3 
+0x1400053d4  int3 
+0x1400053d5  int3 
+0x1400053d6  int3 
+0x1400053d7  int3 
+0x1400053d8  int3 
+0x1400053d9  int3 
+0x1400053da  int3 
+0x1400053db  int3 
+0x1400053dc  int3 
+0x1400053dd  int3 
+0x1400053de  int3 
+0x1400053df  int3 
+0x1400053e0  mov cl, 1
+0x1400053e2  jmp 0x7f0  =>file=0x7f0 VA=0x1400013f0
+0x1400053e7  int3 
+0x1400053e8  int3 
+0x1400053e9  int3 
+0x1400053ea  int3 
+0x1400053eb  int3 
+0x1400053ec  int3 
+0x1400053ed  int3 
+0x1400053ee  int3 
+0x1400053ef  int3 
+0x1400053f0  push rbx
+0x1400053f1  sub rsp, 0x20
+0x1400053f5  mov ebx, ecx
+0x1400053f7  mov ecx, 1
+0x1400053fc  mov edx, 2
+0x140005401  call 0x810  =>file=0x810 VA=0x140001410
+0x140005406  mov byte ptr [rax], bl
+0x140005408  add rsp, 0x20
+0x14000540c  pop rbx
+0x14000540d  ret 
+0x14000540e  int3 
+0x14000540f  int3 
+0x140005410  push rsi
+0x140005411  push rdi
+0x140005412  sub rsp, 0x28
+0x140005416  mov rsi, rdx
+0x140005419  mov rdi, rcx
+0x14000541c  xor r8d, r8d
+0x14000541f  call 0xffffffffffffe600  =>file=0xffffffffffffe600 VA=0x10000000140000000
+0x140005424  test rax, rax
+0x140005427  je 0x830  =>file=0x830 VA=0x140001430
+0x140005429  add rsp, 0x28
+0x14000542d  pop rdi
+0x14000542e  pop rsi
+0x14000542f  ret 
+0x140005430  mov rcx, rdi
+0x140005433  mov rdx, rsi
+0x140005436  call 0x79ed90  =>file=0x79ed90 VA=0x14079f990
+0x14000543b  ud2 
+0x14000543d  int3 
+0x14000543e  int3 
+0x14000543f  int3 
+0x140005440  push r15
+0x140005442  push r14
+0x140005444  push r13
+0x140005446  push r12
+0x140005448  push rsi
+0x140005449  push rdi
+0x14000544a  push rbp
+0x14000544b  push rbx
+0x14000544c  sub rsp, 0x98
+0x140005453  mov r12, qword ptr [r8]
+0x140005456  mov rax, qword ptr [r8 + 8]
+0x14000545a  mov qword ptr [rsp + 0x48], rax
+0x14000545f  cmp r12, rax
+0x140005462  jbe 0x86d  =>file=0x86d VA=0x14000146d
+0x140005464  and qword ptr [rcx], 0
+0x140005468  jmp 0x1abf  =>file=0x1abf VA=0x1400026bf
+0x14000546d  mov r14, r8
+0x140005470  mov rdi, rdx
+0x140005473  cmp byte ptr [rdx + 0x178], 0
+0x14000547a  sete bl
+0x14000547d  or bl, byte ptr [r8 + 0x21]
+0x140005481  cmp byte ptr [r8 + 0x20], 0
+0x140005486  mov qword ptr [rsp + 0x30], rcx
+0x14000548b  je 0xb7c  =>file=0xb7c VA=0x14000177c
+0x140005491  mov r15d, dword ptr [rdi + 0x174]
+0x140005498  test r15, r15
+0x14000549b  je 0x8aa  =>file=0x8aa VA=0x1400014aa
+0x14000549d  cmp r15d, dword ptr [rdi + 0x16c]
+0x1400054a4  jbe 0x108d  =>file=0x108d VA=0x140001c8d
+0x1400054aa  xor eax, eax
+0x1400054ac  mov qword ptr [rsp + 0x38], rax
+0x1400054b1  mov byte ptr [rsp + 0x40], bl
+0x1400054b5  mov rsi, qword ptr [r14 + 0x10]
+0x1400054b9  mov r14, qword ptr [r14 + 0x18]
+0x1400054bd  mov rbx, r12
+0x1400054c0  cmp rbx, qword ptr [rsp + 0x48]
+0x1400054c5  jae 0x10e8  =>file=0x10e8 VA=0x140001ce8
+0x1400054cb  cmp rbx, r14
+0x1400054ce  jae 0x1c7e  =>file=0x1c7e VA=0x14000287e
+0x1400054d4  movzx eax, byte ptr [rsi + rbx]
+0x1400054d8  mov r13b, byte ptr [rdi + rax + 0x58]
+0x1400054dd  mov ebp, r15d
+0x1400054e0  mov rcx, qword ptr [rdi + 8]
+0x1400054e4  mov rdx, qword ptr [rdi + 0x10]
+0x1400054e8  mov r8, rbp
+0x1400054eb  lea r9, [rip + 0xecdbae]  [tgt 0x140ed30a0]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x1400054f2  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x1400054f7  mov eax, dword ptr [rax]
+0x1400054f9  cmp al, 0xfe
+0x1400054fb  je 0x93c  =>file=0x93c VA=0x14000153c
+0x1400054fd  movzx r15d, al
+0x140005501  cmp r15d, 0xff
+0x140005508  jne 0x9db  =>file=0x9db VA=0x1400015db
+0x14000550e  movzx eax, r13b
+0x140005512  lea r8, [rax + rbp]
+0x140005516  add r8, 2
+0x14000551a  mov rcx, qword ptr [rdi + 8]
+0x14000551e  mov rdx, qword ptr [rdi + 0x10]
+0x140005522  lea r9, [rip + 0xecdb8f]  [tgt 0x140ed30b8]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005529  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x14000552e  mov r15d, dword ptr [rax]
+0x140005531  cmp r15d, 1
+0x140005535  jne 0x97b  =>file=0x97b VA=0x14000157b
+0x140005537  jmp 0xe69  =>file=0xe69 VA=0x140001a69
+0x14000553c  mov rcx, qword ptr [rdi + 8]
+0x140005540  mov rdx, qword ptr [rdi + 0x10]
+0x140005544  mov r8, rbp
+0x140005547  lea r9, [rip + 0xecdb82]  [tgt 0x140ed30d0]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x14000554e  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140005553  cmp r13b, byte ptr [rax + 1]
+0x140005557  jne 0xe69  =>file=0xe69 VA=0x140001a69
+0x14000555d  add rbp, 2
+0x140005561  mov rcx, qword ptr [rdi + 8]
+0x140005565  mov rdx, qword ptr [rdi + 0x10]
+0x140005569  mov r8, rbp
+0x14000556c  lea r9, [rip + 0xecdb75]  [tgt 0x140ed30e8]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005573  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140005578  mov r15d, dword ptr [rax]
+0x14000557b  cmp r15d, dword ptr [rdi + 0x168]
+0x140005582  ja 0xb25  =>file=0xb25 VA=0x140001725
+0x140005588  test r15d, r15d
+0x14000558b  je 0xe69  =>file=0xe69 VA=0x140001a69
+0x140005591  cmp r15d, dword ptr [rdi + 0x16c]
+0x140005598  ja 0xb25  =>file=0xb25 VA=0x140001725
+0x14000559e  mov rbp, qword ptr [rdi + 0x50]
+0x1400055a2  mov ecx, r15d
+0x1400055a5  mov rdx, qword ptr [rdi + 8]
+0x1400055a9  mov r8, qword ptr [rdi + 0x10]
+0x1400055ad  lea r9, [rip + 0xecdc0c]  [tgt 0x140ed31c0]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x1400055b4  call 0x1d10  =>file=0x1d10 VA=0x140002910
+0x1400055b9  test rdx, rdx
+0x1400055bc  je 0x1c9e  =>file=0x1c9e VA=0x14000289e
+0x1400055c2  movzx ecx, byte ptr [rax]
+0x1400055c5  cmp rcx, 0xff
+0x1400055cc  jne 0xa79  =>file=0xa79 VA=0x140001679
+0x1400055d2  add rbp, 2
+0x1400055d6  jmp 0xa89  =>file=0xa89 VA=0x140001689
+0x1400055db  add r15d, 3
+0x1400055df  shr r15d, 2
+0x1400055e3  lea rcx, [rbp + 2]
+0x1400055e7  mov rdx, qword ptr [rdi + 8]
+0x1400055eb  mov r8, qword ptr [rdi + 0x10]
+0x1400055ef  lea r9, [rip + 0xecdb0a]  [tgt 0x140ed3100]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x1400055f6  call 0x1d10  =>file=0x1d10 VA=0x140002910
+0x1400055fb  cmp rdx, r15
+0x1400055fe  jb 0x1c46  =>file=0x1c46 VA=0x140002846
+0x140005604  lea rcx, [r15 + rbp]
+0x140005608  add rcx, 2
+0x14000560c  shl r15d, 2
+0x140005610  xor r9d, r9d
+0x140005613  test r15, r15
+0x140005616  je 0xe69  =>file=0xe69 VA=0x140001a69
+0x14000561c  mov rdx, r9
+0x14000561f  mov r8d, dword ptr [rax + r9*4]
+0x140005623  cmp r13b, r8b
+0x140005626  je 0xb2d  =>file=0xb2d VA=0x14000172d
+0x14000562c  mov r9d, r8d
+0x14000562f  shr r9d, 8
+0x140005633  cmp r13b, r9b
+0x140005636  je 0xb45  =>file=0xb45 VA=0x140001745
+0x14000563c  mov r9d, r8d
+0x14000563f  shr r9d, 0x10
+0x140005643  cmp r13b, r9b
+0x140005646  je 0xb60  =>file=0xb60 VA=0x140001760
+0x14000564c  lea r9, [rdx + 1]
+0x140005650  shr r8d, 0x18
+0x140005654  add r15, -4
+0x140005658  cmp r13b, r8b
+0x14000565b  jne 0xa13  =>file=0xa13 VA=0x140001613
+0x14000565d  lea r8, [rcx + rdx*4]
+0x140005661  add r8, 3
+0x140005665  mov rcx, qword ptr [rdi + 8]
+0x140005669  mov rdx, qword ptr [rdi + 0x10]
+0x14000566d  lea r9, [rip + 0xecdad4]  [tgt 0x140ed3148]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005674  jmp 0x973  =>file=0x973 VA=0x140001573
+0x140005679  lea r8d, [rcx + 3]
+0x14000567d  shr r8d, 2
+0x140005681  lea rbp, [rcx + r8]
+0x140005685  add rbp, 2
+0x140005689  cmp rbp, rdx
+0x14000568c  jae 0x1cc0  =>file=0x1cc0 VA=0x1400028c0
+0x140005692  mov r13d, dword ptr [rax + rbp*4]
+0x140005696  test r13d, r13d
+0x140005699  js 0xaaf  =>file=0xaaf VA=0x1400016af
+0x14000569b  lea rcx, [rbp + 1]
+0x14000569f  cmp rcx, rdx
+0x1400056a2  jae 0x1cab  =>file=0x1cab VA=0x1400028ab
+0x1400056a8  mov r13d, dword ptr [rax + rbp*4 + 4]
+0x1400056ad  jmp 0xab6  =>file=0xab6 VA=0x1400016b6
+0x1400056af  and r13d, 0x7fffffff
+0x1400056b6  lea rbp, [rbx + 1]
+0x1400056ba  mov rcx, qword ptr [rdi + 0x20]
+0x1400056be  mov rdx, qword ptr [rdi + 0x28]
+0x1400056c2  mov r8d, r13d
+0x1400056c5  lea r9, [rip + 0xecdadc]  [tgt 0x140ed31a8]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x1400056cc  call 0x770  =>file=0x770 VA=0x140001370
+0x1400056d1  mov eax, dword ptr [rax]
+0x1400056d3  mov r8, rbp
+0x1400056d6  sub r8, rax
+0x1400056d9  lea rcx, [rsp + 0x80]
+0x1400056e1  mov edx, r13d
+0x1400056e4  mov r9, rbp
+0x1400056e7  call 0x7a0  =>file=0x7a0 VA=0x1400013a0
+0x1400056ec  cmp qword ptr [rsp + 0x80], r12
+0x1400056f4  ja 0xb25  =>file=0xb25 VA=0x140001725
+0x1400056f6  mov rax, qword ptr [rsp + 0x90]
+0x1400056fe  mov qword ptr [rsp + 0x60], rax
+0x140005703  movups xmm0, xmmword ptr [rsp + 0x80]
+0x14000570b  movaps xmmword ptr [rsp + 0x50], xmm0
+0x140005710  mov eax, 1
+0x140005715  mov qword ptr [rsp + 0x38], rax
+0x14000571a  test byte ptr [rsp + 0x40], 1
+0x14000571f  jne 0x1ad3  =>file=0x1ad3 VA=0x1400026d3
+0x140005725  inc rbx
+0x140005728  jmp 0x8c0  =>file=0x8c0 VA=0x1400014c0
+0x14000572d  lea r8, [rcx + rdx*4]
+0x140005731  mov rcx, qword ptr [rdi + 8]
+0x140005735  mov rdx, qword ptr [rdi + 0x10]
+0x140005739  lea r9, [rip + 0xecda50]  [tgt 0x140ed3190]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005740  jmp 0x973  =>file=0x973 VA=0x140001573
+0x140005745  lea r8, [rcx + rdx*4]
+0x140005749  inc r8
+0x14000574c  mov rcx, qword ptr [rdi + 8]
+0x140005750  mov rdx, qword ptr [rdi + 0x10]
+0x140005754  lea r9, [rip + 0xecda1d]  [tgt 0x140ed3178]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x14000575b  jmp 0x973  =>file=0x973 VA=0x140001573
+0x140005760  lea r8, [rcx + rdx*4]
+0x140005764  add r8, 2
+0x140005768  mov rcx, qword ptr [rdi + 8]
+0x14000576c  mov rdx, qword ptr [rdi + 0x10]
+0x140005770  lea r9, [rip + 0xecd9e9]  [tgt 0x140ed3160]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005777  jmp 0x973  =>file=0x973 VA=0x140001573
+0x14000577c  mov rax, qword ptr [rdi + 0x38]
+0x140005780  test rax, rax
+0x140005783  je 0xe80  =>file=0xe80 VA=0x140001a80
+0x140005789  test bl, 1
+0x14000578c  je 0x10c3  =>file=0x10c3 VA=0x140001cc3
+0x140005792  mov r13d, dword ptr [rdi + 0x170]
+0x140005799  test r13, r13
+0x14000579c  je 0xbab  =>file=0xbab VA=0x1400017ab
+0x14000579e  cmp r13d, dword ptr [rdi + 0x16c]
+0x1400057a5  jbe 0x11a7  =>file=0x11a7 VA=0x140001da7
+0x1400057ab  mov r8, qword ptr [r14 + 0x10]
+0x1400057af  mov r9, qword ptr [r14 + 0x18]
+0x1400057b3  mov r10, qword ptr [rdi + 0x40]
+0x1400057b7  mov rcx, qword ptr [r10 + 0x10]
+0x1400057bb  dec rcx
+0x1400057be  and rcx, 0xfffffffffffffff0
+0x1400057c2  lea rdx, [rax + rcx]
+0x1400057c6  add rdx, 0x10
+0x1400057ca  mov rax, qword ptr [rsp + 0x48]
+0x1400057cf  mov qword ptr [rsp + 0x28], rax
+0x1400057d4  mov qword ptr [rsp + 0x20], r12
+0x1400057d9  lea rbx, [rsp + 0x50]
+0x1400057de  mov rcx, rbx
+0x1400057e1  mov qword ptr [rsp + 0x40], r8
+0x1400057e6  mov qword ptr [rsp + 0x38], r9
+0x1400057eb  call qword ptr [r10 + 0x20]
+0x1400057ef  mov rax, qword ptr [rbx]
+0x1400057f2  mov rdx, qword ptr [rsp + 0x30]
+0x1400057f7  test rax, rax
+0x1400057fa  je 0x13d9  =>file=0x13d9 VA=0x140001fd9
+0x140005800  cmp eax, 1
+0x140005803  je 0x13c7  =>file=0x13c7 VA=0x140001fc7
+0x140005809  lea rax, [rsp + 0x50]
+0x14000580e  mov rax, qword ptr [rax + 8]
+0x140005812  lea r12, [rip + 0xecd887]  [tgt 0x140ed30a0]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005819  cmp rax, qword ptr [rsp + 0x48]
+0x14000581e  jae 0x16f1  =>file=0x16f1 VA=0x1400022f1
+0x140005824  mov rbx, rax
+0x140005827  cmp rax, qword ptr [rsp + 0x38]
+0x14000582c  jae 0x1ce0  =>file=0x1ce0 VA=0x1400028e0
+0x140005832  mov rax, qword ptr [rsp + 0x40]
+0x140005837  movzx eax, byte ptr [rax + rbx]
+0x14000583b  movzx esi, byte ptr [rdi + rax + 0x58]
+0x140005840  mov r15, rsi
+0x140005843  add r15, 2
+0x140005847  mov r14d, r13d
+0x14000584a  mov rcx, qword ptr [rdi + 8]
+0x14000584e  mov rdx, qword ptr [rdi + 0x10]
+0x140005852  mov r8, r14
+0x140005855  mov r9, r12
+0x140005858  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x14000585d  mov eax, dword ptr [rax]
+0x14000585f  cmp al, 0xfe
+0x140005861  je 0xc97  =>file=0xc97 VA=0x140001897
+0x140005863  movzx r13d, al
+0x140005867  cmp r13d, 0xff
+0x14000586e  jne 0xcda  =>file=0xcda VA=0x1400018da
+0x140005870  lea r8, [r15 + r14]
+0x140005874  mov rcx, qword ptr [rdi + 8]
+0x140005878  mov rdx, qword ptr [rdi + 0x10]
+0x14000587c  lea r9, [rip + 0xecd835]  [tgt 0x140ed30b8]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005883  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140005888  mov r13d, dword ptr [rax]
+0x14000588b  cmp r13d, 1
+0x14000588f  jne 0xdcd  =>file=0xdcd VA=0x1400019cd
+0x140005895  jmp 0xcb8  =>file=0xcb8 VA=0x1400018b8
+0x140005897  mov rcx, qword ptr [rdi + 8]
+0x14000589b  mov rdx, qword ptr [rdi + 0x10]
+0x14000589f  mov r8, r14
+0x1400058a2  lea r9, [rip + 0xecd827]  [tgt 0x140ed30d0]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x1400058a9  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x1400058ae  cmp sil, byte ptr [rax + 1]
+0x1400058b2  je 0xe4e  =>file=0xe4e VA=0x140001a4e
+0x1400058b8  inc r14
+0x1400058bb  mov rcx, qword ptr [rdi + 8]
+0x1400058bf  mov rdx, qword ptr [rdi + 0x10]
+0x1400058c3  mov r8, r14
+0x1400058c6  lea r9, [rip + 0xecd863]  [tgt 0x140ed3130]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x1400058cd  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x1400058d2  mov r13d, dword ptr [rax]
+0x1400058d5  jmp 0xc47  =>file=0xc47 VA=0x140001847
+0x1400058da  add r13d, 3
+0x1400058de  shr r13d, 2
+0x1400058e2  lea rbp, [r14 + 2]
+0x1400058e6  mov rdx, qword ptr [rdi + 8]
+0x1400058ea  mov r8, qword ptr [rdi + 0x10]
+0x1400058ee  mov rcx, rbp
+0x1400058f1  lea r9, [rip + 0xecd808]  [tgt 0x140ed3100]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x1400058f8  call 0x1d10  =>file=0x1d10 VA=0x140002910
+0x1400058fd  cmp rdx, r13
+0x140005900  jb 0x1c68  =>file=0x1c68 VA=0x140002868
+0x140005906  lea edx, [r13*4]
+0x14000590e  xor r9d, r9d
+0x140005911  test rdx, rdx
+0x140005914  je 0xcb8  =>file=0xcb8 VA=0x1400018b8
+0x140005916  mov rcx, r9
+0x140005919  mov r8d, dword ptr [rax + r9*4]
+0x14000591d  cmp sil, r8b
+0x140005920  je 0xd6a  =>file=0xd6a VA=0x14000196a
+0x140005922  mov r9d, r8d
+0x140005925  shr r9d, 8
+0x140005929  cmp sil, r9b
+0x14000592c  je 0xd89  =>file=0xd89 VA=0x140001989
+0x14000592e  mov r9d, r8d
+0x140005931  shr r9d, 0x10
+0x140005935  cmp sil, r9b
+0x140005938  je 0xda8  =>file=0xda8 VA=0x1400019a8
+0x14000593a  lea r9, [rcx + 1]
+0x14000593e  shr r8d, 0x18
+0x140005942  add rdx, -4
+0x140005946  cmp sil, r8b
+0x140005949  jne 0xd11  =>file=0xd11 VA=0x140001911
+0x14000594b  add rbp, r13
+0x14000594e  lea r8, [rcx*4 + 3]
+0x140005956  add r8, rbp
+0x140005959  mov rcx, qword ptr [rdi + 8]
+0x14000595d  mov rdx, qword ptr [rdi + 0x10]
+0x140005961  lea r9, [rip + 0xecd7e0]  [tgt 0x140ed3148]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005968  jmp 0xdc5  =>file=0xdc5 VA=0x1400019c5
+0x14000596a  add rbp, r13
+0x14000596d  lea r8, [rcx*4]
+0x140005975  add r8, rbp
+0x140005978  mov rcx, qword ptr [rdi + 8]
+0x14000597c  mov rdx, qword ptr [rdi + 0x10]
+0x140005980  lea r9, [rip + 0xecd809]  [tgt 0x140ed3190]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005987  jmp 0xdc5  =>file=0xdc5 VA=0x1400019c5
+0x140005989  add rbp, r13
+0x14000598c  lea r8, [rcx*4 + 1]
+0x140005994  add r8, rbp
+0x140005997  mov rcx, qword ptr [rdi + 8]
+0x14000599b  mov rdx, qword ptr [rdi + 0x10]
+0x14000599f  lea r9, [rip + 0xecd7d2]  [tgt 0x140ed3178]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x1400059a6  jmp 0xdc5  =>file=0xdc5 VA=0x1400019c5
+0x1400059a8  add rbp, r13
+0x1400059ab  lea r8, [rcx*4 + 2]
+0x1400059b3  add r8, rbp
+0x1400059b6  mov rcx, qword ptr [rdi + 8]
+0x1400059ba  mov rdx, qword ptr [rdi + 0x10]
+0x1400059be  lea r9, [rip + 0xecd79b]  [tgt 0x140ed3160]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x1400059c5  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x1400059ca  mov r13d, dword ptr [rax]
+0x1400059cd  cmp r13d, dword ptr [rdi + 0x168]
+0x1400059d4  ja 0xe43  =>file=0xe43 VA=0x140001a43
+0x1400059d6  test r13d, r13d
+0x1400059d9  je 0x16f1  =>file=0x16f1 VA=0x1400022f1
+0x1400059df  cmp r13d, dword ptr [rdi + 0x16c]
+0x1400059e6  jbe 0x1b28  =>file=0x1b28 VA=0x140002728
+0x1400059ec  mov rax, qword ptr [rdi + 0x38]
+0x1400059f0  mov r10, qword ptr [rdi + 0x40]
+0x1400059f4  mov rcx, qword ptr [r10 + 0x10]
+0x1400059f8  dec rcx
+0x1400059fb  and rcx, 0xfffffffffffffff0
+0x1400059ff  lea rdx, [rax + rcx]
+0x140005a03  add rdx, 0x10
+0x140005a07  mov rax, qword ptr [rsp + 0x48]
+0x140005a0c  mov qword ptr [rsp + 0x28], rax
+0x140005a11  mov qword ptr [rsp + 0x20], rbx
+0x140005a16  lea rcx, [rsp + 0x50]
+0x140005a1b  mov r8, qword ptr [rsp + 0x40]
+0x140005a20  mov r9, qword ptr [rsp + 0x38]
+0x140005a25  call qword ptr [r10 + 0x20]
+0x140005a29  cmp qword ptr [rsp + 0x50], 0
+0x140005a2f  je 0x16f1  =>file=0x16f1 VA=0x1400022f1
+0x140005a35  mov rax, qword ptr [rsp + 0x58]
+0x140005a3a  cmp rax, rbx
+0x140005a3d  ja 0xc19  =>file=0xc19 VA=0x140001819
+0x140005a43  inc rbx
+0x140005a46  mov rax, rbx
+0x140005a49  jmp 0xc19  =>file=0xc19 VA=0x140001819
+0x140005a4e  add r14, 2
+0x140005a52  mov rcx, qword ptr [rdi + 8]
+0x140005a56  mov rdx, qword ptr [rdi + 0x10]
+0x140005a5a  mov r8, r14
+0x140005a5d  lea r9, [rip + 0xecd684]  [tgt 0x140ed30e8]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005a64  jmp 0xdc5  =>file=0xdc5 VA=0x1400019c5
+0x140005a69  mov rcx, qword ptr [rsp + 0x30]
+0x140005a6e  mov rax, qword ptr [rsp + 0x38]
+0x140005a73  mov qword ptr [rcx], rax
+0x140005a76  movaps xmm0, xmmword ptr [rsp + 0x50]
+0x140005a7b  jmp 0x1ab2  =>file=0x1ab2 VA=0x1400026b2
+0x140005a80  test bl, 1
+0x140005a83  je 0x10f7  =>file=0x10f7 VA=0x140001cf7
+0x140005a89  mov ecx, dword ptr [rdi + 0x170]
+0x140005a8f  test rcx, rcx
+0x140005a92  je 0xea0  =>file=0xea0 VA=0x140001aa0
+0x140005a94  cmp ecx, dword ptr [rdi + 0x16c]
+0x140005a9a  jbe 0x1221  =>file=0x1221 VA=0x140001e21
+0x140005aa0  mov rax, qword ptr [r14 + 0x10]
+0x140005aa4  mov qword ptr [rsp + 0x40], rax
+0x140005aa9  mov rax, qword ptr [r14 + 0x18]
+0x140005aad  mov qword ptr [rsp + 0x38], rax
+0x140005ab2  lea rbx, [rip + 0xecd5e7]  [tgt 0x140ed30a0]  *ptr,len=92: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aho-corasick-1.1.4\src\nfa\contiguous.rs"
+0x140005ab9  cmp r12, qword ptr [rsp + 0x48]
+0x140005abe  jae 0x16f1  =>file=0x16f1 VA=0x1400022f1
+0x140005ac4  cmp r12, qword ptr [rsp + 0x38]
+0x140005ac9  jae 0x1c8d  =>file=0x1c8d VA=0x14000288d
+0x140005acf  mov rax, qword ptr [rsp + 0x40]
+0x140005ad4  movzx eax, byte ptr [rax + r12]
+0x140005ad9  movzx esi, byte ptr [rdi + rax + 0x58]
+0x140005ade  mov r13, rsi
+0x140005ae1  add r13, 2
+0x140005ae5  mov r14d, ecx
+0x140005ae8  mov rcx, qword ptr [rdi + 8]
+0x140005aec  mov rdx, qword ptr [rdi + 0x10]
+0x140005af0  mov r8, r14
+0x140005af3  mov r9, rbx
+0x140005af6  call 0xfffffffffffffa20  =>file=0xfffffffffffffa20 VA=0x10000000140000000
+0x140005afb  mov eax, dword ptr [rax]
+0x140005afd  cmp al, 0xfe

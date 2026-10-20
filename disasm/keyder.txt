@@ -1,0 +1,1453 @@
+0x1404aebb0  push rsi
+0x1404aebb1  sub rsp, 0x20
+0x1404aebb5  mov rsi, rcx
+0x1404aebb8  inc rcx
+0x1404aebbb  call 0xffffffffffc00460  =>file=0xffffffffffc00460 VA=0x1000000013fc02000
+0x1404aebc0  xor eax, eax
+0x1404aebc2  xchg byte ptr [rsi], al
+0x1404aebc4  cmp al, 2
+0x1404aebc6  je 0x1e  =>file=0x1e VA=0x140000c1e
+0x1404aebc8  add rsp, 0x20
+0x1404aebcc  pop rsi
+0x1404aebcd  ret 
+0x1404aebce  mov rcx, rsi
+0x1404aebd1  add rsp, 0x20
+0x1404aebd5  pop rsi
+0x1404aebd6  jmp qword ptr [rip + 0x30e5eb]  [tgt 0x1407bd1c8]
+0x1404aebdd  int3 
+0x1404aebde  int3 
+0x1404aebdf  int3 
+0x1404aebe0  push rsi
+0x1404aebe1  sub rsp, 0x20
+0x1404aebe5  mov rsi, rcx
+0x1404aebe8  mov rcx, qword ptr [rcx]
+0x1404aebeb  mov rdx, qword ptr [rsi + 8]
+0x1404aebef  call 0xffffffffffc228f0  =>file=0xffffffffffc228f0 VA=0x1000000013fc24000
+0x1404aebf4  add rsi, 0x18
+0x1404aebf8  mov rcx, rsi
+0x1404aebfb  add rsp, 0x20
+0x1404aebff  pop rsi
+0x1404aec00  jmp 0xffffffffffe8fd70  =>file=0xffffffffffe8fd70 VA=0x1000000013fe91000
+0x1404aec05  int3 
+0x1404aec06  int3 
+0x1404aec07  int3 
+0x1404aec08  int3 
+0x1404aec09  int3 
+0x1404aec0a  int3 
+0x1404aec0b  int3 
+0x1404aec0c  int3 
+0x1404aec0d  int3 
+0x1404aec0e  int3 
+0x1404aec0f  int3 
+0x1404aec10  push r15
+0x1404aec12  push r14
+0x1404aec14  push rsi
+0x1404aec15  push rdi
+0x1404aec16  push rbx
+0x1404aec17  sub rsp, 0x70
+0x1404aec1b  mov rbx, rcx
+0x1404aec1e  lea rsi, [rsp + 0x50]
+0x1404aec23  mov rcx, rsi
+0x1404aec26  call 0xffffffffffdb1a80  =>file=0xffffffffffdb1a80 VA=0x1000000013fdb2000
+0x1404aec2b  mov rdi, qword ptr [rsi + 8]
+0x1404aec2f  mov r8, qword ptr [rsi + 0x10]
+0x1404aec33  mov qword ptr [rsp + 0x20], 3
+0x1404aec3c  lea r9, [rip + 0x3c6460]  [tgt 0x1408750a3] str="mcpruntime-lsp-resultscould not resolve workspace folder"
+0x1404aec43  lea r14, [rsp + 0x30]
+0x1404aec48  mov rcx, r14
+0x1404aec4b  mov rdx, rdi
+0x1404aec4e  call 0x1b6410  =>file=0x1b6410 VA=0x1401b7010
+0x1404aec53  mov r15, qword ptr [r14 + 8]
+0x1404aec57  mov r8, qword ptr [r14 + 0x10]
+0x1404aec5b  mov qword ptr [rsp + 0x20], 0xd
+0x1404aec64  lea r9, [rip + 0xa0fa5a]  [tgt 0x140ebe6c5] str="endpoint.json^(?<path>.*)\((?<line>\d+),(?<col>\d+)\): (?<ki"
+0x1404aec6b  mov rcx, rbx
+0x1404aec6e  mov rdx, r15
+0x1404aec71  call 0x1b6410  =>file=0x1b6410 VA=0x1401b7010
+0x1404aec76  mov rcx, qword ptr [r14]
+0x1404aec79  mov rdx, r15
+0x1404aec7c  call 0xffffffffffc228f0  =>file=0xffffffffffc228f0 VA=0x1000000013fc24000
+0x1404aec81  mov rcx, qword ptr [rsi]
+0x1404aec84  mov rdx, rdi
+0x1404aec87  add rsp, 0x70
+0x1404aec8b  pop rbx
+0x1404aec8c  pop rdi
+0x1404aec8d  pop rsi
+0x1404aec8e  pop r14
+0x1404aec90  pop r15
+0x1404aec92  jmp 0xffffffffffc228f0  =>file=0xffffffffffc228f0 VA=0x1000000013fc24000
+0x1404aec97  int3 
+0x1404aec98  int3 
+0x1404aec99  int3 
+0x1404aec9a  int3 
+0x1404aec9b  int3 
+0x1404aec9c  int3 
+0x1404aec9d  int3 
+0x1404aec9e  int3 
+0x1404aec9f  int3 
+0x1404aeca0  push rsi
+0x1404aeca1  push rdi
+0x1404aeca2  push rbx
+0x1404aeca3  sub rsp, 0x50
+0x1404aeca7  mov rdx, rcx
+0x1404aecaa  lea rsi, [rsp + 0x28]
+0x1404aecaf  mov rcx, rsi
+0x1404aecb2  call 0x85780  =>file=0x85780 VA=0x140086380
+0x1404aecb7  cmp dword ptr [rsi], 1
+0x1404aecba  je 0x155  =>file=0x155 VA=0x140000d55
+0x1404aecbc  mov rsi, qword ptr [rsp + 0x30]
+0x1404aecc1  mov bl, byte ptr [rsp + 0x38]
+0x1404aecc5  lea rcx, [rsi + 8]
+0x1404aecc9  lea rdx, [rip + 0x398b88]  [tgt 0x140847858]
+0x1404aecd0  call 0xffffffffffc374d0  =>file=0xffffffffffc374d0 VA=0x1000000013fc38000
+0x1404aecd5  test rax, rax
+0x1404aecd8  je 0x13e  =>file=0x13e VA=0x140000d3e
+0x1404aecda  mov rdi, qword ptr [rax]
+0x1404aecdd  mov rax, qword ptr [rax + 8]
+0x1404aece1  lea rcx, [rsp + 0x28]
+0x1404aece6  mov rdx, rdi
+0x1404aece9  call qword ptr [rax + 0x18]
+0x1404aecec  jmp 0x140  =>file=0x140 VA=0x140000d40
+0x1404aecee  xor edi, edi
+0x1404aecf0  mov rcx, rsi
+0x1404aecf3  mov edx, ebx
+0x1404aecf5  call 0
+0x1404aecfa  mov rax, rdi
+0x1404aecfd  add rsp, 0x50
+0x1404aed01  pop rbx
+0x1404aed02  pop rdi
+0x1404aed03  pop rsi
+0x1404aed04  ret 
+0x1404aed05  mov rax, qword ptr [rsp + 0x30]
+0x1404aed0a  mov cl, byte ptr [rsp + 0x38]
+0x1404aed0e  lea r8, [rsp + 0x40]
+0x1404aed13  mov qword ptr [r8], rax
+0x1404aed16  mov byte ptr [r8 + 8], cl
+0x1404aed1a  lea rax, [rip + 0x399497]  [tgt 0x1408481b8]  *ptr,len=77: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\tauri-2.11.2\src\state.rs"
+0x1404aed21  mov qword ptr [rsp + 0x20], rax
+0x1404aed26  lea rcx, [rip + 0xab715c]  [tgt 0x140f65e89] str="called `Result::unwrap()` on an `Err` value"
+0x1404aed2d  lea r9, [rip + 0x8f24fc]  [tgt 0x140da1230]
+0x1404aed34  mov edx, 0x2b
+0x1404aed39  call 0x2f5e20  =>file=0x2f5e20 VA=0x1402f6a20
+0x1404aed3e  ud2 
+0x1404aed40  push rsi
+0x1404aed41  push rdi
+0x1404aed42  sub rsp, 0x38
+0x1404aed46  mov rsi, rdx
+0x1404aed49  mov rdi, qword ptr [rdx + 8]
+0x1404aed4d  mov r8, qword ptr [rdx + 0x10]
+0x1404aed51  lea rax, [rip + 0xaa9b5e]  [tgt 0x140f588b6] str="''cargo\registry\src\index.crates.io-1949cf8c6b5b557f\toml_e"
+0x1404aed58  mov qword ptr [rsp + 0x20], rax
+0x1404aed5d  mov qword ptr [rsp + 0x28], 2
+0x1404aed66  mov rdx, rdi
+0x1404aed69  mov r9d, 0x27
+0x1404aed6f  call 0xffffffffffd01680  =>file=0xffffffffffd01680 VA=0x1000000013fd02000
+0x1404aed74  mov rcx, qword ptr [rsi]
+0x1404aed77  mov rdx, rdi
+0x1404aed7a  add rsp, 0x38
+0x1404aed7e  pop rdi
+0x1404aed7f  pop rsi
+0x1404aed80  jmp 0xffffffffffc228f0  =>file=0xffffffffffc228f0 VA=0x1000000013fc24000
+0x1404aed85  int3 
+0x1404aed86  int3 
+0x1404aed87  int3 
+0x1404aed88  int3 
+0x1404aed89  int3 
+0x1404aed8a  int3 
+0x1404aed8b  int3 
+0x1404aed8c  int3 
+0x1404aed8d  int3 
+0x1404aed8e  int3 
+0x1404aed8f  int3 
+0x1404aed90  sub rsp, 0x28
+0x1404aed94  call 0xffffffffffffa3f0  =>file=0xffffffffffffa3f0 VA=0x1000000013fffb000
+0x1404aed99  mov r8, rax
+0x1404aed9c  xor eax, eax
+0x1404aed9e  test r8, r8
+0x1404aeda1  je 0x204  =>file=0x204 VA=0x140000e04
+0x1404aeda3  mov rcx, rdx
+0x1404aeda6  test rcx, rcx
+0x1404aeda9  je 0x204  =>file=0x204 VA=0x140000e04
+0x1404aedab  mov edx, dword ptr [rcx]
+0x1404aedad  mov eax, 1
+0x1404aedb2  jmp 0x204  =>file=0x204 VA=0x140000e04
+0x1404aedb4  add rsp, 0x28
+0x1404aedb8  ret 
+0x1404aedb9  int3 
+0x1404aedba  int3 
+0x1404aedbb  int3 
+0x1404aedbc  int3 
+0x1404aedbd  int3 
+0x1404aedbe  int3 
+0x1404aedbf  int3 
+0x1404aedc0  push r14
+0x1404aedc2  push rsi
+0x1404aedc3  push rdi
+0x1404aedc4  push rbx
+0x1404aedc5  sub rsp, 0x28
+0x1404aedc9  mov rdi, rdx
+0x1404aedcc  mov rsi, rcx
+0x1404aedcf  mov bl, byte ptr [rdx]
+0x1404aedd1  lea r14, [rdx + 0x18]
+0x1404aedd5  movzx eax, bl
+0x1404aedd8  lea rcx, [rip + 0xacb515]  [tgt 0x140f7a2f4] str=")KS"
+0x1404aeddf  movsxd rax, dword ptr [rcx + rax*4]
+0x1404aede3  add rax, rcx
+0x1404aede6  jmp rax
+0x1404aede8  lea rcx, [rsi + 0x48]
+0x1404aedec  mov rdx, qword ptr [rdi + 0x50]
+0x1404aedf0  mov r8, qword ptr [rdi + 0x58]
+0x1404aedf4  call 0xffffffffffb75210  =>file=0xffffffffffb75210 VA=0x1000000013fb76000
+0x1404aedf9  movups xmm0, xmmword ptr [rdi + 8]
+0x1404aedfd  movups xmm1, xmmword ptr [r14]
+0x1404aee01  movups xmm2, xmmword ptr [r14 + 0x10]
+0x1404aee06  movups xmm3, xmmword ptr [r14 + 0x20]
+0x1404aee0b  movups xmmword ptr [rsi + 0x18], xmm1
+0x1404aee0f  movups xmmword ptr [rsi + 0x28], xmm2
+0x1404aee13  movups xmmword ptr [rsi + 0x38], xmm3
+0x1404aee17  movups xmmword ptr [rsi + 8], xmm0
+0x1404aee1b  jmp 0x2e3  =>file=0x2e3 VA=0x140000ee3
+0x1404aee1d  lea rcx, [rsi + 0x48]
+0x1404aee21  mov rdx, qword ptr [rdi + 0x50]
+0x1404aee25  mov r8, qword ptr [rdi + 0x58]
+0x1404aee29  call 0xffffffffffb75210  =>file=0xffffffffffb75210 VA=0x1000000013fb76000
+0x1404aee2e  movups xmm0, xmmword ptr [rdi + 8]
+0x1404aee32  movups xmm1, xmmword ptr [r14]
+0x1404aee36  movups xmm2, xmmword ptr [r14 + 0x10]
+0x1404aee3b  movups xmm3, xmmword ptr [r14 + 0x20]
+0x1404aee40  movups xmmword ptr [rsi + 0x18], xmm1
+0x1404aee44  movups xmmword ptr [rsi + 0x28], xmm2
+0x1404aee48  movups xmmword ptr [rsi + 0x38], xmm3
+0x1404aee4c  movzx eax, word ptr [rdi + 1]
+0x1404aee50  movups xmmword ptr [rsi + 8], xmm0
+0x1404aee54  mov word ptr [rsi + 1], ax
+0x1404aee58  jmp 0x2e3  =>file=0x2e3 VA=0x140000ee3
+0x1404aee5a  lea rcx, [rsi + 0x48]
+0x1404aee5e  mov rdx, qword ptr [rdi + 0x50]
+0x1404aee62  mov r8, qword ptr [rdi + 0x58]
+0x1404aee66  call 0xffffffffffb75210  =>file=0xffffffffffb75210 VA=0x1000000013fb76000
+0x1404aee6b  movups xmm0, xmmword ptr [rdi + 8]
+0x1404aee6f  movups xmm1, xmmword ptr [r14]
+0x1404aee73  movups xmm2, xmmword ptr [r14 + 0x10]
+0x1404aee78  movups xmm3, xmmword ptr [r14 + 0x20]
+0x1404aee7d  movups xmmword ptr [rsi + 0x18], xmm1
+0x1404aee81  movups xmmword ptr [rsi + 0x28], xmm2
+0x1404aee85  movups xmmword ptr [rsi + 0x38], xmm3
+0x1404aee89  mov al, byte ptr [rdi + 1]
+0x1404aee8c  movups xmmword ptr [rsi + 8], xmm0
+0x1404aee90  mov byte ptr [rsi + 1], al
+0x1404aee93  mov byte ptr [rsi], bl
+0x1404aee95  add rsp, 0x28
+0x1404aee99  pop rbx
+0x1404aee9a  pop rdi
+0x1404aee9b  pop rsi
+0x1404aee9c  pop r14
+0x1404aee9e  ret 
+0x1404aee9f  int3 
+0x1404aeea0  jmp 0xffffffffffc45090  =>file=0xffffffffffc45090 VA=0x1000000013fc46000
+0x1404aeea5  int3 
+0x1404aeea6  int3 
+0x1404aeea7  int3 
+0x1404aeea8  int3 
+0x1404aeea9  int3 
+0x1404aeeaa  int3 
+0x1404aeeab  int3 
+0x1404aeeac  int3 
+0x1404aeead  int3 
+0x1404aeeae  int3 
+0x1404aeeaf  int3 
+0x1404aeeb0  push r14
+0x1404aeeb2  push rsi
+0x1404aeeb3  push rdi
+0x1404aeeb4  push rbx
+0x1404aeeb5  sub rsp, 0x38
+0x1404aeeb9  mov edi, r9d
+0x1404aeebc  mov rsi, rcx
+0x1404aeebf  mov rcx, rdx
+0x1404aeec2  mov rdx, r8
+0x1404aeec5  mov r8d, r9d
+0x1404aeec8  call 0x1ffc50  =>file=0x1ffc50 VA=0x140200850
+0x1404aeecd  test rax, rax
+0x1404aeed0  je 0x379  =>file=0x379 VA=0x140000f79
+0x1404aeed2  mov rbx, rax
+0x1404aeed5  mov rax, qword ptr [rax]
+0x1404aeed8  mov r8, qword ptr [rbx + 8]
+0x1404aeedc  mov rcx, qword ptr [r8 + 0x10]
+0x1404aeee0  dec rcx
+0x1404aeee3  and rcx, 0xfffffffffffffff0
+0x1404aeee7  lea rdx, [rax + rcx]
+0x1404aeeeb  add rdx, 0x10
+0x1404aeeef  lea r14, [rsp + 0x20]
+0x1404aeef4  mov rcx, r14
+0x1404aeef7  call qword ptr [r8 + 0x18]
+0x1404aeefb  movdqa xmm0, xmmword ptr [r14]
+0x1404aef00  pcmpeqb xmm0, xmmword ptr [rip + 0x32d848]  [tgt 0x1407dc750]
+0x1404aef08  pmovmskb eax, xmm0
+0x1404aef0c  cmp eax, 0xffff
+0x1404aef11  jne 0x379  =>file=0x379 VA=0x140000f79
+0x1404aef13  mov rax, qword ptr [rbx]
+0x1404aef16  lock inc qword ptr [rax]
+0x1404aef1a  jle 0x393  =>file=0x393 VA=0x140000f93
+0x1404aef1c  mov qword ptr [rsi + 8], rax
+0x1404aef20  mov rax, 0xffffffffffffffff
+0x1404aef27  jmp 0x386  =>file=0x386 VA=0x140000f86
+0x1404aef29  mov dword ptr [rsi + 8], edi
+0x1404aef2c  movabs rax, 0x8000000000000026
+0x1404aef36  mov qword ptr [rsi], rax
+0x1404aef39  add rsp, 0x38
+0x1404aef3d  pop rbx
+0x1404aef3e  pop rdi
+0x1404aef3f  pop rsi
+0x1404aef40  pop r14
+0x1404aef42  ret 
+0x1404aef43  ud2 
+0x1404aef45  int3 
+0x1404aef46  int3 
+0x1404aef47  int3 
+0x1404aef48  int3 
+0x1404aef49  int3 
+0x1404aef4a  int3 
+0x1404aef4b  int3 
+0x1404aef4c  int3 
+0x1404aef4d  int3 
+0x1404aef4e  int3 
+0x1404aef4f  int3 
+0x1404aef50  sub rsp, 0x28
+0x1404aef54  cmp qword ptr [rcx], -1
+0x1404aef58  je 0x3b3  =>file=0x3b3 VA=0x140000fb3
+0x1404aef5a  call 0xffffffffffc332d0  =>file=0xffffffffffc332d0 VA=0x1000000013fc34000
+0x1404aef5f  xor eax, eax
+0x1404aef61  jmp 0x3b7  =>file=0x3b7 VA=0x140000fb7
+0x1404aef63  mov rax, qword ptr [rcx + 8]
+0x1404aef67  add rsp, 0x28
+0x1404aef6b  ret 
+0x1404aef6c  int3 
+0x1404aef6d  int3 
+0x1404aef6e  int3 
+0x1404aef6f  int3 
+0x1404aef70  push r15
+0x1404aef72  push r14
+0x1404aef74  push rsi
+0x1404aef75  push rdi
+0x1404aef76  push rbx
+0x1404aef77  sub rsp, 0xf0
+0x1404aef7e  mov r8, rdx
+0x1404aef81  mov rbx, rcx
+0x1404aef84  xor ecx, ecx
+0x1404aef86  mov eax, 1
+0x1404aef8b  lock cmpxchg qword ptr [rdx], rcx
+0x1404aef90  jne 0x439  =>file=0x439 VA=0x140001039
+0x1404aef92  mov r15, qword ptr [r8 + 0x10]
+0x1404aef96  mov r14, qword ptr [r8 + 0x18]
+0x1404aef9a  lea rsi, [r8 + 0x20]
+0x1404aef9e  lea rdi, [rsp + 0x30]
+0x1404aefa3  mov ecx, 0xc0
+0x1404aefa8  rep movsb byte ptr [rdi], byte ptr [rsi]
+0x1404aefaa  cmp r8, -1
+0x1404aefae  je 0x414  =>file=0x414 VA=0x140001014
+0x1404aefb0  lock dec qword ptr [r8 + 8]
+0x1404aefb5  jne 0x414  =>file=0x414 VA=0x140001014
+0x1404aefb7  mov edx, 8
+0x1404aefbc  mov rcx, r8
+0x1404aefbf  call 0xffffffffffb528b0  =>file=0xffffffffffb528b0 VA=0x1000000013fb54000
+0x1404aefc4  cmp r15, -1
+0x1404aefc8  je 0x436  =>file=0x436 VA=0x140001036
+0x1404aefca  mov qword ptr [rbx], r15
+0x1404aefcd  mov qword ptr [rbx + 8], r14
+0x1404aefd1  add rbx, 0x10
+0x1404aefd5  lea rsi, [rsp + 0x30]
+0x1404aefda  mov ecx, 0xc0
+0x1404aefdf  mov rdi, rbx
+0x1404aefe2  rep movsb byte ptr [rdi], byte ptr [rsi]
+0x1404aefe4  jmp 0x459  =>file=0x459 VA=0x140001059
+0x1404aefe6  mov r8, r14
+0x1404aefe9  lea rsi, [rsp + 0x28]
+0x1404aefee  mov qword ptr [rsi], r8
+0x1404aeff1  add r8, 0x10
+0x1404aeff5  mov rcx, rbx
+0x1404aeff8  mov rdx, r8
+0x1404aeffb  call 0xfffffffffffb9ce0  =>file=0xfffffffffffb9ce0 VA=0x1000000013ffbb000
+0x1404af000  mov rcx, rsi
+0x1404af003  call 0x470  =>file=0x470 VA=0x140001070
+0x1404af008  nop 
+0x1404af009  add rsp, 0xf0
+0x1404af010  pop rbx
+0x1404af011  pop rdi
+0x1404af012  pop rsi
+0x1404af013  pop r14
+0x1404af015  pop r15
+0x1404af017  ret 
+0x1404af018  int3 
+0x1404af019  int3 
+0x1404af01a  int3 
+0x1404af01b  int3 
+0x1404af01c  int3 
+0x1404af01d  int3 
+0x1404af01e  int3 
+0x1404af01f  int3 
+0x1404af020  mov rax, qword ptr [rcx]
+0x1404af023  lock dec qword ptr [rax]
+0x1404af027  jne 0x481  =>file=0x481 VA=0x140001081
+0x1404af029  mov rcx, qword ptr [rcx]
+0x1404af02c  jmp 0x490  =>file=0x490 VA=0x140001090
+0x1404af031  ret 
+0x1404af032  int3 
+0x1404af033  int3 
+0x1404af034  int3 
+0x1404af035  int3 
+0x1404af036  int3 
+0x1404af037  int3 
+0x1404af038  int3 
+0x1404af039  int3 
+0x1404af03a  int3 
+0x1404af03b  int3 
+0x1404af03c  int3 
+0x1404af03d  int3 
+0x1404af03e  int3 
+0x1404af03f  int3 
+0x1404af040  push rsi
+0x1404af041  sub rsp, 0x20
+0x1404af045  mov rsi, rcx
+0x1404af048  add rcx, 0x10
+0x1404af04c  call 0xfffffffffffb9db0  =>file=0xfffffffffffb9db0 VA=0x1000000013ffbb000
+0x1404af051  cmp rsi, -1
+0x1404af055  je 0x4c0  =>file=0x4c0 VA=0x1400010c0
+0x1404af057  lock dec qword ptr [rsi + 8]
+0x1404af05c  jne 0x4c0  =>file=0x4c0 VA=0x1400010c0
+0x1404af05e  mov edx, 8
+0x1404af063  mov rcx, rsi
+0x1404af066  add rsp, 0x20
+0x1404af06a  pop rsi
+0x1404af06b  jmp 0xffffffffffb528b0  =>file=0xffffffffffb528b0 VA=0x1000000013fb54000
+0x1404af070  add rsp, 0x20
+0x1404af074  pop rsi
+0x1404af075  ret 
+0x1404af076  int3 
+0x1404af077  int3 
+0x1404af078  int3 
+0x1404af079  int3 
+0x1404af07a  int3 
+0x1404af07b  int3 
+0x1404af07c  int3 
+0x1404af07d  int3 
+0x1404af07e  int3 
+0x1404af07f  int3 
+0x1404af080  push rsi
+0x1404af081  sub rsp, 0x30
+0x1404af085  mov rsi, rcx
+0x1404af088  cmp dword ptr [rcx + 0x98], -1
+0x1404af08f  je 0x535  =>file=0x535 VA=0x140001135
+0x1404af091  lea rcx, [rsi + 0x98]
+0x1404af098  call 0xffffffffffc2d250  =>file=0xffffffffffc2d250 VA=0x1000000013fc2e000
+0x1404af09d  mov rcx, qword ptr [rsi + 0x140]
+0x1404af0a4  call 0xffffffffffc2b640  =>file=0xffffffffffc2b640 VA=0x1000000013fc2c000
+0x1404af0a9  lea rcx, [rsp + 0x20]
+0x1404af0ae  and qword ptr [rcx], 0
+0x1404af0b2  mov dword ptr [rcx + 8], edx
+0x1404af0b5  call 0x20be00  =>file=0x20be00 VA=0x14020ca00
+0x1404af0ba  mov rcx, qword ptr [rsi + 0x120]
+0x1404af0c1  mov rdx, qword ptr [rsi + 0x128]
+0x1404af0c8  call 0x2026f0  =>file=0x2026f0 VA=0x1402032f0
+0x1404af0cd  lea rcx, [rsi + 0x130]
+0x1404af0d4  call 0xffffffffffc22e40  =>file=0xffffffffffc22e40 VA=0x1000000013fc24000
+0x1404af0d9  lea rcx, [rsi + 0x150]
+0x1404af0e0  call 0xffffffffffc6f130  =>file=0xffffffffffc6f130 VA=0x1000000013fc70000
+0x1404af0e5  mov rcx, qword ptr [rsi + 0x168]
+0x1404af0ec  test rcx, rcx
+0x1404af0ef  je 0x54d  =>file=0x54d VA=0x14000114d
+0x1404af0f1  mov rdx, qword ptr [rsi + 0x170]
+0x1404af0f8  call 0xffffffffffc30830  =>file=0xffffffffffc30830 VA=0x1000000013fc32000
+0x1404af0fd  lea rcx, [rsi + 0x160]
+0x1404af104  call 0xffffffffffc311e0  =>file=0xffffffffffc311e0 VA=0x1000000013fc32000
+0x1404af109  mov rcx, rsi
+0x1404af10c  add rsp, 0x30
+0x1404af110  pop rsi
+0x1404af111  jmp 0xffffffffffc311f0  =>file=0xffffffffffc311f0 VA=0x1000000013fc32000
+0x1404af116  int3 
+0x1404af117  int3 
+0x1404af118  int3 
+0x1404af119  int3 
+0x1404af11a  int3 
+0x1404af11b  int3 
+0x1404af11c  int3 
+0x1404af11d  int3 
+0x1404af11e  int3 
+0x1404af11f  int3 
+0x1404af120  push rsi
+0x1404af121  push rdi
+0x1404af122  push rbx
+0x1404af123  sub rsp, 0x60
+0x1404af127  mov rdi, r9
+0x1404af12a  mov rsi, rcx
+0x1404af12d  lea rcx, [rsp + 0x28]
+0x1404af132  call 0xffffffffffb900d0  =>file=0xffffffffffb900d0 VA=0x1000000013fb91000
+0x1404af137  lea rbx, [rsp + 0x48]
+0x1404af13c  mov edx, 0x80
+0x1404af141  mov rcx, rbx
+0x1404af144  call 0xffffffffffc33540  =>file=0xffffffffffc33540 VA=0x1000000013fc34000
+0x1404af149  lea rdx, [rsp + 0x40]
+0x1404af14e  mov qword ptr [rdx], rbx
+0x1404af151  mov rcx, rdi
+0x1404af154  call 0x620  =>file=0x620 VA=0x140001220
+0x1404af159  mov rcx, qword ptr [rbx]
+0x1404af15c  mov rdx, qword ptr [rbx + 8]
+0x1404af160  test rax, rax
+0x1404af163  je 0x5e2  =>file=0x5e2 VA=0x1400011e2
+0x1404af165  mov rdi, rax
+0x1404af168  call 0xffffffffffc228f0  =>file=0xffffffffffc228f0 VA=0x1000000013fc24000
+0x1404af16d  mov rdx, rdi
+0x1404af170  movabs rax, 0x800000000000000f
+0x1404af17a  mov qword ptr [rsi], rax
+0x1404af17d  mov qword ptr [rsi + 8], rdx
+0x1404af181  mov rcx, qword ptr [rsp + 0x28]
+0x1404af186  mov rdx, qword ptr [rsp + 0x30]
+0x1404af18b  call 0xffffffffffc228f0  =>file=0xffffffffffc228f0 VA=0x1000000013fc24000
+0x1404af190  jmp 0x60f  =>file=0x60f VA=0x14000120f
+0x1404af192  cmp rcx, -1
+0x1404af196  je 0x5c0  =>file=0x5c0 VA=0x1400011c0
+0x1404af198  mov rax, qword ptr [rsp + 0x58]
+0x1404af19d  mov r8, qword ptr [rsp + 0x38]
+0x1404af1a2  mov qword ptr [rsi + 0x18], r8
+0x1404af1a6  movups xmm0, xmmword ptr [rsp + 0x28]
+0x1404af1ab  movups xmmword ptr [rsi + 8], xmm0
+0x1404af1af  mov qword ptr [rsi + 0x20], rcx
+0x1404af1b3  mov qword ptr [rsi + 0x28], rdx
+0x1404af1b7  mov qword ptr [rsi + 0x30], rax
+0x1404af1bb  or qword ptr [rsi], 0xffffffffffffffff
+0x1404af1bf  add rsp, 0x60
+0x1404af1c3  pop rbx
+0x1404af1c4  pop rdi
+0x1404af1c5  pop rsi
+0x1404af1c6  ret 
+0x1404af1c7  int3 
+0x1404af1c8  int3 
+0x1404af1c9  int3 
+0x1404af1ca  int3 
+0x1404af1cb  int3 
+0x1404af1cc  int3 
+0x1404af1cd  int3 
+0x1404af1ce  int3 
+0x1404af1cf  int3 
+0x1404af1d0  push rsi
+0x1404af1d1  push rdi
+0x1404af1d2  sub rsp, 0x48
+0x1404af1d6  mov rsi, rcx
+0x1404af1d9  mov qword ptr [rsp + 0x20], 4
+0x1404af1e2  lea r8, [rip + 0x3abb08]  [tgt 0x14085acf1] str="UndockedPanelSnapshotdockIdactiveTabsearchQueryproblemsLayou"
+0x1404af1e9  lea rdi, [rsp + 0x38]
+0x1404af1ee  mov r9d, 0x15
+0x1404af1f4  mov rcx, rdi
+0x1404af1f7  call 0xffffffffffc56a60  =>file=0xffffffffffc56a60 VA=0x1000000013fc58000
+0x1404af1fc  mov al, byte ptr [rdi]
+0x1404af1fe  cmp al, 2
+0x1404af200  jne 0x65c  =>file=0x65c VA=0x14000125c
+0x1404af202  mov rax, qword ptr [rsp + 0x40]
+0x1404af207  jmp 0x72b  =>file=0x72b VA=0x14000132b
+0x1404af20c  mov edx, dword ptr [rsp + 0x39]
+0x1404af210  mov r8d, dword ptr [rsp + 0x3c]
+0x1404af215  lea rcx, [rsp + 0x28]
+0x1404af21a  mov dword ptr [rcx + 4], r8d
+0x1404af21e  mov dword ptr [rcx + 1], edx
+0x1404af221  mov rdx, qword ptr [rsp + 0x40]
+0x1404af226  mov byte ptr [rcx], al
+0x1404af228  mov qword ptr [rcx + 8], rdx
+0x1404af22c  mov r9, qword ptr [rsi + 8]
+0x1404af230  mov rax, qword ptr [rsi + 0x10]
+0x1404af234  mov qword ptr [rsp + 0x20], rax
+0x1404af239  lea rdx, [rip + 0x3abac6]  [tgt 0x14085ad06] str="dockIdactiveTabsearchQueryproblemsLayoutsrc\panel_docking.rs"
+0x1404af240  mov r8d, 6
+0x1404af246  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af24b  test rax, rax
+0x1404af24e  jne 0x72b  =>file=0x72b VA=0x14000132b
+0x1404af254  mov r9, qword ptr [rsi + 0x20]
+0x1404af258  mov rax, qword ptr [rsi + 0x28]
+0x1404af25c  mov qword ptr [rsp + 0x20], rax
+0x1404af261  lea rdx, [rip + 0x3abaa4]  [tgt 0x14085ad0c] str="activeTabsearchQueryproblemsLayoutsrc\panel_docking.rs"
+0x1404af268  lea rcx, [rsp + 0x28]
+0x1404af26d  mov r8d, 9
+0x1404af273  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af278  test rax, rax
+0x1404af27b  jne 0x72b  =>file=0x72b VA=0x14000132b
+0x1404af27d  mov r9, qword ptr [rsi + 0x38]
+0x1404af281  mov rax, qword ptr [rsi + 0x40]
+0x1404af285  mov qword ptr [rsp + 0x20], rax
+0x1404af28a  lea rdx, [rip + 0x3aba84]  [tgt 0x14085ad15] str="searchQueryproblemsLayoutsrc\panel_docking.rs"
+0x1404af291  lea rcx, [rsp + 0x28]
+0x1404af296  mov r8d, 0xb
+0x1404af29c  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af2a1  test rax, rax
+0x1404af2a4  jne 0x72b  =>file=0x72b VA=0x14000132b
+0x1404af2a6  mov r9, qword ptr [rsi + 0x50]
+0x1404af2aa  mov rax, qword ptr [rsi + 0x58]
+0x1404af2ae  mov qword ptr [rsp + 0x20], rax
+0x1404af2b3  lea rdx, [rip + 0x3aba66]  [tgt 0x14085ad20] str="problemsLayoutsrc\panel_docking.rs"
+0x1404af2ba  lea rcx, [rsp + 0x28]
+0x1404af2bf  mov r8d, 0xe
+0x1404af2c5  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af2ca  test rax, rax
+0x1404af2cd  jne 0x72b  =>file=0x72b VA=0x14000132b
+0x1404af2cf  lea rcx, [rsp + 0x28]
+0x1404af2d4  call 0xffffffffffc56b40  =>file=0xffffffffffc56b40 VA=0x1000000013fc58000
+0x1404af2d9  xor eax, eax
+0x1404af2db  add rsp, 0x48
+0x1404af2df  pop rdi
+0x1404af2e0  pop rsi
+0x1404af2e1  ret 
+0x1404af2e2  int3 
+0x1404af2e3  int3 
+0x1404af2e4  int3 
+0x1404af2e5  int3 
+0x1404af2e6  int3 
+0x1404af2e7  int3 
+0x1404af2e8  int3 
+0x1404af2e9  int3 
+0x1404af2ea  int3 
+0x1404af2eb  int3 
+0x1404af2ec  int3 
+0x1404af2ed  int3 
+0x1404af2ee  int3 
+0x1404af2ef  int3 
+0x1404af2f0  push rsi
+0x1404af2f1  push rdi
+0x1404af2f2  push rbx
+0x1404af2f3  sub rsp, 0x60
+0x1404af2f7  mov rdi, r9
+0x1404af2fa  mov rsi, rcx
+0x1404af2fd  lea rcx, [rsp + 0x28]
+0x1404af302  call 0xffffffffffb900d0  =>file=0xffffffffffb900d0 VA=0x1000000013fb91000
+0x1404af307  lea rbx, [rsp + 0x48]
+0x1404af30c  mov edx, 0x80
+0x1404af311  mov rcx, rbx
+0x1404af314  call 0xffffffffffc33540  =>file=0xffffffffffc33540 VA=0x1000000013fc34000
+0x1404af319  lea rdx, [rsp + 0x40]
+0x1404af31e  mov qword ptr [rdx], rbx
+0x1404af321  mov rcx, rdi
+0x1404af324  call 0x7f0  =>file=0x7f0 VA=0x1400013f0
+0x1404af329  mov rcx, qword ptr [rbx]
+0x1404af32c  mov rdx, qword ptr [rbx + 8]
+0x1404af330  test rax, rax
+0x1404af333  je 0x7b2  =>file=0x7b2 VA=0x1400013b2
+0x1404af335  mov rdi, rax
+0x1404af338  call 0xffffffffffc228f0  =>file=0xffffffffffc228f0 VA=0x1000000013fc24000
+0x1404af33d  mov rdx, rdi
+0x1404af340  movabs rax, 0x800000000000000f
+0x1404af34a  mov qword ptr [rsi], rax
+0x1404af34d  mov qword ptr [rsi + 8], rdx
+0x1404af351  mov rcx, qword ptr [rsp + 0x28]
+0x1404af356  mov rdx, qword ptr [rsp + 0x30]
+0x1404af35b  call 0xffffffffffc228f0  =>file=0xffffffffffc228f0 VA=0x1000000013fc24000
+0x1404af360  jmp 0x7df  =>file=0x7df VA=0x1400013df
+0x1404af362  cmp rcx, -1
+0x1404af366  je 0x790  =>file=0x790 VA=0x140001390
+0x1404af368  mov rax, qword ptr [rsp + 0x58]
+0x1404af36d  mov r8, qword ptr [rsp + 0x38]
+0x1404af372  mov qword ptr [rsi + 0x18], r8
+0x1404af376  movups xmm0, xmmword ptr [rsp + 0x28]
+0x1404af37b  movups xmmword ptr [rsi + 8], xmm0
+0x1404af37f  mov qword ptr [rsi + 0x20], rcx
+0x1404af383  mov qword ptr [rsi + 0x28], rdx
+0x1404af387  mov qword ptr [rsi + 0x30], rax
+0x1404af38b  or qword ptr [rsi], 0xffffffffffffffff
+0x1404af38f  add rsp, 0x60
+0x1404af393  pop rbx
+0x1404af394  pop rdi
+0x1404af395  pop rsi
+0x1404af396  ret 
+0x1404af397  int3 
+0x1404af398  int3 
+0x1404af399  int3 
+0x1404af39a  int3 
+0x1404af39b  int3 
+0x1404af39c  int3 
+0x1404af39d  int3 
+0x1404af39e  int3 
+0x1404af39f  int3 
+0x1404af3a0  push rsi
+0x1404af3a1  push rdi
+0x1404af3a2  push rbx
+0x1404af3a3  sub rsp, 0x60
+0x1404af3a7  mov rsi, rcx
+0x1404af3aa  mov qword ptr [rsp + 0x20], 0xc
+0x1404af3b3  lea r8, [rip + 0x3aba22]  [tgt 0x14085addc] str="UndockedScriptSnapshotfolderreadOnlyautoExecFileclouddirtyor"
+0x1404af3ba  lea rdi, [rsp + 0x40]
+0x1404af3bf  mov r9d, 0x16
+0x1404af3c5  mov rcx, rdi
+0x1404af3c8  call 0xffffffffffc56a60  =>file=0xffffffffffc56a60 VA=0x1000000013fc58000
+0x1404af3cd  mov al, byte ptr [rdi]
+0x1404af3cf  cmp al, 2
+0x1404af3d1  jne 0x82d  =>file=0x82d VA=0x14000142d
+0x1404af3d3  mov rax, qword ptr [rsp + 0x48]
+0x1404af3d8  jmp 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af3dd  mov edx, dword ptr [rsp + 0x41]
+0x1404af3e1  mov r8d, dword ptr [rsp + 0x44]
+0x1404af3e6  lea rcx, [rsp + 0x30]
+0x1404af3eb  mov dword ptr [rcx + 4], r8d
+0x1404af3ef  mov dword ptr [rcx + 1], edx
+0x1404af3f2  mov rdx, qword ptr [rsp + 0x48]
+0x1404af3f7  mov byte ptr [rcx], al
+0x1404af3f9  mov qword ptr [rcx + 8], rdx
+0x1404af3fd  mov r9, qword ptr [rsi + 8]
+0x1404af401  mov rax, qword ptr [rsi + 0x10]
+0x1404af405  mov qword ptr [rsp + 0x20], rax
+0x1404af40a  lea rdx, [rip + 0x3ab8f5]  [tgt 0x14085ad06] str="dockIdactiveTabsearchQueryproblemsLayoutsrc\panel_docking.rs"
+0x1404af411  mov r8d, 6
+0x1404af417  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af41c  test rax, rax
+0x1404af41f  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af425  mov r9, qword ptr [rsi + 0x138]
+0x1404af42c  lea rdx, [rip + 0xa8a160]  [tgt 0x140f39593] str="iddebuginfonoticewarningcriticalalertemergency"
+0x1404af433  lea rcx, [rsp + 0x30]
+0x1404af438  mov r8d, 2
+0x1404af43e  call 0xffffffffffd0de30  =>file=0xffffffffffd0de30 VA=0x1000000013fd0f000
+0x1404af443  test rax, rax
+0x1404af446  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af44c  mov r9, qword ptr [rsi + 0x20]
+0x1404af450  mov rax, qword ptr [rsi + 0x28]
+0x1404af454  mov qword ptr [rsp + 0x20], rax
+0x1404af459  lea rdx, [rip + 0xa8a23a]  [tgt 0x140f3969a] str="nameiconswebsiteUrlRootsCapabilitieslistChangedTasksCapabili"
+0x1404af460  lea rcx, [rsp + 0x30]
+0x1404af465  mov r8d, 4
+0x1404af46b  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af470  test rax, rax
+0x1404af473  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af479  mov r9, qword ptr [rsi + 0x38]
+0x1404af47d  mov rax, qword ptr [rsi + 0x40]
+0x1404af481  mov qword ptr [rsp + 0x20], rax
+0x1404af486  lea rdx, [rip + 0xab51c9]  [tgt 0x140f64656] str="codemessage"
+0x1404af48d  lea rcx, [rsp + 0x30]
+0x1404af492  mov r8d, 4
+0x1404af498  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af49d  test rax, rax
+0x1404af4a0  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af4a6  mov r9, qword ptr [rsi + 0x50]
+0x1404af4aa  mov rax, qword ptr [rsi + 0x58]
+0x1404af4ae  mov qword ptr [rsp + 0x20], rax
+0x1404af4b3  lea rdx, [rip + 0xa952db]  [tgt 0x140f44795] str="typeformat"
+0x1404af4ba  lea rcx, [rsp + 0x30]
+0x1404af4bf  mov r8d, 4
+0x1404af4c5  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af4ca  test rax, rax
+0x1404af4cd  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af4d3  lea r9, [rsi + 0x60]
+0x1404af4d7  lea rdx, [rip + 0xab1b2d]  [tgt 0x140f6100b] str="filehttphttpswswsscargo\registry\src\index.crates.io-1949cf8"
+0x1404af4de  lea rcx, [rsp + 0x30]
+0x1404af4e3  mov r8d, 4
+0x1404af4e9  call 0xffffffffffc8b240  =>file=0xffffffffffc8b240 VA=0x1000000013fc8c000
+0x1404af4ee  test rax, rax
+0x1404af4f1  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af4f3  lea r9, [rsi + 0x78]
+0x1404af4f7  lea rdx, [rip + 0x3ab8f4]  [tgt 0x14085adf2] str="folderreadOnlyautoExecFileclouddirtyoriginalCodeexecclientsr"
+0x1404af4fe  lea rcx, [rsp + 0x30]
+0x1404af503  mov r8d, 6
+0x1404af509  call 0xffffffffffc8b240  =>file=0xffffffffffc8b240 VA=0x1000000013fc8c000
+0x1404af50e  test rax, rax
+0x1404af511  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af513  mov r9b, byte ptr [rsi + 0x140]
+0x1404af51a  lea rdx, [rip + 0x3ab8d7]  [tgt 0x14085adf8] str="readOnlyautoExecFileclouddirtyoriginalCodeexecclientsrc\exte"
+0x1404af521  lea rcx, [rsp + 0x30]
+0x1404af526  mov r8d, 8
+0x1404af52c  call 0xffffffffffceebb0  =>file=0xffffffffffceebb0 VA=0x1000000013fcf0000
+0x1404af531  test rax, rax
+0x1404af534  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af536  lea r9, [rsi + 0x90]
+0x1404af53d  lea rdx, [rip + 0x3ab8bc]  [tgt 0x14085ae00] str="autoExecFileclouddirtyoriginalCodeexecclientsrc\external_bri"
+0x1404af544  lea rcx, [rsp + 0x30]
+0x1404af549  mov r8d, 0xc
+0x1404af54f  call 0xffffffffffc8b240  =>file=0xffffffffffc8b240 VA=0x1000000013fc8c000
+0x1404af554  test rax, rax
+0x1404af557  je 0x9b1  =>file=0x9b1 VA=0x1400015b1
+0x1404af559  add rsp, 0x60
+0x1404af55d  pop rbx
+0x1404af55e  pop rdi
+0x1404af55f  pop rsi
+0x1404af560  ret 
+0x1404af561  cmp byte ptr [rsp + 0x30], 0
+0x1404af566  jne 0xbba  =>file=0xbba VA=0x1400017ba
+0x1404af56c  lea rdx, [rip + 0x3ab899]  [tgt 0x14085ae0c] str="clouddirtyoriginalCodeexecclientsrc\external_bridge.rs"
+0x1404af573  lea rdi, [rsp + 0x30]
+0x1404af578  mov r8d, 5
+0x1404af57e  mov rcx, rdi
+0x1404af581  call 0xffffffffffc56c30  =>file=0xffffffffffc56c30 VA=0x1000000013fc58000
+0x1404af586  cmp byte ptr [rdi], 1
+0x1404af589  je 0xbc6  =>file=0xbc6 VA=0x1400017c6
+0x1404af58f  mov rdi, qword ptr [rsp + 0x38]
+0x1404af594  mov rcx, qword ptr [rdi]
+0x1404af597  call 0x204170  =>file=0x204170 VA=0x140204d70
+0x1404af59c  cmp qword ptr [rsi + 0xa8], -1
+0x1404af5a4  je 0xb50  =>file=0xb50 VA=0x140001750
+0x1404af5aa  mov qword ptr [rsp + 0x20], 5
+0x1404af5b3  lea r8, [rip + 0x3ab7d3]  [tgt 0x14085ad8d] str="DockedCloudSnapshotprovidergistIdfilenameupdatedAthtmlUrlsrc"
+0x1404af5ba  lea rbx, [rsp + 0x40]
+0x1404af5bf  mov r9d, 0x13
+0x1404af5c5  mov rcx, rbx
+0x1404af5c8  mov rdx, rdi
+0x1404af5cb  call 0xffffffffffc56a60  =>file=0xffffffffffc56a60 VA=0x1000000013fc58000
+0x1404af5d0  mov al, byte ptr [rbx]
+0x1404af5d2  cmp al, 2
+0x1404af5d4  je 0x823  =>file=0x823 VA=0x140001423
+0x1404af5da  mov edx, dword ptr [rsp + 0x41]
+0x1404af5de  mov r8d, dword ptr [rsp + 0x44]
+0x1404af5e3  lea rcx, [rsp + 0x50]
+0x1404af5e8  mov dword ptr [rcx + 4], r8d
+0x1404af5ec  mov dword ptr [rcx + 1], edx
+0x1404af5ef  mov rdx, qword ptr [rsp + 0x48]
+0x1404af5f4  mov byte ptr [rcx], al
+0x1404af5f6  mov qword ptr [rcx + 8], rdx
+0x1404af5fa  mov r9, qword ptr [rsi + 0xb0]
+0x1404af601  mov rax, qword ptr [rsi + 0xb8]
+0x1404af608  mov qword ptr [rsp + 0x20], rax
+0x1404af60d  lea rdx, [rip + 0x3ab78c]  [tgt 0x14085ada0] str="providergistIdfilenameupdatedAthtmlUrlsrc\script_docking.rs"
+0x1404af614  mov r8d, 8
+0x1404af61a  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af61f  test rax, rax
+0x1404af622  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af628  mov r9, qword ptr [rsi + 0xc8]
+0x1404af62f  mov rax, qword ptr [rsi + 0xd0]
+0x1404af636  mov qword ptr [rsp + 0x20], rax
+0x1404af63b  lea rdx, [rip + 0x3ab766]  [tgt 0x14085ada8] str="gistIdfilenameupdatedAthtmlUrlsrc\script_docking.rs"
+0x1404af642  lea rcx, [rsp + 0x50]
+0x1404af647  mov r8d, 6
+0x1404af64d  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af652  test rax, rax
+0x1404af655  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af65b  mov r9, qword ptr [rsi + 0xe0]
+0x1404af662  mov rax, qword ptr [rsi + 0xe8]
+0x1404af669  mov qword ptr [rsp + 0x20], rax
+0x1404af66e  lea rdx, [rip + 0x3ab739]  [tgt 0x14085adae] str="filenameupdatedAthtmlUrlsrc\script_docking.rs"
+0x1404af675  lea rcx, [rsp + 0x50]
+0x1404af67a  mov r8d, 8
+0x1404af680  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af685  test rax, rax
+0x1404af688  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af68e  mov r9, qword ptr [rsi + 0xf8]
+0x1404af695  mov rax, qword ptr [rsi + 0x100]
+0x1404af69c  mov qword ptr [rsp + 0x20], rax
+0x1404af6a1  lea rdx, [rip + 0x3ab70e]  [tgt 0x14085adb6] str="updatedAthtmlUrlsrc\script_docking.rs"
+0x1404af6a8  lea rcx, [rsp + 0x50]
+0x1404af6ad  mov r8d, 9
+0x1404af6b3  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af6b8  test rax, rax
+0x1404af6bb  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af6c1  mov r9, qword ptr [rsi + 0x110]
+0x1404af6c8  mov rax, qword ptr [rsi + 0x118]
+0x1404af6cf  mov qword ptr [rsp + 0x20], rax
+0x1404af6d4  lea rdx, [rip + 0x3ab6e4]  [tgt 0x14085adbf] str="htmlUrlsrc\script_docking.rs"
+0x1404af6db  lea rcx, [rsp + 0x50]
+0x1404af6e0  mov r8d, 7
+0x1404af6e6  call 0xffffffffffc56b50  =>file=0xffffffffffc56b50 VA=0x1000000013fc58000
+0x1404af6eb  test rax, rax
+0x1404af6ee  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af6f4  lea rcx, [rsp + 0x50]
+0x1404af6f9  call 0xffffffffffc56b40  =>file=0xffffffffffc56b40 VA=0x1000000013fc58000
+0x1404af6fe  jmp 0xb58  =>file=0xb58 VA=0x140001758
+0x1404af700  mov rcx, qword ptr [rdi]
+0x1404af703  call 0xffffffffffdaa860  =>file=0xffffffffffdaa860 VA=0x1000000013fdac000
+0x1404af708  mov r9b, byte ptr [rsi + 0x141]
+0x1404af70f  lea rdx, [rip + 0x3ab6fb]  [tgt 0x14085ae11] str="dirtyoriginalCodeexecclientsrc\external_bridge.rs"
+0x1404af716  lea rcx, [rsp + 0x30]
+0x1404af71b  mov r8d, 5
+0x1404af721  call 0xffffffffffceebb0  =>file=0xffffffffffceebb0 VA=0x1000000013fcf0000
+0x1404af726  test rax, rax
+0x1404af729  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af72f  add rsi, 0x120
+0x1404af736  lea rdx, [rip + 0x3ab6d9]  [tgt 0x14085ae16] str="originalCodeexecclientsrc\external_bridge.rs"
+0x1404af73d  lea rcx, [rsp + 0x30]
+0x1404af742  mov r8d, 0xc
+0x1404af748  mov r9, rsi
+0x1404af74b  call 0xffffffffffc8b240  =>file=0xffffffffffc8b240 VA=0x1000000013fc8c000
+0x1404af750  test rax, rax
+0x1404af753  jne 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af759  lea rcx, [rsp + 0x30]
+0x1404af75e  call 0xffffffffffc56b40  =>file=0xffffffffffc56b40 VA=0x1000000013fc58000
+0x1404af763  xor eax, eax
+0x1404af765  jmp 0x9a9  =>file=0x9a9 VA=0x1400015a9
+0x1404af76a  add rsp, 0x60
+0x1404af76e  pop rbx
+0x1404af76f  pop rdi
+0x1404af770  pop rsi
+0x1404af771  jmp 0x307510  =>file=0x307510 VA=0x140308110
+0x1404af776  lea rcx, [rip + 0xab6252]  [tgt 0x140f659cf] str="internal error: entered unreachable coderustup\toolchains\st"
+0x1404af77d  lea r8, [rip + 0xa8a19c]  [tgt 0x140f39920]  *ptr,len=81: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\serde_json-1.0.149\src\ser.rs"
+0x1404af784  mov edx, 0x28
+0x1404af789  call 0x2f5d20  =>file=0x2f5d20 VA=0x1402f6920
+0x1404af78e  ud2 
+0x1404af790  push r15
+0x1404af792  push r14
+0x1404af794  push r12
+0x1404af796  push rsi
+0x1404af797  push rdi
+0x1404af798  push rbx
+0x1404af799  sub rsp, 0x48
+0x1404af79d  mov rbx, r8
+0x1404af7a0  mov rsi, rdx
+0x1404af7a3  mov rdi, rcx
+0x1404af7a6  mov r14, qword ptr [r8 + 8]
+0x1404af7aa  mov r15, qword ptr [r8 + 0x10]
+0x1404af7ae  mov rcx, r14
+0x1404af7b1  mov rdx, r15
+0x1404af7b4  call 0xffffffffffc2a960  =>file=0xffffffffffc2a960 VA=0x1000000013fc2c000
+0x1404af7b9  test rax, rax
+0x1404af7bc  setne al
+0x1404af7bf  test rdx, rdx
+0x1404af7c2  sete cl
+0x1404af7c5  test al, cl
+0x1404af7c7  je 0xc2d  =>file=0xc2d VA=0x14000182d
+0x1404af7c9  mov rcx, qword ptr [rsi + 0x18]
+0x1404af7cd  mov rdx, qword ptr [rsi + 0x20]
+0x1404af7d1  call 0xffffffffffc7efc0  =>file=0xffffffffffc7efc0 VA=0x1000000013fc80000
+0x1404af7d6  or qword ptr [rsi + 0x18], 0xffffffffffffffff
+0x1404af7db  jmp 0xc60  =>file=0xc60 VA=0x140001860
+0x1404af7dd  lea r12, [rsp + 0x28]
+0x1404af7e2  mov rcx, r12
+0x1404af7e5  mov rdx, r14
+0x1404af7e8  mov r8, r15
+0x1404af7eb  call 0xffffffffffb74ab0  =>file=0xffffffffffb74ab0 VA=0x1000000013fb76000
+0x1404af7f0  mov rcx, qword ptr [rsi + 0x18]
+0x1404af7f4  mov rdx, qword ptr [rsi + 0x20]
+0x1404af7f8  call 0xffffffffffc7efc0  =>file=0xffffffffffc7efc0 VA=0x1000000013fc80000
+0x1404af7fd  movups xmm0, xmmword ptr [r12]
+0x1404af802  movups xmm1, xmmword ptr [r12 + 0x10]
+0x1404af808  movups xmmword ptr [rsi + 0x28], xmm1
+0x1404af80c  movups xmmword ptr [rsi + 0x18], xmm0
+0x1404af810  mov ecx, 0xa0
+0x1404af815  rep movsb byte ptr [rdi], byte ptr [rsi]
+0x1404af817  mov rcx, qword ptr [rbx]
+0x1404af81a  mov rdx, r14
+0x1404af81d  add rsp, 0x48
+0x1404af821  pop rbx
+0x1404af822  pop rdi
+0x1404af823  pop rsi
+0x1404af824  pop r12
+0x1404af826  pop r14
+0x1404af828  pop r15
+0x1404af82a  jmp 0xffffffffffc228f0  =>file=0xffffffffffc228f0 VA=0x1000000013fc24000
+0x1404af82f  int3 
+0x1404af830  push r15
+0x1404af832  push r14
+0x1404af834  push r13
+0x1404af836  push r12
+0x1404af838  push rsi
+0x1404af839  push rdi
+0x1404af83a  push rbp
+0x1404af83b  push rbx
+0x1404af83c  sub rsp, 0x118
+0x1404af843  mov r14, rdx
+0x1404af846  mov rsi, rcx
+0x1404af849  mov rcx, r8
+0x1404af84c  call r9
+0x1404af84f  mov r15, rax
+0x1404af852  mov r12, rdx
+0x1404af855  lea rbx, [rsp + 0x68]
+0x1404af85a  mov rcx, rbx
+0x1404af85d  call 0xffffffffffc64fd0  =>file=0xffffffffffc64fd0 VA=0x1000000013fc66000
+0x1404af862  mov rbp, qword ptr [rbx]
+0x1404af865  mov rdi, qword ptr [rbx + 8]
+0x1404af869  mov rax, qword ptr [rbx + 0x10]
+0x1404af86d  mov qword ptr [rsp + 0x28], rax
+0x1404af872  mov rbx, qword ptr [rbx + 0x18]
+0x1404af876  lock inc qword ptr [r14]
+0x1404af87a  jle 0xdff  =>file=0xdff VA=0x1400019ff
+0x1404af880  lea r13, [r14 + 0x10]
+0x1404af884  mov ecx, 8
+0x1404af889  mov edx, 0x28
+0x1404af88e  call 0xffffffffffc22850  =>file=0xffffffffffc22850 VA=0x1000000013fc24000
+0x1404af893  mov qword ptr [rax], rbp
+0x1404af896  mov qword ptr [rax + 8], rdi
+0x1404af89a  mov qword ptr [rax + 0x10], r15
+0x1404af89e  mov qword ptr [rax + 0x18], r12
+0x1404af8a2  mov qword ptr [rax + 0x20], r14
+0x1404af8a6  lea r8, [rsp + 0x68]
+0x1404af8ab  mov qword ptr [r8 + 8], rax
+0x1404af8af  lea rax, [rip + 0x3b306a]  [tgt 0x140862920]
+0x1404af8b6  mov qword ptr [r8 + 0x10], rax
+0x1404af8ba  mov byte ptr [r8], 0x1d
+0x1404af8be  lea r14, [rsp + 0x50]
+0x1404af8c3  mov rcx, r14
+0x1404af8c6  mov rdx, r13
+0x1404af8c9  call 0x1dc1c0  =>file=0x1dc1c0 VA=0x1401dcdc0
+0x1404af8ce  mov r14, qword ptr [r14]
+0x1404af8d1  cmp r14, -1
+0x1404af8d5  je 0xd42  =>file=0xd42 VA=0x140001942
+0x1404af8d7  movups xmm0, xmmword ptr [rsp + 0x58]
+0x1404af8dc  movaps xmmword ptr [rsp + 0x30], xmm0
+0x1404af8e1  movabs r15, 0x800000000000000a
+0x1404af8eb  mov rdi, qword ptr [rsp + 0x28]
+0x1404af8f0  jmp 0xd8d  =>file=0xd8d VA=0x14000198d
+0x1404af8f2  lea r14, [rsp + 0x68]
+0x1404af8f7  mov rcx, r14
+0x1404af8fa  mov rdi, qword ptr [rsp + 0x28]
+0x1404af8ff  mov rdx, rdi
+0x1404af902  mov r8, rbx
+0x1404af905  call 0xfffffffffffb16a0  =>file=0xfffffffffffb16a0 VA=0x1000000013ffb2000
+0x1404af90a  mov r14, qword ptr [r14]
+0x1404af90d  cmp r14, -2
+0x1404af911  jne 0xd6f  =>file=0xd6f VA=0x14000196f
+0x1404af913  movabs r15, 0x800000000000001b
+0x1404af91d  jmp 0xd8d  =>file=0xd8d VA=0x14000198d
+0x1404af91f  mov rax, qword ptr [rsp + 0x80]
+0x1404af927  mov qword ptr [rsp + 0x40], rax
+0x1404af92c  movups xmm0, xmmword ptr [rsp + 0x70]
+0x1404af931  movaps xmmword ptr [rsp + 0x30], xmm0
+0x1404af936  mov r15, 0xffffffffffffffff
+0x1404af93d  mov rcx, rdi
+0x1404af940  mov rdx, rbx
+0x1404af943  call 0xfffffffffffb1f00  =>file=0xfffffffffffb1f00 VA=0x1000000013ffb3000
+0x1404af948  cmp r15, -1
+0x1404af94c  je 0xdb9  =>file=0xdb9 VA=0x1400019b9
+0x1404af94e  mov rax, qword ptr [rsp + 0x40]
+0x1404af953  mov qword ptr [rsi + 0x20], rax
+0x1404af957  movaps xmm0, xmmword ptr [rsp + 0x30]
+0x1404af95c  movups xmmword ptr [rsi + 0x10], xmm0
+0x1404af960  mov qword ptr [rsi], r15
+0x1404af963  mov qword ptr [rsi + 8], r14
+0x1404af967  jmp 0xdeb  =>file=0xdeb VA=0x1400019eb
+0x1404af969  cmp r14d, -1
+0x1404af96d  je 0xde1  =>file=0xde1 VA=0x1400019e1
+0x1404af96f  mov qword ptr [rsi + 8], r14
+0x1404af973  movaps xmm0, xmmword ptr [rsp + 0x30]
+0x1404af978  movups xmmword ptr [rsi + 0x10], xmm0
+0x1404af97c  mov rax, qword ptr [rsp + 0x40]
+0x1404af981  mov qword ptr [rsi + 0x20], rax
+0x1404af985  movabs rax, 0x800000000000001c
+0x1404af98f  jmp 0xde8  =>file=0xde8 VA=0x1400019e8
+0x1404af991  mov rax, 0xffffffffffffffff
+0x1404af998  mov qword ptr [rsi], rax
+0x1404af99b  add rsp, 0x118
+0x1404af9a2  pop rbx
+0x1404af9a3  pop rbp
+0x1404af9a4  pop rdi
+0x1404af9a5  pop rsi
+0x1404af9a6  pop r12
+0x1404af9a8  pop r13
+0x1404af9aa  pop r14
+0x1404af9ac  pop r15
+0x1404af9ae  ret 
+0x1404af9af  ud2 
+0x1404af9b1  int3 
+0x1404af9b2  int3 
+0x1404af9b3  int3 
+0x1404af9b4  int3 
+0x1404af9b5  int3 
+0x1404af9b6  int3 
+0x1404af9b7  int3 
+0x1404af9b8  int3 
+0x1404af9b9  int3 
+0x1404af9ba  int3 
+0x1404af9bb  int3 
+0x1404af9bc  int3 
+0x1404af9bd  int3 
+0x1404af9be  int3 
+0x1404af9bf  int3 
+0x1404af9c0  push rsi
+0x1404af9c1  sub rsp, 0x20
+0x1404af9c5  mov rsi, rcx
+0x1404af9c8  add rcx, 0x10
+0x1404af9cc  call 0xffffffffffffc5d0  =>file=0xffffffffffffc5d0 VA=0x1000000013fffe000
+0x1404af9d1  mov rcx, qword ptr [rsi]
+0x1404af9d4  mov rdx, qword ptr [rsi + 8]
+0x1404af9d8  call 0xfffffffffffb2d00  =>file=0xfffffffffffb2d00 VA=0x1000000013ffb4000
+0x1404af9dd  add rsi, 0x20
+0x1404af9e1  mov rcx, rsi
+0x1404af9e4  add rsp, 0x20
+0x1404af9e8  pop rsi
+0x1404af9e9  jmp 0xffffffffffc22840  =>file=0xffffffffffc22840 VA=0x1000000013fc24000
+0x1404af9ee  int3 
+0x1404af9ef  int3 
+0x1404af9f0  push r15
+0x1404af9f2  push r14
+0x1404af9f4  push r13
+0x1404af9f6  push r12
+0x1404af9f8  push rsi
+0x1404af9f9  push rdi
+0x1404af9fa  push rbx
+0x1404af9fb  sub rsp, 0x70
+0x1404af9ff  mov rsi, rcx
+0x1404afa02  lea rdi, [rcx + 0x10]
+0x1404afa06  mov rcx, qword ptr [rcx + 0x20]
+0x1404afa0a  lea rbx, [rsp + 0x30]
+0x1404afa0f  mov qword ptr [rbx], rcx
+0x1404afa12  add rcx, 0x10
+0x1404afa16  call 0xfffffffffffb1440  =>file=0xfffffffffffb1440 VA=0x1000000013ffb2000
+0x1404afa1b  mov r14, rax
+0x1404afa1e  mov rcx, rdi
+0x1404afa21  call 0xf10  =>file=0xf10 VA=0x140001b10
+0x1404afa26  mov rcx, rax
+0x1404afa29  call qword ptr [rdx + 0x18]
+0x1404afa2c  mov r15, rax
+0x1404afa2f  mov rcx, qword ptr [r14 + 8]
+0x1404afa33  mov r14, qword ptr [rdx + 0x18]
+0x1404afa37  add rcx, 0x10
+0x1404afa3b  lea rdx, [rip + 0x3904ce]  [tgt 0x14083ff10]  *ptr,len=75: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\muda-0.19.1\src\menu.rs"
+0x1404afa42  call 0x2236e0  =>file=0x2236e0 VA=0x1402242e0
+0x1404afa47  mov r12, rdx
+0x1404afa4a  and qword ptr [rsp + 0x20], 0
+0x1404afa50  lea r13, [rsp + 0x50]
+0x1404afa55  mov rcx, r13
+0x1404afa58  mov rdx, rax
+0x1404afa5b  mov r8, r15
+0x1404afa5e  mov r9, r14
+0x1404afa61  call 0xffffffffffc0bd00  =>file=0xffffffffffc0bd00 VA=0x1000000013fc0d000
+0x1404afa66  inc qword ptr [r12]
+0x1404afa6a  mov rcx, rbx
+0x1404afa6d  call 0xffffffffffc22840  =>file=0xffffffffffc22840 VA=0x1000000013fc24000
+0x1404afa72  mov rdx, qword ptr [rsi]
+0x1404afa75  mov r8, qword ptr [rsi + 8]
+0x1404afa79  lea rbx, [rsp + 0x30]
+0x1404afa7e  mov rcx, rbx
+0x1404afa81  mov r9, r13
+0x1404afa84  call 0xfffffffffffb2570  =>file=0xfffffffffffb2570 VA=0x1000000013ffb4000
+0x1404afa89  mov rcx, rbx
+0x1404afa8c  call 0xfffffffffffb2450  =>file=0xfffffffffffb2450 VA=0x1000000013ffb4000
+0x1404afa91  mov rcx, rdi
+0x1404afa94  call 0xffffffffffffc5d0  =>file=0xffffffffffffc5d0 VA=0x1000000013fffe000
+0x1404afa99  mov rcx, qword ptr [rsi]
+0x1404afa9c  mov rdx, qword ptr [rsi + 8]
+0x1404afaa0  call 0xfffffffffffb2d00  =>file=0xfffffffffffb2d00 VA=0x1000000013ffb4000
+0x1404afaa5  nop 
+0x1404afaa6  add rsp, 0x70
+0x1404afaaa  pop rbx
+0x1404afaab  pop rdi
+0x1404afaac  pop rsi
+0x1404afaad  pop r12
+0x1404afaaf  pop r13
+0x1404afab1  pop r14
+0x1404afab3  pop r15
+0x1404afab5  ret 
+0x1404afab6  int3 
+0x1404afab7  int3 
+0x1404afab8  int3 
+0x1404afab9  int3 
+0x1404afaba  int3 
+0x1404afabb  int3 
+0x1404afabc  int3 
+0x1404afabd  int3 
+0x1404afabe  int3 
+0x1404afabf  int3 
+0x1404afac0  mov rax, qword ptr [rcx]
+0x1404afac3  lea r8, [rip + 0xabb44a]  [tgt 0x140f6af14]
+0x1404afaca  movsxd rdx, dword ptr [r8 + rax*4]
+0x1404aface  add rdx, r8
+0x1404afad1  lea rax, [rcx + 8]
+0x1404afad5  ret 
+0x1404afad6  int3 
+0x1404afad7  int3 
+0x1404afad8  int3 
+0x1404afad9  int3 
+0x1404afada  int3 
+0x1404afadb  int3 
+0x1404afadc  int3 
+0x1404afadd  int3 
+0x1404afade  int3 
+0x1404afadf  int3 
+0x1404afae0  sub rsp, 0x28
+0x1404afae4  mov rcx, qword ptr [rcx]
+0x1404afae7  add rcx, 0x10
+0x1404afaeb  call 0xfffffffffffb1440  =>file=0xfffffffffffb1440 VA=0x1000000013ffb2000
+0x1404afaf0  lea rdx, [rip + 0xa1ac99]  [tgt 0x140eca790]
+0x1404afaf7  add rsp, 0x28
+0x1404afafb  ret 
+0x1404afafc  int3 
+0x1404afafd  int3 
+0x1404afafe  int3 
+0x1404afaff  int3 
+0x1404afb00  mov rdx, qword ptr [rcx]
+0x1404afb03  lock inc qword ptr [rdx]
+0x1404afb07  jle 0xf5c  =>file=0xf5c VA=0x140001b5c
+0x1404afb09  xor eax, eax
+0x1404afb0b  ret 
+0x1404afb0c  ud2 
+0x1404afb0e  int3 
+0x1404afb0f  int3 
+0x1404afb10  sub rsp, 0x28
+0x1404afb14  mov rcx, qword ptr [rcx]
+0x1404afb17  add rcx, 0x10
+0x1404afb1b  call 0xfffffffffffb1440  =>file=0xfffffffffffb1440 VA=0x1000000013ffb2000
+0x1404afb20  lea rdx, [rip + 0xa19d89]  [tgt 0x140ec98b0]
+0x1404afb27  add rsp, 0x28
+0x1404afb2b  ret 
+0x1404afb2c  int3 
+0x1404afb2d  int3 
+0x1404afb2e  int3 
+0x1404afb2f  int3 
+0x1404afb30  mov rdx, qword ptr [rcx]
+0x1404afb33  lock inc qword ptr [rdx]
+0x1404afb37  jle 0xf8f  =>file=0xf8f VA=0x140001b8f
+0x1404afb39  mov eax, 3
+0x1404afb3e  ret 
+0x1404afb3f  ud2 
+0x1404afb41  int3 
+0x1404afb42  int3 
+0x1404afb43  int3 
+0x1404afb44  int3 
+0x1404afb45  int3 
+0x1404afb46  int3 
+0x1404afb47  int3 
+0x1404afb48  int3 
+0x1404afb49  int3 
+0x1404afb4a  int3 
+0x1404afb4b  int3 
+0x1404afb4c  int3 
+0x1404afb4d  int3 
+0x1404afb4e  int3 
+0x1404afb4f  int3 
+0x1404afb50  sub rsp, 0x28
+0x1404afb54  mov rcx, qword ptr [rcx]
+0x1404afb57  add rcx, 0x10
+0x1404afb5b  call 0xfffffffffffb1440  =>file=0xfffffffffffb1440 VA=0x1000000013ffb2000
+0x1404afb60  lea rdx, [rip + 0xa19c99]  [tgt 0x140ec9800]
+0x1404afb67  add rsp, 0x28
+0x1404afb6b  ret 
+0x1404afb6c  int3 
+0x1404afb6d  int3 
+0x1404afb6e  int3 
+0x1404afb6f  int3 
+0x1404afb70  mov rdx, qword ptr [rcx]
+0x1404afb73  lock inc qword ptr [rdx]
+0x1404afb77  jle 0xfcf  =>file=0xfcf VA=0x140001bcf
+0x1404afb79  mov eax, 2
+0x1404afb7e  ret 
+0x1404afb7f  ud2 
+0x1404afb81  int3 
+0x1404afb82  int3 
+0x1404afb83  int3 
+0x1404afb84  int3 
+0x1404afb85  int3 
+0x1404afb86  int3 
+0x1404afb87  int3 
+0x1404afb88  int3 
+0x1404afb89  int3 
+0x1404afb8a  int3 
+0x1404afb8b  int3 
+0x1404afb8c  int3 
+0x1404afb8d  int3 
+0x1404afb8e  int3 
+0x1404afb8f  int3 
+0x1404afb90  mov eax, 0xa8
+0x1404afb95  add rax, qword ptr [rcx]
+0x1404afb98  ret 
+0x1404afb99  int3 
+0x1404afb9a  int3 
+0x1404afb9b  int3 
+0x1404afb9c  int3 
+0x1404afb9d  int3 
+0x1404afb9e  int3 
+0x1404afb9f  int3 
+0x1404afba0  sub rsp, 0x28
+0x1404afba4  mov rcx, qword ptr [rcx]
+0x1404afba7  add rcx, 0x10
+0x1404afbab  call 0xfffffffffffb1440  =>file=0xfffffffffffb1440 VA=0x1000000013ffb2000
+0x1404afbb0  lea rdx, [rip + 0xa1ada9]  [tgt 0x140eca960]
+0x1404afbb7  add rsp, 0x28
+0x1404afbbb  ret 
+0x1404afbbc  int3 
+0x1404afbbd  int3 
+0x1404afbbe  int3 
+0x1404afbbf  int3 
+0x1404afbc0  mov rdx, qword ptr [rcx]
+0x1404afbc3  lock inc qword ptr [rdx]
+0x1404afbc7  jle 0x101f  =>file=0x101f VA=0x140001c1f
+0x1404afbc9  mov eax, 1
+0x1404afbce  ret 
+0x1404afbcf  ud2 
+0x1404afbd1  int3 
+0x1404afbd2  int3 
+0x1404afbd3  int3 
+0x1404afbd4  int3 
+0x1404afbd5  int3 
+0x1404afbd6  int3 
+0x1404afbd7  int3 
+0x1404afbd8  int3 
+0x1404afbd9  int3 
+0x1404afbda  int3 
+0x1404afbdb  int3 
+0x1404afbdc  int3 
+0x1404afbdd  int3 
+0x1404afbde  int3 
+0x1404afbdf  int3 
+0x1404afbe0  sub rsp, 0x28
+0x1404afbe4  mov rcx, qword ptr [rcx]
+0x1404afbe7  add rcx, 0x10
+0x1404afbeb  call 0xfffffffffffb1440  =>file=0xfffffffffffb1440 VA=0x1000000013ffb2000
+0x1404afbf0  lea rdx, [rip + 0xa19ce9]  [tgt 0x140ec98e0]
+0x1404afbf7  add rsp, 0x28
+0x1404afbfb  ret 
+0x1404afbfc  int3 
+0x1404afbfd  int3 
+0x1404afbfe  int3 
+0x1404afbff  int3 
+0x1404afc00  mov rdx, qword ptr [rcx]
+0x1404afc03  lock inc qword ptr [rdx]
+0x1404afc07  jle 0x105f  =>file=0x105f VA=0x140001c5f
+0x1404afc09  mov eax, 4
+0x1404afc0e  ret 
+0x1404afc0f  ud2 
+0x1404afc11  int3 
+0x1404afc12  int3 
+0x1404afc13  int3 
+0x1404afc14  int3 
+0x1404afc15  int3 
+0x1404afc16  int3 
+0x1404afc17  int3 
+0x1404afc18  int3 
+0x1404afc19  int3 
+0x1404afc1a  int3 
+0x1404afc1b  int3 
+0x1404afc1c  int3 
+0x1404afc1d  int3 
+0x1404afc1e  int3 
+0x1404afc1f  int3 
+0x1404afc20  push r15
+0x1404afc22  push r14
+0x1404afc24  push r13
+0x1404afc26  push r12
+0x1404afc28  push rsi
+0x1404afc29  push rdi
+0x1404afc2a  push rbp
+0x1404afc2b  push rbx
+0x1404afc2c  sub rsp, 0x448
+0x1404afc33  mov r14, r8
+0x1404afc36  mov rbx, rcx
+0x1404afc39  test rdx, rdx
+0x1404afc3c  je 0x1211  =>file=0x1211 VA=0x140001e11
+0x1404afc42  cmp rdx, 1
+0x1404afc46  jne 0x13ba  =>file=0x13ba VA=0x140001fba
+0x1404afc4c  lea r12, [rsp + 0x68]
+0x1404afc51  or dword ptr [r12 + 8], 0xffffffff
+0x1404afc57  xorps xmm0, xmm0
+0x1404afc5a  lea r13, [rsp + 0x160]
+0x1404afc62  and qword ptr [r13 + 0x20], 0
+0x1404afc67  movaps xmmword ptr [r13 + 0x10], xmm0
+0x1404afc6c  movaps xmmword ptr [r13], xmm0
+0x1404afc71  lea rsi, [rsp + 0x90]
+0x1404afc79  and dword ptr [rsp + 0x90], 0
+0x1404afc81  mov rax, qword ptr [r14]
+0x1404afc84  mov r15, qword ptr [r14 + 8]
+0x1404afc88  mov rcx, rax
+0x1404afc8b  shr rcx, 1
+0x1404afc8e  mov ebp, ecx
+0x1404afc90  and ebp, 0x1f
+0x1404afc93  cmp rbp, 0x1f
+0x1404afc97  je 0x1131  =>file=0x1131 VA=0x140001d31
+0x1404afc99  lea rdi, [rax + 2]
+0x1404afc9d  test al, 1
+0x1404afc9f  jne 0x1117  =>file=0x1117 VA=0x140001d17
+0x1404afca1  lock or dword ptr [rsp], 0
+0x1404afca6  mov rdx, qword ptr [r14 + 0x80]
+0x1404afcad  mov r8, rdx
+0x1404afcb0  shr r8, 1
+0x1404afcb3  cmp rcx, r8
+0x1404afcb6  je 0x113b  =>file=0x113b VA=0x140001d3b
+0x1404afcb8  xor rdx, rax
+0x1404afcbb  xor ecx, ecx
+0x1404afcbd  cmp rdx, 0x40
+0x1404afcc1  setae cl
+0x1404afcc4  or rdi, rcx
+0x1404afcc7  test r15, r15
+0x1404afcca  je 0x1131  =>file=0x1131 VA=0x140001d31
+0x1404afccc  lock cmpxchg qword ptr [r14], rdi
+0x1404afcd1  je 0x14f6  =>file=0x14f6 VA=0x1400020f6
+0x1404afcd7  mov rcx, rsi
+0x1404afcda  call 0xffffffffffc2ba40  =>file=0xffffffffffc2ba40 VA=0x1000000013fc2c000
+0x1404afcdf  jmp 0x10d1  =>file=0x10d1 VA=0x140001cd1
+0x1404afce1  mov rcx, rsi
+0x1404afce4  call 0xffffffffffc2b840  =>file=0xffffffffffc2b840 VA=0x1000000013fc2c000
+0x1404afce9  jmp 0x10d1  =>file=0x10d1 VA=0x140001cd1
+0x1404afceb  test dl, 1
+0x1404afcee  jne 0x1765  =>file=0x1765 VA=0x140002365
+0x1404afcf4  mov edi, dword ptr [rsp + 0x70]
+0x1404afcf8  cmp edi, -1
+0x1404afcfb  je 0x1164  =>file=0x1164 VA=0x140001d64
+0x1404afcfd  mov r15, qword ptr [rsp + 0x68]
+0x1404afd02  call 0x1b2930  =>file=0x1b2930 VA=0x1401b3530
+0x1404afd07  cmp rax, r15
+0x1404afd0a  jne 0x115e  =>file=0x115e VA=0x140001d5e
+0x1404afd0c  cmp edx, edi
+0x1404afd0e  jae 0x17b8  =>file=0x17b8 VA=0x1400023b8
+0x1404afd14  call 0x1ee6a0  =>file=0x1ee6a0 VA=0x1401ef2a0
+0x1404afd19  test rax, rax
+0x1404afd1c  je 0x11d2  =>file=0x11d2 VA=0x140001dd2
+0x1404afd1e  mov r15, rax
+0x1404afd21  mov rdi, qword ptr [rax]
+0x1404afd24  and qword ptr [rax], 0
+0x1404afd28  test rdi, rdi
+0x1404afd2b  je 0x11d2  =>file=0x11d2 VA=0x140001dd2
+0x1404afd2d  mov qword ptr [rsp + 0x30], rdi
+0x1404afd32  mov qword ptr [rdi + 0x18], 0
+0x1404afd3a  mov qword ptr [rdi + 0x20], 0
+0x1404afd42  mov qword ptr [rsp + 0x90], r13
+0x1404afd4a  mov qword ptr [rsp + 0x98], r14
+0x1404afd52  mov qword ptr [rsp + 0xa0], r12
+0x1404afd5a  mov rcx, rsi
+0x1404afd5d  lea rdx, [rsp + 0x30]
+0x1404afd62  call 0xffffffffffc65ce0  =>file=0xffffffffffc65ce0 VA=0x1000000013fc67000
+0x1404afd67  mov rax, qword ptr [r15]
+0x1404afd6a  mov qword ptr [rsp + 0x90], rax
+0x1404afd72  mov qword ptr [r15], rdi
+0x1404afd75  mov rcx, rsi
+0x1404afd78  call 0x1ee970  =>file=0x1ee970 VA=0x1401ef570
+0x1404afd7d  jmp 0x10c9  =>file=0x10c9 VA=0x140001cc9
+0x1404afd82  call 0x307fa0  =>file=0x307fa0 VA=0x140308ba0
+0x1404afd87  mov qword ptr [rsp + 0x30], rax
+0x1404afd8c  mov qword ptr [rsp + 0x90], r13
+0x1404afd94  mov qword ptr [rsp + 0x98], r14
+0x1404afd9c  mov qword ptr [rsp + 0xa0], r12
+0x1404afda4  mov rcx, rsi
+0x1404afda7  lea rdi, [rsp + 0x30]
+0x1404afdac  mov rdx, rdi
+0x1404afdaf  call 0xffffffffffc65ce0  =>file=0xffffffffffc65ce0 VA=0x1000000013fc67000
+0x1404afdb4  mov rcx, rdi
+0x1404afdb7  call 0x1ee5a0  =>file=0x1ee5a0 VA=0x1401ef1a0
+0x1404afdbc  jmp 0x10c9  =>file=0x10c9 VA=0x140001cc9
+0x1404afdc1  lea r12, [rsp + 0x68]
+0x1404afdc6  or dword ptr [r12 + 8], 0xffffffff
+0x1404afdcc  xorps xmm0, xmm0
+0x1404afdcf  lea r13, [rsp + 0x160]
+0x1404afdd7  and qword ptr [r13 + 0x20], 0
+0x1404afddc  movaps xmmword ptr [r13 + 0x10], xmm0
+0x1404afde1  movaps xmmword ptr [r13], xmm0
+0x1404afde6  lea rsi, [rsp + 0x90]
+0x1404afdee  lea rdi, [rsp + 0x30]
+0x1404afdf3  and dword ptr [rsp + 0x90], 0
+0x1404afdfb  mov rdx, qword ptr [r14]
+0x1404afdfe  mov r9, qword ptr [r14 + 0x190]
+0x1404afe05  mov r8, qword ptr [r14 + 0x198]
+0x1404afe0c  dec r9
+0x1404afe0f  and r9, rdx
+0x1404afe12  xor eax, eax
+0x1404afe14  sub rax, qword ptr [r14 + 0x188]
+0x1404afe1b  imul rcx, r9, 0xc8
+0x1404afe22  mov r10, qword ptr [r8 + rcx + 0xc0]
+0x1404afe2a  lea r11, [rdx + 1]
+0x1404afe2e  cmp r11, r10
+0x1404afe31  jne 0x12ab  =>file=0x12ab VA=0x140001eab
+0x1404afe33  inc r9
+0x1404afe36  cmp r9, qword ptr [r14 + 0x180]
+0x1404afe3d  jb 0x129c  =>file=0x129c VA=0x140001e9c
+0x1404afe3f  and rax, rdx
+0x1404afe42  add rax, qword ptr [r14 + 0x188]
+0x1404afe49  mov r10, rax
+0x1404afe4c  mov rax, rdx
+0x1404afe4f  lock cmpxchg qword ptr [r14], r10
+0x1404afe54  jne 0x12d1  =>file=0x12d1 VA=0x140001ed1
+0x1404afe56  jmp 0x148d  =>file=0x148d VA=0x14000208d
+0x1404afe5b  cmp r10, rdx
+0x1404afe5e  jne 0x12de  =>file=0x12de VA=0x140001ede
+0x1404afe60  lock or dword ptr [rsp], 0
+0x1404afe65  mov rax, qword ptr [r14 + 0x80]
+0x1404afe6c  mov rcx, qword ptr [r14 + 0x190]
+0x1404afe73  mov r8, rcx
+0x1404afe76  not r8
+0x1404afe79  and r8, rax
+0x1404afe7c  cmp r8, rdx
+0x1404afe7f  je 0x12eb  =>file=0x12eb VA=0x140001eeb
+0x1404afe81  mov rcx, rsi
+0x1404afe84  call 0xffffffffffc2ba40  =>file=0xffffffffffc2ba40 VA=0x1000000013fc2c000
+0x1404afe89  jmp 0x124b  =>file=0x124b VA=0x140001e4b
+0x1404afe8e  mov rcx, rsi
+0x1404afe91  call 0xffffffffffc2b840  =>file=0xffffffffffc2b840 VA=0x1000000013fc2c000
+0x1404afe96  jmp 0x124b  =>file=0x124b VA=0x140001e4b
+0x1404afe9b  test rcx, rax
+0x1404afe9e  jne 0x176e  =>file=0x176e VA=0x14000236e
+0x1404afea4  mov ebp, dword ptr [rsp + 0x70]
+0x1404afea8  cmp ebp, -1
+0x1404afeab  je 0x1314  =>file=0x1314 VA=0x140001f14

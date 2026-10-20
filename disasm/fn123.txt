@@ -1,0 +1,1336 @@
+0x140191770  sub rsp, 0x38
+0x140191774  mov qword ptr [rsp + 0x30], rcx
+0x140191779  cmp rcx, 0xc
+0x14019177d  jne 0x14  =>file=0x14 VA=0x140000c14
+0x14019177f  add rsp, 0x38
+0x140191783  ret 
+0x140191784  lea rax, [rip + 0xd38fe5]  [tgt 0x140eca770]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\generic-array-0.14.7\src\lib.rs"
+0x14019178b  mov qword ptr [rsp + 0x28], rax
+0x140191790  lea r8, [rip + 0xd38ff1]  [tgt 0x140eca788]
+0x140191797  lea rdx, [rsp + 0x30]
+0x14019179c  xor ecx, ecx
+0x14019179e  xor r9d, r9d
+0x1401917a1  call 0x612ff0  =>file=0x612ff0 VA=0x140613bf0
+0x1401917a6  ud2 
+0x1401917a8  int3 
+0x1401917a9  int3 
+0x1401917aa  int3 
+0x1401917ab  int3 
+0x1401917ac  int3 
+0x1401917ad  int3 
+0x1401917ae  int3 
+0x1401917af  int3 
+0x1401917b0  push rsi
+0x1401917b1  sub rsp, 0x20
+0x1401917b5  mov rsi, rcx
+0x1401917b8  call 0x57de70  =>file=0x57de70 VA=0x14057ea70
+0x1401917bd  mov rcx, qword ptr [rsi]
+0x1401917c0  mov rdx, qword ptr [rsi + 8]
+0x1401917c4  add rsp, 0x20
+0x1401917c8  pop rsi
+0x1401917c9  jmp 0xfffffffffff3fd30  =>file=0xfffffffffff3fd30 VA=0x1000000013ff41000
+0x1401917ce  int3 
+0x1401917cf  int3 
+0x1401917d0  push r15
+0x1401917d2  push r14
+0x1401917d4  push rsi
+0x1401917d5  push rdi
+0x1401917d6  push rbx
+0x1401917d7  sub rsp, 0x110
+0x1401917de  movaps xmmword ptr [rsp + 0x100], xmm6
+0x1401917e6  mov rbx, r8
+0x1401917e9  mov rdi, rdx
+0x1401917ec  mov rsi, rcx
+0x1401917ef  xorps xmm6, xmm6
+0x1401917f2  lea r14, [rsp + 0x70]
+0x1401917f7  movaps xmmword ptr [r14], xmm6
+0x1401917fb  lea r9, [rip + 0xc17926]  [tgt 0x140da9128]  *ptr,len=77: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aes-gcm-0.10.3\src\lib.rs"
+0x140191802  mov ecx, 0xc
+0x140191807  mov r8d, 0x10
+0x14019180d  mov rdx, r14
+0x140191810  call 0xffffffffffe969d0  =>file=0xffffffffffe969d0 VA=0x1000000013fe98000
+0x140191815  lea rcx, [rip + 0xc17924]  [tgt 0x140da9140]  *ptr,len=77: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aes-gcm-0.10.3\src\lib.rs"
+0x14019181c  mov qword ptr [rsp + 0x20], rcx
+0x140191821  mov r9d, 0xc
+0x140191827  mov rcx, rax
+0x14019182a  mov r8, rbx
+0x14019182d  call 0xffffffffffe96810  =>file=0xffffffffffe96810 VA=0x1000000013fe98000
+0x140191832  mov byte ptr [r14 + 0xf], 1
+0x140191837  mov rax, qword ptr [r14]
+0x14019183a  mov ecx, dword ptr [r14 + 8]
+0x14019183e  movzx edx, word ptr [r14 + 0xc]
+0x140191843  mov r8b, byte ptr [r14 + 0xe]
+0x140191847  mov r9b, byte ptr [r14 + 0xf]
+0x14019184b  lea rbx, [rsp + 0x60]
+0x140191850  mov qword ptr [rbx], rax
+0x140191853  mov dword ptr [rbx + 8], ecx
+0x140191856  mov word ptr [rbx + 0xc], dx
+0x14019185a  mov byte ptr [rbx + 0xe], r8b
+0x14019185e  mov byte ptr [rbx + 0xf], r9b
+0x140191862  movaps xmmword ptr [r14], xmm6
+0x140191866  xor r14d, r14d
+0x140191869  lea r15, [rip + 0xd325f0]  [tgt 0x140ec3e60]  *ptr,len=82: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ctr-0.9.2\src\flavors\ctr32.rs"
+0x140191870  cmp r14, 0x10
+0x140191874  je 0x13c  =>file=0x13c VA=0x140000d3c
+0x140191876  mov r8d, 0x10
+0x14019187c  mov rcx, r14
+0x14019187f  mov rdx, rbx
+0x140191882  mov r9, r15
+0x140191885  call 0xffffffffffe942a0  =>file=0xffffffffffe942a0 VA=0x1000000013fe95000
+0x14019188a  cmp rdx, 3
+0x14019188e  jbe 0x1f4  =>file=0x1f4 VA=0x140000df4
+0x140191894  mov eax, dword ptr [rax]
+0x140191896  cmp r14, 0xc
+0x14019189a  mov ecx, eax
+0x14019189c  bswap ecx
+0x14019189e  cmovne ecx, eax
+0x1401918a1  mov dword ptr [rsp + r14 + 0x70], ecx
+0x1401918a6  add r14, 4
+0x1401918aa  jmp 0x100  =>file=0x100 VA=0x140000d00
+0x1401918ac  lea rdx, [rsp + 0x48]
+0x1401918b1  movaps xmm0, xmmword ptr [rsp + 0x70]
+0x1401918b6  movups xmmword ptr [rdx], xmm0
+0x1401918b9  mov qword ptr [rdx - 8], rdi
+0x1401918bd  and dword ptr [rdx + 0x10], 0
+0x1401918c1  xorps xmm6, xmm6
+0x1401918c4  movaps xmmword ptr [rsp + 0x30], xmm6
+0x1401918c9  mov al, byte ptr [rip + 0xe4e875]  [tgt 0x140fe0144]
+0x1401918cf  cmp al, 1
+0x1401918d1  jne 0x172  =>file=0x172 VA=0x140000d72
+0x1401918d3  lea r8, [rsp + 0x30]
+0x1401918d8  mov rcx, rdi
+0x1401918db  call 0x1630  =>file=0x1630 VA=0x140002230
+0x1401918e0  jmp 0x1c3  =>file=0x1c3 VA=0x140000dc3
+0x1401918e2  lea rbx, [rsp + 0xb0]
+0x1401918ea  mov rcx, rbx
+0x1401918ed  call 0x870  =>file=0x870 VA=0x140001470
+0x1401918f2  lea r14, [rsp + 0xc0]
+0x1401918fa  movaps xmmword ptr [r14 + 0x30], xmm6
+0x1401918ff  movaps xmmword ptr [r14 + 0x20], xmm6
+0x140191904  movaps xmmword ptr [r14 + 0x10], xmm6
+0x140191909  movaps xmmword ptr [r14], xmm6
+0x14019190d  mov rcx, r14
+0x140191910  mov rdx, rbx
+0x140191913  call 0x970  =>file=0x970 VA=0x140001570
+0x140191918  lea rbx, [rsp + 0x70]
+0x14019191d  mov rcx, rbx
+0x140191920  mov rdx, rdi
+0x140191923  mov r8, r14
+0x140191926  call 0xffffffffffe70780  =>file=0xffffffffffe70780 VA=0x1000000013fe72000
+0x14019192b  movups xmm0, xmmword ptr [rbx]
+0x14019192e  movaps xmmword ptr [rsp + 0x30], xmm0
+0x140191933  movups xmm0, xmmword ptr [rsp + 0x40]
+0x140191938  movups xmm1, xmmword ptr [rsp + 0x50]
+0x14019193d  movups xmmword ptr [rsi + 0x10], xmm1
+0x140191941  movups xmmword ptr [rsi], xmm0
+0x140191944  movaps xmm0, xmmword ptr [rsp + 0x30]
+0x140191949  movups xmmword ptr [rsi + 0x20], xmm0
+0x14019194d  movaps xmm6, xmmword ptr [rsp + 0x100]
+0x140191955  add rsp, 0x110
+0x14019195c  pop rbx
+0x14019195d  pop rdi
+0x14019195e  pop rsi
+0x14019195f  pop r14
+0x140191961  pop r15
+0x140191963  ret 
+0x140191964  mov r8, rdx
+0x140191967  lea r9, [rip + 0xd3250a]  [tgt 0x140ec3e78]  *ptr,len=82: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ctr-0.9.2\src\flavors\ctr32.rs"
+0x14019196e  mov edx, 4
+0x140191973  xor ecx, ecx
+0x140191975  call 0x613080  =>file=0x613080 VA=0x140613c80
+0x14019197a  ud2 
+0x14019197c  int3 
+0x14019197d  int3 
+0x14019197e  int3 
+0x14019197f  int3 
+0x140191980  push r15
+0x140191982  push r14
+0x140191984  push r12
+0x140191986  push rsi
+0x140191987  push rdi
+0x140191988  push rbx
+0x140191989  sub rsp, 0x98
+0x140191990  movaps xmmword ptr [rsp + 0x80], xmm6
+0x140191998  mov r15, r9
+0x14019199b  mov rdi, r8
+0x14019199e  mov rsi, rcx
+0x1401919a1  mov r14, qword ptr [rsp + 0xf0]
+0x1401919a9  mov al, byte ptr [rip + 0xe4e796]  [tgt 0x140fe0145]
+0x1401919af  movaps xmm0, xmmword ptr [rdx + 0x3c0]
+0x1401919b6  movaps xmm1, xmmword ptr [rdx + 0x3d0]
+0x1401919bd  lea rbx, [rsp + 0x60]
+0x1401919c2  movaps xmmword ptr [rbx], xmm0
+0x1401919c5  movaps xmmword ptr [rbx + 0x10], xmm1
+0x1401919c9  mov edx, 1
+0x1401919ce  mov rcx, rbx
+0x1401919d1  xor r8d, r8d
+0x1401919d4  call 0x1150  =>file=0x1150 VA=0x140001d50
+0x1401919d9  mov rcx, rbx
+0x1401919dc  mov rdx, r15
+0x1401919df  mov r8, r14
+0x1401919e2  call 0x1150  =>file=0x1150 VA=0x140001d50
+0x1401919e7  shl r14, 3
+0x1401919eb  xorps xmm6, xmm6
+0x1401919ee  lea rdx, [rsp + 0x50]
+0x1401919f3  movaps xmmword ptr [rdx], xmm6
+0x1401919f6  lea r9, [rip + 0xc176e3]  [tgt 0x140da90e0]  *ptr,len=77: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aes-gcm-0.10.3\src\lib.rs"
+0x1401919fd  mov ecx, 8
+0x140191a02  mov r8d, 0x10
+0x140191a08  call 0xffffffffffe969d0  =>file=0xffffffffffe969d0 VA=0x1000000013fe98000
+0x140191a0d  lea r15, [rsp + 0x40]
+0x140191a12  and qword ptr [r15], 0
+0x140191a16  lea rcx, [rip + 0xc176db]  [tgt 0x140da90f8]  *ptr,len=77: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aes-gcm-0.10.3\src\lib.rs"
+0x140191a1d  mov qword ptr [rsp + 0x20], rcx
+0x140191a22  mov r9d, 8
+0x140191a28  mov rcx, rax
+0x140191a2b  mov r8, r15
+0x140191a2e  call 0xffffffffffe96810  =>file=0xffffffffffe96810 VA=0x1000000013fe98000
+0x140191a33  lea r12, [rsp + 0x58]
+0x140191a38  bswap r14
+0x140191a3b  mov qword ptr [r15], r14
+0x140191a3e  lea rax, [rip + 0xc176cb]  [tgt 0x140da9110]  *ptr,len=77: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\aes-gcm-0.10.3\src\lib.rs"
+0x140191a45  mov qword ptr [rsp + 0x20], rax
+0x140191a4a  lea r14, [rsp + 0x40]
+0x140191a4f  mov edx, 8
+0x140191a54  mov r9d, 8
+0x140191a5a  mov rcx, r12
+0x140191a5d  mov r8, r14
+0x140191a60  call 0xffffffffffe96810  =>file=0xffffffffffe96810 VA=0x1000000013fe98000
+0x140191a65  movaps xmm0, xmmword ptr [r12 - 8]
+0x140191a6b  movaps xmmword ptr [r14], xmm0
+0x140191a6f  lea rdx, [rsp + 0x40]
+0x140191a74  mov r8d, 1
+0x140191a7a  mov rcx, rbx
+0x140191a7d  call 0x1200  =>file=0x1200 VA=0x140001e00
+0x140191a82  movaps xmm0, xmmword ptr [rbx + 0x10]
+0x140191a86  mov al, byte ptr [rip + 0xe4e6b9]  [tgt 0x140fe0145]
+0x140191a8c  cmp al, 1
+0x140191a8e  jne 0x364  =>file=0x364 VA=0x140000f64
+0x140191a90  movaps xmmword ptr [rsp + 0x30], xmm0
+0x140191a95  lea rcx, [rsp + 0x30]
+0x140191a9a  call 0x1600  =>file=0x1600 VA=0x140002200
+0x140191a9f  xor eax, eax
+0x140191aa1  cmp rax, 0x10
+0x140191aa5  je 0x343  =>file=0x343 VA=0x140000f43
+0x140191aa7  mov cl, byte ptr [rdi + rax]
+0x140191aaa  xor byte ptr [rsp + rax + 0x30], cl
+0x140191aae  inc rax
+0x140191ab1  jmp 0x331  =>file=0x331 VA=0x140000f31
+0x140191ab3  movaps xmm0, xmmword ptr [rsp + 0x30]
+0x140191ab8  movups xmmword ptr [rsi], xmm0
+0x140191abb  movaps xmm6, xmmword ptr [rsp + 0x80]
+0x140191ac3  add rsp, 0x98
+0x140191aca  pop rbx
+0x140191acb  pop rdi
+0x140191acc  pop rsi
+0x140191acd  pop r12
+0x140191acf  pop r14
+0x140191ad1  pop r15
+0x140191ad3  ret 
+0x140191ad4  movaps xmmword ptr [rsp + 0x30], xmm6
+0x140191ad9  movups xmmword ptr [rsp + 0x40], xmm0
+0x140191ade  xor eax, eax
+0x140191ae0  cmp rax, 2
+0x140191ae4  je 0x325  =>file=0x325 VA=0x140000f25
+0x140191ae6  mov rcx, qword ptr [rsp + rax*8 + 0x40]
+0x140191aeb  mov qword ptr [rsp + rax*8 + 0x30], rcx
+0x140191af0  inc rax
+0x140191af3  jmp 0x370  =>file=0x370 VA=0x140000f70
+0x140191af5  int3 
+0x140191af6  int3 
+0x140191af7  int3 
+0x140191af8  int3 
+0x140191af9  int3 
+0x140191afa  int3 
+0x140191afb  int3 
+0x140191afc  int3 
+0x140191afd  int3 
+0x140191afe  int3 
+0x140191aff  int3 
+0x140191b00  push r15
+0x140191b02  push r14
+0x140191b04  push rsi
+0x140191b05  push rdi
+0x140191b06  push rbx
+0x140191b07  sub rsp, 0x60
+0x140191b0b  mov rdi, rdx
+0x140191b0e  mov rbx, rcx
+0x140191b11  mov r14, qword ptr [rdx + 0x10]
+0x140191b15  mov rsi, r14
+0x140191b18  and rsi, 0xf
+0x140191b1c  je 0x3bb  =>file=0x3bb VA=0x140000fbb
+0x140191b1e  mov eax, dword ptr [rbx + 0x18]
+0x140191b21  not eax
+0x140191b23  cmp esi, eax
+0x140191b25  jae 0x488  =>file=0x488 VA=0x140001088
+0x140191b2b  cmp r14, 0x11
+0x140191b2f  jb 0x3fb  =>file=0x3fb VA=0x140000ffb
+0x140191b31  mov rax, qword ptr [rdi]
+0x140191b34  mov rcx, qword ptr [rdi + 8]
+0x140191b38  mov r8, r14
+0x140191b3b  shr r8, 4
+0x140191b3f  and r14, 0xfffffffffffffff0
+0x140191b43  lea r15, [rax + r14]
+0x140191b47  add r14, rcx
+0x140191b4a  lea rdx, [rsp + 0x38]
+0x140191b4f  mov qword ptr [rdx], rax
+0x140191b52  mov qword ptr [rdx + 8], rcx
+0x140191b56  mov qword ptr [rdx + 0x10], r8
+0x140191b5a  mov rcx, rbx
+0x140191b5d  call 0x4c0  =>file=0x4c0 VA=0x1400010c0
+0x140191b62  mov qword ptr [rdi], r15
+0x140191b65  mov qword ptr [rdi + 8], r14
+0x140191b69  jmp 0x3fe  =>file=0x3fe VA=0x140000ffe
+0x140191b6b  mov rsi, r14
+0x140191b6e  test rsi, rsi
+0x140191b71  je 0x47c  =>file=0x47c VA=0x14000107c
+0x140191b73  xorps xmm0, xmm0
+0x140191b76  lea r14, [rsp + 0x50]
+0x140191b7b  movaps xmmword ptr [r14], xmm0
+0x140191b7f  lea r9, [rip + 0xd38f1a]  [tgt 0x140ecaaa0]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cipher-0.4.4\src\stream_core.rs"
+0x140191b86  mov r8d, 0x10
+0x140191b8c  mov rcx, rsi
+0x140191b8f  mov rdx, r14
+0x140191b92  call 0xffffffffffe969d0  =>file=0xffffffffffe969d0 VA=0x1000000013fe98000
+0x140191b97  mov r8, qword ptr [rdi]
+0x140191b9a  lea rcx, [rip + 0xd38f17]  [tgt 0x140ecaab8]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cipher-0.4.4\src\stream_core.rs"
+0x140191ba1  mov qword ptr [rsp + 0x20], rcx
+0x140191ba6  mov rcx, rax
+0x140191ba9  mov r9, rsi
+0x140191bac  call 0xffffffffffe96810  =>file=0xffffffffffe96810 VA=0x1000000013fe98000
+0x140191bb1  lea rdx, [rsp + 0x38]
+0x140191bb6  mov qword ptr [rdx], r14
+0x140191bb9  mov qword ptr [rdx + 8], r14
+0x140191bbd  mov qword ptr [rdx + 0x10], 1
+0x140191bc5  mov rcx, rbx
+0x140191bc8  call 0x4c0  =>file=0x4c0 VA=0x1400010c0
+0x140191bcd  mov rcx, qword ptr [rdi + 8]
+0x140191bd1  lea rax, [rip + 0xd38ef8]  [tgt 0x140ecaad0]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cipher-0.4.4\src\stream_core.rs"
+0x140191bd8  mov qword ptr [rsp + 0x20], rax
+0x140191bdd  mov rdx, rsi
+0x140191be0  mov r8, r14
+0x140191be3  mov r9, rsi
+0x140191be6  call 0xffffffffffe96810  =>file=0xffffffffffe96810 VA=0x1000000013fe98000
+0x140191beb  nop 
+0x140191bec  add rsp, 0x60
+0x140191bf0  pop rbx
+0x140191bf1  pop rdi
+0x140191bf2  pop rsi
+0x140191bf3  pop r14
+0x140191bf5  pop r15
+0x140191bf7  ret 
+0x140191bf8  lea rax, [rip + 0xd38e89]  [tgt 0x140ecaa88]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cipher-0.4.4\src\stream_core.rs"
+0x140191bff  mov qword ptr [rsp + 0x20], rax
+0x140191c04  lea rcx, [rip + 0xdd427e]  [tgt 0x140f65e89] str="called `Result::unwrap()` on an `Err` value"
+0x140191c0b  lea r9, [rip + 0xc0fc3e]  [tgt 0x140da1850]
+0x140191c12  lea r8, [rsp + 0x37]
+0x140191c17  mov edx, 0x2b
+0x140191c1c  call 0x613260  =>file=0x613260 VA=0x140613e60
+0x140191c21  ud2 
+0x140191c23  int3 
+0x140191c24  int3 
+0x140191c25  int3 
+0x140191c26  int3 
+0x140191c27  int3 
+0x140191c28  int3 
+0x140191c29  int3 
+0x140191c2a  int3 
+0x140191c2b  int3 
+0x140191c2c  int3 
+0x140191c2d  int3 
+0x140191c2e  int3 
+0x140191c2f  int3 
+0x140191c30  push r15
+0x140191c32  push r14
+0x140191c34  push r13
+0x140191c36  push r12
+0x140191c38  push rsi
+0x140191c39  push rdi
+0x140191c3a  push rbp
+0x140191c3b  push rbx
+0x140191c3c  sub rsp, 0x198
+0x140191c43  movaps xmmword ptr [rsp + 0x180], xmm6
+0x140191c4b  lea rsi, [rcx + 8]
+0x140191c4f  mov qword ptr [rsp + 0x90], rsi
+0x140191c57  movups xmm0, xmmword ptr [rdx]
+0x140191c5a  movups xmmword ptr [rsp + 0x98], xmm0
+0x140191c62  mov rax, qword ptr [rdx + 0x10]
+0x140191c66  mov qword ptr [rsp + 0xa8], rax
+0x140191c6e  mov rdi, qword ptr [rcx]
+0x140191c71  mov al, byte ptr [rip + 0xe4e4cd]  [tgt 0x140fe0144]
+0x140191c77  cmp al, 1
+0x140191c79  jne 0x537  =>file=0x537 VA=0x140001137
+0x140191c7b  lea rdx, [rsp + 0x90]
+0x140191c83  mov rcx, rdi
+0x140191c86  call 0x9a0  =>file=0x9a0 VA=0x1400015a0
+0x140191c8b  movaps xmm6, xmmword ptr [rsp + 0x180]
+0x140191c93  add rsp, 0x198
+0x140191c9a  pop rbx
+0x140191c9b  pop rbp
+0x140191c9c  pop rdi
+0x140191c9d  pop rsi
+0x140191c9e  pop r12
+0x140191ca0  pop r13
+0x140191ca2  pop r14
+0x140191ca4  pop r15
+0x140191ca6  ret 
+0x140191ca7  mov rbp, qword ptr [rsp + 0x98]
+0x140191caf  mov r14, qword ptr [rsp + 0xa0]
+0x140191cb7  mov rax, qword ptr [rsp + 0xa8]
+0x140191cbf  mov qword ptr [rsp + 0x28], rax
+0x140191cc4  shr rax, 2
+0x140191cc8  mov qword ptr [rsp + 0x38], rax
+0x140191ccd  xor r13d, r13d
+0x140191cd0  xorps xmm6, xmm6
+0x140191cd3  lea r15, [rsp + 0x140]
+0x140191cdb  mov qword ptr [rsp + 0x40], rdi
+0x140191ce0  mov qword ptr [rsp + 0x30], r14
+0x140191ce5  cmp qword ptr [rsp + 0x38], r13
+0x140191cea  je 0x6de  =>file=0x6de VA=0x1400012de
+0x140191cf0  mov r14, rbp
+0x140191cf3  mov rbp, rdi
+0x140191cf6  movaps xmmword ptr [rsp + 0x120], xmm6
+0x140191cfe  movaps xmmword ptr [rsp + 0x110], xmm6
+0x140191d06  movaps xmmword ptr [rsp + 0x100], xmm6
+0x140191d0e  movaps xmmword ptr [rsp + 0xf0], xmm6
+0x140191d16  movaps xmmword ptr [rsp + 0x80], xmm6
+0x140191d1e  movaps xmmword ptr [rsp + 0x70], xmm6
+0x140191d23  movaps xmmword ptr [rsp + 0x60], xmm6
+0x140191d28  movaps xmmword ptr [rsp + 0x50], xmm6
+0x140191d2d  xor edi, edi
+0x140191d2f  cmp rdi, 0x40
+0x140191d33  je 0x5e6  =>file=0x5e6 VA=0x1400011e6
+0x140191d35  lea r12, [rdi + 0x10]
+0x140191d39  mov rcx, r15
+0x140191d3c  mov rdx, rsi
+0x140191d3f  call 0x870  =>file=0x870 VA=0x140001470
+0x140191d44  movups xmm0, xmmword ptr [rsp + 0x140]
+0x140191d4c  movups xmmword ptr [rsp + rdi + 0x50], xmm0
+0x140191d51  mov rdi, r12
+0x140191d54  jmp 0x5bf  =>file=0x5bf VA=0x1400011bf
+0x140191d56  mov r12, r13
+0x140191d59  shl r12, 6
+0x140191d5d  lea rbx, [rsp + 0xf0]
+0x140191d65  mov rcx, rbx
+0x140191d68  mov rdx, rbp
+0x140191d6b  lea rdi, [rsp + 0x50]
+0x140191d70  mov r8, rdi
+0x140191d73  call 0xffffffffffe70780  =>file=0xffffffffffe70780 VA=0x1000000013fe72000
+0x140191d78  mov rbp, r14
+0x140191d7b  movups xmm0, xmmword ptr [r14 + r12]
+0x140191d80  movups xmm1, xmmword ptr [r14 + r12 + 0x10]
+0x140191d86  movups xmm2, xmmword ptr [r14 + r12 + 0x20]
+0x140191d8c  movups xmm3, xmmword ptr [r14 + r12 + 0x30]
+0x140191d92  movaps xmmword ptr [rsp + 0x80], xmm3
+0x140191d9a  movaps xmmword ptr [rsp + 0x70], xmm2
+0x140191d9f  movaps xmmword ptr [rsp + 0x60], xmm1
+0x140191da4  movaps xmmword ptr [rsp + 0x50], xmm0
+0x140191da9  movaps xmmword ptr [rsp + 0xb0], xmm6
+0x140191db1  movaps xmmword ptr [rsp + 0xc0], xmm6
+0x140191db9  movaps xmmword ptr [rsp + 0xd0], xmm6
+0x140191dc1  movaps xmmword ptr [rsp + 0xe0], xmm6
+0x140191dc9  lea rax, [rsp + 0xb0]
+0x140191dd1  xor r8d, r8d
+0x140191dd4  mov r14, qword ptr [rsp + 0x30]
+0x140191dd9  cmp r8, 4
+0x140191ddd  je 0x69a  =>file=0x69a VA=0x14000129a
+0x140191ddf  xor r9d, r9d
+0x140191de2  cmp r9, 0x10
+0x140191de6  je 0x689  =>file=0x689 VA=0x140001289
+0x140191de8  mov r10b, byte ptr [rbx + r9]
+0x140191dec  xor r10b, byte ptr [rdi + r9]
+0x140191df0  mov byte ptr [rax + r9], r10b
+0x140191df4  inc r9
+0x140191df7  jmp 0x672  =>file=0x672 VA=0x140001272
+0x140191df9  inc r8
+0x140191dfc  add rdi, 0x10
+0x140191e00  add rbx, 0x10
+0x140191e04  add rax, 0x10
+0x140191e08  jmp 0x669  =>file=0x669 VA=0x140001269
+0x140191e0a  inc r13
+0x140191e0d  movaps xmm0, xmmword ptr [rsp + 0xb0]
+0x140191e15  movaps xmm1, xmmword ptr [rsp + 0xc0]
+0x140191e1d  movaps xmm2, xmmword ptr [rsp + 0xd0]
+0x140191e25  movaps xmm3, xmmword ptr [rsp + 0xe0]
+0x140191e2d  movups xmmword ptr [r14 + r12 + 0x30], xmm3
+0x140191e33  movups xmmword ptr [r14 + r12 + 0x20], xmm2
+0x140191e39  movups xmmword ptr [r14 + r12 + 0x10], xmm1
+0x140191e3f  movups xmmword ptr [r14 + r12], xmm0
+0x140191e44  mov rdi, qword ptr [rsp + 0x40]
+0x140191e49  jmp 0x575  =>file=0x575 VA=0x140001175
+0x140191e4e  mov r12, qword ptr [rsp + 0x28]
+0x140191e53  mov r13d, r12d
+0x140191e56  and r13d, 3
+0x140191e5a  xorps xmm6, xmm6
+0x140191e5d  lea rdx, [rsp + 0x140]
+0x140191e65  movaps xmmword ptr [rdx + 0x30], xmm6
+0x140191e69  movaps xmmword ptr [rdx + 0x20], xmm6
+0x140191e6d  movaps xmmword ptr [rdx + 0x10], xmm6
+0x140191e71  movaps xmmword ptr [rdx], xmm6
+0x140191e74  mov r8d, 4
+0x140191e7a  mov rcx, r13
+0x140191e7d  call 0x940  =>file=0x940 VA=0x140001540
+0x140191e82  cmp rdx, 4
+0x140191e86  jae 0x81d  =>file=0x81d VA=0x14000141d
+0x140191e8c  mov r15, rax
+0x140191e8f  mov qword ptr [rsp + 0x48], r13
+0x140191e94  shl r12, 4
+0x140191e98  and r12, 0xffffffffffffffc0
+0x140191e9c  add rbp, r12
+0x140191e9f  mov qword ptr [rsp + 0x28], rbp
+0x140191ea4  add r14, r12
+0x140191ea7  lea rbp, [rsp + 0x100]
+0x140191eaf  mov qword ptr [rsp + 0x30], rdx
+0x140191eb4  shl rdx, 4
+0x140191eb8  mov qword ptr [rsp + 0x38], rdx
+0x140191ebd  xor r12d, r12d
+0x140191ec0  cmp qword ptr [rsp + 0x38], r12
+0x140191ec5  je 0x7af  =>file=0x7af VA=0x1400013af
+0x140191ec7  lea r13, [r15 + r12]
+0x140191ecb  lea rbx, [rsp + 0x130]
+0x140191ed3  mov rcx, rbx
+0x140191ed6  mov rdx, rsi
+0x140191ed9  call 0x870  =>file=0x870 VA=0x140001470
+0x140191ede  lea rdi, [rsp + 0xf0]
+0x140191ee6  mov rcx, rdi
+0x140191ee9  mov rdx, rbx
+0x140191eec  call 0x970  =>file=0x970 VA=0x140001570
+0x140191ef1  movups xmmword ptr [rbp + 0x20], xmm6
+0x140191ef5  movups xmmword ptr [rbp + 0x10], xmm6
+0x140191ef9  movups xmmword ptr [rbp], xmm6
+0x140191efd  lea rcx, [rsp + 0x50]
+0x140191f02  mov rdx, qword ptr [rsp + 0x40]
+0x140191f07  mov r8, rdi
+0x140191f0a  call 0xffffffffffe70780  =>file=0xffffffffffe70780 VA=0x1000000013fe72000
+0x140191f0f  movups xmm0, xmmword ptr [rsp + 0x50]
+0x140191f14  movups xmmword ptr [r13], xmm0
+0x140191f19  add r12, 0x10
+0x140191f1d  jmp 0x750  =>file=0x750 VA=0x140001350
+0x140191f1f  xor ecx, ecx
+0x140191f21  xorps xmm0, xmm0
+0x140191f24  mov r9, qword ptr [rsp + 0x48]
+0x140191f29  mov rbx, qword ptr [rsp + 0x28]
+0x140191f2e  mov r10, qword ptr [rsp + 0x30]
+0x140191f33  cmp rcx, r9
+0x140191f36  je 0x51b  =>file=0x51b VA=0x14000111b
+0x140191f3c  cmp rcx, r10
+0x140191f3f  je 0x837  =>file=0x837 VA=0x140001437
+0x140191f41  lea rax, [rcx + 1]
+0x140191f45  shl rcx, 4
+0x140191f49  lea rdx, [r14 + rcx]
+0x140191f4d  movups xmm1, xmmword ptr [rbx + rcx]
+0x140191f51  movaps xmmword ptr [rsp + 0xf0], xmm1
+0x140191f59  movaps xmmword ptr [rsp + 0x50], xmm0
+0x140191f5e  xor ecx, ecx
+0x140191f60  cmp rcx, 0x10
+0x140191f64  je 0x80c  =>file=0x80c VA=0x14000140c
+0x140191f66  mov r8b, byte ptr [r15 + rcx]
+0x140191f6a  xor r8b, byte ptr [rsp + rcx + 0xf0]
+0x140191f72  mov byte ptr [rsp + rcx + 0x50], r8b
+0x140191f77  inc rcx
+0x140191f7a  jmp 0x7f0  =>file=0x7f0 VA=0x1400013f0
+0x140191f7c  movaps xmm1, xmmword ptr [rsp + 0x50]
+0x140191f81  movups xmmword ptr [rdx], xmm1
+0x140191f84  add r15, 0x10
+0x140191f88  mov rcx, rax
+0x140191f8b  jmp 0x7c3  =>file=0x7c3 VA=0x1400013c3
+0x140191f8d  lea rcx, [rip + 0xd38a9c]  [tgt 0x140ecaa30] str="assertion failed: blocks.len() < Self::ParBlocksSize::USIZE"
+0x140191f94  lea r8, [rip + 0xd38ad5]  [tgt 0x140ecaa70]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cipher-0.4.4\src\stream_core.rs"
+0x140191f9b  mov edx, 0x3b
+0x140191fa0  call 0x613160  =>file=0x613160 VA=0x140613d60
+0x140191fa5  ud2 
+0x140191fa7  lea r8, [rip + 0x6ce8da]  [tgt 0x140860888]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cipher-0.4.4\src\stream_core.rs"
+0x140191fae  mov rcx, r10
+0x140191fb1  mov rdx, r10
+0x140191fb4  call 0x612fb0  =>file=0x612fb0 VA=0x140613bb0
+0x140191fb9  ud2 
+0x140191fbb  int3 
+0x140191fbc  int3 
+0x140191fbd  int3 
+0x140191fbe  int3 
+0x140191fbf  int3 
+0x140191fc0  mov rcx, qword ptr [rdx]
+0x140191fc3  mov rax, qword ptr [rdx + 8]
+0x140191fc7  mov rax, qword ptr [rax + 0x18]
+0x140191fcb  lea rdx, [rip + 0xd3747e]  [tgt 0x140ec9450] str="StreamCipherErrorcargo\registry\src\index.crates.io-1949cf8c"
+0x140191fd2  mov r8d, 0x11
+0x140191fd8  jmp rax
+0x140191fdb  int3 
+0x140191fdc  int3 
+0x140191fdd  int3 
+0x140191fde  int3 
+0x140191fdf  int3 
+0x140191fe0  push r15
+0x140191fe2  push r14
+0x140191fe4  push r13
+0x140191fe6  push r12
+0x140191fe8  push rsi
+0x140191fe9  push rdi
+0x140191fea  push rbp
+0x140191feb  push rbx
+0x140191fec  sub rsp, 0x58
+0x140191ff0  mov rsi, rdx
+0x140191ff3  mov qword ptr [rsp + 0x38], rcx
+0x140191ff8  xorps xmm0, xmm0
+0x140191ffb  lea rbx, [rsp + 0x40]
+0x140192000  movaps xmmword ptr [rbx], xmm0
+0x140192003  mov eax, dword ptr [rdx + 0x10]
+0x140192006  mov edi, dword ptr [rdx + 0xc]
+0x140192009  mov dword ptr [rsp + 0x30], eax
+0x14019200d  add edi, eax
+0x14019200f  bswap edi
+0x140192011  xor r14d, r14d
+0x140192014  lea r15, [rip + 0xd31e75]  [tgt 0x140ec3e90]  *ptr,len=82: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ctr-0.9.2\src\flavors\ctr32.rs"
+0x14019201b  lea r12, [rip + 0xd31e86]  [tgt 0x140ec3ea8]  *ptr,len=82: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ctr-0.9.2\src\flavors\ctr32.rs"
+0x140192022  lea rbp, [rip + 0xd31e97]  [tgt 0x140ec3ec0]  *ptr,len=82: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\ctr-0.9.2\src\flavors\ctr32.rs"
+0x140192029  lea r13, [rsp + 0x34]
+0x14019202e  cmp r14, 0x10
+0x140192032  je 0x917  =>file=0x917 VA=0x140001517
+0x140192034  mov eax, edi
+0x140192036  cmp r14, 0xc
+0x14019203a  je 0x8d0  =>file=0x8d0 VA=0x1400014d0
+0x14019203c  mov eax, dword ptr [rsi + r14]
+0x140192040  mov dword ptr [rsp + 0x34], eax
+0x140192044  mov r8d, 0x10
+0x14019204a  mov rcx, r14
+0x14019204d  mov rdx, rbx
+0x140192050  mov r9, r15
+0x140192053  call 0xffffffffffe942a0  =>file=0xffffffffffe942a0 VA=0x1000000013fe95000
+0x140192058  mov r8, rdx
+0x14019205b  mov ecx, 4
+0x140192060  mov rdx, rax
+0x140192063  mov r9, r12
+0x140192066  call 0xffffffffffe969d0  =>file=0xffffffffffe969d0 VA=0x1000000013fe98000
+0x14019206b  mov qword ptr [rsp + 0x20], rbp
+0x140192070  mov r9d, 4
+0x140192076  mov rcx, rax
+0x140192079  mov r8, r13
+0x14019207c  call 0xffffffffffe96810  =>file=0xffffffffffe96810 VA=0x1000000013fe98000
+0x140192081  add r14, 4
+0x140192085  jmp 0x8be  =>file=0x8be VA=0x1400014be
+0x140192087  movaps xmm0, xmmword ptr [rsp + 0x40]
+0x14019208c  mov rax, qword ptr [rsp + 0x38]
+0x140192091  movups xmmword ptr [rax], xmm0
+0x140192094  mov eax, dword ptr [rsp + 0x30]
+0x140192098  inc eax
+0x14019209a  mov dword ptr [rsi + 0x10], eax
+0x14019209d  add rsp, 0x58
+0x1401920a1  pop rbx
+0x1401920a2  pop rbp
+0x1401920a3  pop rdi
+0x1401920a4  pop rsi
+0x1401920a5  pop r12
+0x1401920a7  pop r13
+0x1401920a9  pop r14
+0x1401920ab  pop r15
+0x1401920ad  ret 
+0x1401920ae  int3 
+0x1401920af  int3 
+0x1401920b0  sub rsp, 0x28
+0x1401920b4  mov rax, rdx
+0x1401920b7  mov rdx, rcx
+0x1401920ba  cmp rcx, r8
+0x1401920bd  ja 0x954  =>file=0x954 VA=0x140001554
+0x1401920bf  add rsp, 0x28
+0x1401920c3  ret 
+0x1401920c4  lea r9, [rip + 0x6ce7a5]  [tgt 0x140860870]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cipher-0.4.4\src\stream_core.rs"
+0x1401920cb  xor ecx, ecx
+0x1401920cd  call 0x613080  =>file=0x613080 VA=0x140613c80
+0x1401920d2  ud2 
+0x1401920d4  int3 
+0x1401920d5  int3 
+0x1401920d6  int3 
+0x1401920d7  int3 
+0x1401920d8  int3 
+0x1401920d9  int3 
+0x1401920da  int3 
+0x1401920db  int3 
+0x1401920dc  int3 
+0x1401920dd  int3 
+0x1401920de  int3 
+0x1401920df  int3 
+0x1401920e0  sub rsp, 0x18
+0x1401920e4  xor eax, eax
+0x1401920e6  cmp rax, 0x10
+0x1401920ea  je 0x989  =>file=0x989 VA=0x140001589
+0x1401920ec  mov r8b, byte ptr [rdx + rax]
+0x1401920f0  mov byte ptr [rsp + rax], r8b
+0x1401920f4  inc rax
+0x1401920f7  jmp 0x976  =>file=0x976 VA=0x140001576
+0x1401920f9  movups xmm0, xmmword ptr [rsp]
+0x1401920fd  movups xmmword ptr [rcx], xmm0
+0x140192100  add rsp, 0x18
+0x140192104  ret 
+0x140192105  int3 
+0x140192106  int3 
+0x140192107  int3 
+0x140192108  int3 
+0x140192109  int3 
+0x14019210a  int3 
+0x14019210b  int3 
+0x14019210c  int3 
+0x14019210d  int3 
+0x14019210e  int3 
+0x14019210f  int3 
+0x140192110  push r15
+0x140192112  push r14
+0x140192114  push r13
+0x140192116  push r12
+0x140192118  push rsi
+0x140192119  push rdi
+0x14019211a  push rbp
+0x14019211b  push rbx
+0x14019211c  sub rsp, 0x398
+0x140192123  movaps xmmword ptr [rsp + 0x380], xmm15
+0x14019212c  movaps xmmword ptr [rsp + 0x370], xmm14
+0x140192135  movaps xmmword ptr [rsp + 0x360], xmm13
+0x14019213e  movaps xmmword ptr [rsp + 0x350], xmm12
+0x140192147  movaps xmmword ptr [rsp + 0x340], xmm11
+0x140192150  movaps xmmword ptr [rsp + 0x330], xmm10
+0x140192159  movaps xmmword ptr [rsp + 0x320], xmm9
+0x140192162  movaps xmmword ptr [rsp + 0x310], xmm8
+0x14019216b  movaps xmmword ptr [rsp + 0x300], xmm7
+0x140192173  movaps xmmword ptr [rsp + 0x2f0], xmm6
+0x14019217b  mov r14, qword ptr [rdx]
+0x14019217e  mov rax, qword ptr [rdx + 8]
+0x140192182  mov qword ptr [rsp + 0x38], rax
+0x140192187  mov rax, qword ptr [rdx + 0x10]
+0x14019218b  mov qword ptr [rsp + 0x30], rax
+0x140192190  mov rbx, qword ptr [rdx + 0x18]
+0x140192194  mov qword ptr [rsp + 0x28], rbx
+0x140192199  shr rbx, 3
+0x14019219d  movaps xmm0, xmmword ptr [rcx]
+0x1401921a0  movaps xmmword ptr [rsp + 0x130], xmm0
+0x1401921a8  movdqa xmm0, xmmword ptr [rcx + 0x10]
+0x1401921ad  movdqa xmm1, xmmword ptr [rcx + 0x20]
+0x1401921b2  movaps xmm2, xmmword ptr [rcx + 0x30]
+0x1401921b6  movaps xmmword ptr [rsp + 0x100], xmm2
+0x1401921be  movaps xmm2, xmmword ptr [rcx + 0x40]
+0x1401921c2  movaps xmmword ptr [rsp + 0xf0], xmm2
+0x1401921ca  movdqa xmm11, xmmword ptr [rcx + 0x50]
+0x1401921d0  movdqa xmm12, xmmword ptr [rcx + 0x60]
+0x1401921d6  movdqa xmm13, xmmword ptr [rcx + 0x70]
+0x1401921dc  movdqa xmm14, xmmword ptr [rcx + 0x80]
+0x1401921e5  movdqa xmm15, xmmword ptr [rcx + 0x90]
+0x1401921ee  movdqa xmm6, xmmword ptr [rcx + 0xa0]
+0x1401921f6  movdqa xmm7, xmmword ptr [rcx + 0xb0]
+0x1401921fe  movdqa xmm8, xmmword ptr [rcx + 0xc0]
+0x140192207  movdqa xmm9, xmmword ptr [rcx + 0xd0]
+0x140192210  mov qword ptr [rsp + 0xd8], rcx
+0x140192218  movdqa xmm10, xmmword ptr [rcx + 0xe0]
+0x140192221  xor r15d, r15d
+0x140192224  lea r13, [rsp + 0x40]
+0x140192229  lea rbp, [rsp + 0x270]
+0x140192231  movdqa xmmword ptr [rsp + 0x120], xmm0
+0x14019223a  movdqa xmmword ptr [rsp + 0x110], xmm1
+0x140192243  cmp rbx, r15
+0x140192246  je 0xedb  =>file=0xedb VA=0x140001adb
+0x14019224c  lea rcx, [rsp + 0x1f0]
+0x140192254  call 0x1080  =>file=0x1080 VA=0x140001c80
+0x140192259  lea rcx, [rsp + 0x170]
+0x140192261  call 0x1080  =>file=0x1080 VA=0x140001c80
+0x140192266  xor esi, esi
+0x140192268  cmp rsi, 0x80
+0x14019226f  je 0xb24  =>file=0xb24 VA=0x140001724
+0x140192271  lea rdi, [rsi + 0x10]
+0x140192275  mov rcx, r13
+0x140192278  mov rdx, r14
+0x14019227b  call 0x870  =>file=0x870 VA=0x140001470
+0x140192280  movdqu xmm0, xmmword ptr [rsp + 0x40]
+0x140192286  movdqu xmmword ptr [rsp + rsi + 0x170], xmm0
+0x14019228f  mov rsi, rdi
+0x140192292  jmp 0xaf8  =>file=0xaf8 VA=0x1400016f8
+0x140192294  movaps xmm0, xmmword ptr [rsp + 0x170]
+0x14019229c  movaps xmm1, xmmword ptr [rsp + 0x130]
+0x1401922a4  xorps xmm0, xmm1
+0x1401922a7  movaps xmmword ptr [rsp + 0x40], xmm0
+0x1401922ac  movaps xmm0, xmmword ptr [rsp + 0x180]
+0x1401922b4  xorps xmm0, xmm1
+0x1401922b7  movaps xmmword ptr [rsp + 0x50], xmm0
+0x1401922bc  movaps xmm0, xmmword ptr [rsp + 0x190]
+0x1401922c4  xorps xmm0, xmm1
+0x1401922c7  movaps xmmword ptr [rsp + 0x60], xmm0
+0x1401922cc  movaps xmm0, xmmword ptr [rsp + 0x1a0]
+0x1401922d4  xorps xmm0, xmm1
+0x1401922d7  movaps xmmword ptr [rsp + 0x70], xmm0
+0x1401922dc  movaps xmm0, xmmword ptr [rsp + 0x1b0]
+0x1401922e4  xorps xmm0, xmm1
+0x1401922e7  movaps xmmword ptr [rsp + 0x80], xmm0
+0x1401922ef  movaps xmm0, xmmword ptr [rsp + 0x1c0]
+0x1401922f7  xorps xmm0, xmm1
+0x1401922fa  movaps xmmword ptr [rsp + 0x90], xmm0
+0x140192302  movaps xmm0, xmmword ptr [rsp + 0x1d0]
+0x14019230a  xorps xmm0, xmm1
+0x14019230d  movaps xmmword ptr [rsp + 0xa0], xmm0
+0x140192315  movaps xmm0, xmmword ptr [rsp + 0x1e0]
+0x14019231d  xorps xmm0, xmm1
+0x140192320  movaps xmmword ptr [rsp + 0xb0], xmm0
+0x140192328  xor eax, eax
+0x14019232a  mov rcx, qword ptr [rsp + 0x38]
+0x14019232f  movdqa xmm1, xmmword ptr [rsp + 0x120]
+0x140192338  cmp rax, 0x80
+0x14019233e  je 0xbe7  =>file=0xbe7 VA=0x1400017e7
+0x140192340  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x140192346  aesenc xmm0, xmm1
+0x14019234b  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x140192351  add rax, 0x10
+0x140192355  jmp 0xbc8  =>file=0xbc8 VA=0x1400017c8
+0x140192357  xor eax, eax
+0x140192359  movdqa xmm1, xmmword ptr [rsp + 0x110]
+0x140192362  cmp rax, 0x80
+0x140192368  je 0xc11  =>file=0xc11 VA=0x140001811
+0x14019236a  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x140192370  aesenc xmm0, xmm1
+0x140192375  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x14019237b  add rax, 0x10
+0x14019237f  jmp 0xbf2  =>file=0xbf2 VA=0x1400017f2
+0x140192381  xor eax, eax
+0x140192383  movdqa xmm1, xmmword ptr [rsp + 0x100]
+0x14019238c  cmp rax, 0x80
+0x140192392  je 0xc3b  =>file=0xc3b VA=0x14000183b
+0x140192394  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x14019239a  aesenc xmm0, xmm1
+0x14019239f  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x1401923a5  add rax, 0x10
+0x1401923a9  jmp 0xc1c  =>file=0xc1c VA=0x14000181c
+0x1401923ab  xor eax, eax
+0x1401923ad  movdqa xmm1, xmmword ptr [rsp + 0xf0]
+0x1401923b6  cmp rax, 0x80
+0x1401923bc  je 0xc65  =>file=0xc65 VA=0x140001865
+0x1401923be  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x1401923c4  aesenc xmm0, xmm1
+0x1401923c9  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x1401923cf  add rax, 0x10
+0x1401923d3  jmp 0xc46  =>file=0xc46 VA=0x140001846
+0x1401923d5  xor eax, eax
+0x1401923d7  cmp rax, 0x80
+0x1401923dd  je 0xc87  =>file=0xc87 VA=0x140001887
+0x1401923df  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x1401923e5  aesenc xmm0, xmm11
+0x1401923eb  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x1401923f1  add rax, 0x10
+0x1401923f5  jmp 0xc67  =>file=0xc67 VA=0x140001867
+0x1401923f7  xor eax, eax
+0x1401923f9  cmp rax, 0x80
+0x1401923ff  je 0xca9  =>file=0xca9 VA=0x1400018a9
+0x140192401  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x140192407  aesenc xmm0, xmm12
+0x14019240d  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x140192413  add rax, 0x10
+0x140192417  jmp 0xc89  =>file=0xc89 VA=0x140001889
+0x140192419  xor eax, eax
+0x14019241b  cmp rax, 0x80
+0x140192421  je 0xccb  =>file=0xccb VA=0x1400018cb
+0x140192423  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x140192429  aesenc xmm0, xmm13
+0x14019242f  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x140192435  add rax, 0x10
+0x140192439  jmp 0xcab  =>file=0xcab VA=0x1400018ab
+0x14019243b  xor eax, eax
+0x14019243d  cmp rax, 0x80
+0x140192443  je 0xced  =>file=0xced VA=0x1400018ed
+0x140192445  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x14019244b  aesenc xmm0, xmm14
+0x140192451  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x140192457  add rax, 0x10
+0x14019245b  jmp 0xccd  =>file=0xccd VA=0x1400018cd
+0x14019245d  xor eax, eax
+0x14019245f  cmp rax, 0x80
+0x140192465  je 0xd0f  =>file=0xd0f VA=0x14000190f
+0x140192467  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x14019246d  aesenc xmm0, xmm15
+0x140192473  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x140192479  add rax, 0x10
+0x14019247d  jmp 0xcef  =>file=0xcef VA=0x1400018ef
+0x14019247f  xor eax, eax
+0x140192481  cmp rax, 0x80
+0x140192487  je 0xd30  =>file=0xd30 VA=0x140001930
+0x140192489  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x14019248f  aesenc xmm0, xmm6
+0x140192494  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x14019249a  add rax, 0x10
+0x14019249e  jmp 0xd11  =>file=0xd11 VA=0x140001911
+0x1401924a0  xor eax, eax
+0x1401924a2  cmp rax, 0x80
+0x1401924a8  je 0xd51  =>file=0xd51 VA=0x140001951
+0x1401924aa  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x1401924b0  aesenc xmm0, xmm7
+0x1401924b5  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x1401924bb  add rax, 0x10
+0x1401924bf  jmp 0xd32  =>file=0xd32 VA=0x140001932
+0x1401924c1  xor eax, eax
+0x1401924c3  cmp rax, 0x80
+0x1401924c9  je 0xd73  =>file=0xd73 VA=0x140001973
+0x1401924cb  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x1401924d1  aesenc xmm0, xmm8
+0x1401924d7  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x1401924dd  add rax, 0x10
+0x1401924e1  jmp 0xd53  =>file=0xd53 VA=0x140001953
+0x1401924e3  xor eax, eax
+0x1401924e5  cmp rax, 0x80
+0x1401924eb  je 0xd95  =>file=0xd95 VA=0x140001995
+0x1401924ed  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x1401924f3  aesenc xmm0, xmm9
+0x1401924f9  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x1401924ff  add rax, 0x10
+0x140192503  jmp 0xd75  =>file=0xd75 VA=0x140001975
+0x140192505  xor eax, eax
+0x140192507  cmp rax, 0x80
+0x14019250d  je 0xdb7  =>file=0xdb7 VA=0x1400019b7
+0x14019250f  movdqa xmm0, xmmword ptr [rsp + rax + 0x40]
+0x140192515  aesenclast xmm0, xmm10
+0x14019251b  movdqa xmmword ptr [rsp + rax + 0x40], xmm0
+0x140192521  add rax, 0x10
+0x140192525  jmp 0xd97  =>file=0xd97 VA=0x140001997
+0x140192527  mov r12, r15
+0x14019252a  shl r12, 7
+0x14019252e  lea rsi, [rcx + r12]
+0x140192532  movaps xmm0, xmmword ptr [rsp + 0x40]
+0x140192537  movaps xmmword ptr [rsp + 0x150], xmm0
+0x14019253f  movdqa xmm1, xmmword ptr [rsp + 0x50]
+0x140192545  movaps xmm2, xmmword ptr [rsp + 0x60]
+0x14019254a  movaps xmm3, xmmword ptr [rsp + 0x70]
+0x14019254f  movaps xmm4, xmmword ptr [rsp + 0x80]
+0x140192557  movaps xmm5, xmmword ptr [rsp + 0x90]
+0x14019255f  movaps xmm0, xmmword ptr [rsp + 0xa0]
+0x140192567  movaps xmmword ptr [rsp + 0xc0], xmm0
+0x14019256f  movaps xmm0, xmmword ptr [rsp + 0xb0]
+0x140192577  movaps xmmword ptr [rsp + 0x140], xmm0
+0x14019257f  movaps xmm0, xmmword ptr [rsp + 0x150]
+0x140192587  movaps xmmword ptr [rsp + 0x1f0], xmm0
+0x14019258f  movdqa xmmword ptr [rsp + 0x200], xmm1
+0x140192598  movaps xmmword ptr [rsp + 0x210], xmm2
+0x1401925a0  movaps xmmword ptr [rsp + 0x220], xmm3
+0x1401925a8  movaps xmmword ptr [rsp + 0x230], xmm4
+0x1401925b0  movaps xmmword ptr [rsp + 0x240], xmm5
+0x1401925b8  movaps xmm0, xmmword ptr [rsp + 0xc0]
+0x1401925c0  movaps xmmword ptr [rsp + 0x250], xmm0
+0x1401925c8  movdqa xmm0, xmmword ptr [rsp + 0x140]
+0x1401925d1  movdqa xmmword ptr [rsp + 0x260], xmm0
+0x1401925da  mov ecx, 0x80
+0x1401925df  mov rdi, r13
+0x1401925e2  rep movsb byte ptr [rdi], byte ptr [rsi]
+0x1401925e4  mov rcx, rbp
+0x1401925e7  call 0x1080  =>file=0x1080 VA=0x140001c80
+0x1401925ec  mov rax, rbp
+0x1401925ef  lea rcx, [rsp + 0x1f0]
+0x1401925f7  mov rdx, r13
+0x1401925fa  xor r8d, r8d
+0x1401925fd  mov r11, qword ptr [rsp + 0x30]
+0x140192602  cmp r8, 8
+0x140192606  je 0xec3  =>file=0xec3 VA=0x140001ac3
+0x140192608  xor r9d, r9d
+0x14019260b  cmp r9, 0x10
+0x14019260f  je 0xeb2  =>file=0xeb2 VA=0x140001ab2
+0x140192611  mov r10b, byte ptr [rcx + r9]
+0x140192615  xor r10b, byte ptr [rdx + r9]
+0x140192619  mov byte ptr [rax + r9], r10b
+0x14019261d  inc r9
+0x140192620  jmp 0xe9b  =>file=0xe9b VA=0x140001a9b
+0x140192622  inc r8
+0x140192625  add rdx, 0x10
+0x140192629  add rcx, 0x10
+0x14019262d  add rax, 0x10
+0x140192631  jmp 0xe92  =>file=0xe92 VA=0x140001a92
+0x140192633  add r12, r11
+0x140192636  inc r15
+0x140192639  mov ecx, 0x80
+0x14019263e  mov rdi, r12
+0x140192641  mov rsi, rbp
+0x140192644  rep movsb byte ptr [rdi], byte ptr [rsi]
+0x140192646  jmp 0xad3  =>file=0xad3 VA=0x1400016d3
+0x14019264b  mov rsi, qword ptr [rsp + 0x28]
+0x140192650  and esi, 7
+0x140192653  lea rdi, [rsp + 0x40]
+0x140192658  mov rcx, rdi
+0x14019265b  call 0x1080  =>file=0x1080 VA=0x140001c80
+0x140192660  mov r8d, 8
+0x140192666  mov qword ptr [rsp + 0xc0], rsi
+0x14019266e  mov rcx, rsi
+0x140192671  mov rdx, rdi
+0x140192674  call 0x940  =>file=0x940 VA=0x140001540
+0x140192679  mov r15, rax
+0x14019267c  mov rbx, rdx
+0x14019267f  mov rdi, rdx
+0x140192682  shl rdi, 4
+0x140192686  lea r12, [rsp + 0x170]
+0x14019268e  lea r13, [rsp + 0x160]
+0x140192696  mov rbp, rax
+0x140192699  test rdi, rdi
+0x14019269c  je 0xf6b  =>file=0xf6b VA=0x140001b6b
+0x14019269e  lea rsi, [rbp + 0x10]
+0x1401926a2  mov rcx, r12
+0x1401926a5  mov rdx, r14
+0x1401926a8  call 0x870  =>file=0x870 VA=0x140001470
+0x1401926ad  movdqa xmm0, xmmword ptr [rsp + 0x170]
+0x1401926b6  movdqa xmmword ptr [rsp + 0x160], xmm0
+0x1401926bf  mov rcx, qword ptr [rsp + 0xd8]
+0x1401926c7  mov rdx, r13
+0x1401926ca  mov r8, rbp
+0x1401926cd  call 0x10d0  =>file=0x10d0 VA=0x140001cd0
+0x1401926d2  add rdi, -0x10
+0x1401926d6  mov rbp, rsi
+0x1401926d9  jmp 0xf29  =>file=0xf29 VA=0x140001b29
+0x1401926db  mov rax, qword ptr [rsp + 0x28]
+0x1401926e0  shl rax, 4
+0x1401926e4  and rax, 0xffffffffffffff80
+0x1401926e8  mov r9, qword ptr [rsp + 0x38]
+0x1401926ed  add r9, rax
+0x1401926f0  mov r10, qword ptr [rsp + 0x30]
+0x1401926f5  add r10, rax
+0x1401926f8  xor ecx, ecx
+0x1401926fa  pxor xmm0, xmm0
+0x1401926fe  mov r11, qword ptr [rsp + 0xc0]
+0x140192706  cmp rcx, r11
+0x140192709  je 0xfff  =>file=0xfff VA=0x140001bff
+0x14019270b  cmp rcx, rbx
+0x14019270e  je 0x106b  =>file=0x106b VA=0x140001c6b
+0x140192714  lea rax, [rcx + 1]
+0x140192718  shl rcx, 4
+0x14019271c  lea rdx, [r10 + rcx]
+0x140192720  movdqu xmm1, xmmword ptr [r9 + rcx]
+0x140192726  movdqa xmmword ptr [rsp + 0x170], xmm1
+0x14019272f  movdqa xmmword ptr [rsp + 0xe0], xmm0
+0x140192738  xor ecx, ecx
+0x14019273a  cmp rcx, 0x10
+0x14019273e  je 0xfe9  =>file=0xfe9 VA=0x140001be9
+0x140192740  mov r8b, byte ptr [r15 + rcx]
+0x140192744  xor r8b, byte ptr [rsp + rcx + 0x170]
+0x14019274c  mov byte ptr [rsp + rcx + 0xe0], r8b
+0x140192754  inc rcx
+0x140192757  jmp 0xfca  =>file=0xfca VA=0x140001bca
+0x140192759  movdqa xmm1, xmmword ptr [rsp + 0xe0]
+0x140192762  movdqu xmmword ptr [rdx], xmm1
+0x140192766  add r15, 0x10
+0x14019276a  mov rcx, rax
+0x14019276d  jmp 0xf96  =>file=0xf96 VA=0x140001b96
+0x14019276f  movaps xmm6, xmmword ptr [rsp + 0x2f0]
+0x140192777  movaps xmm7, xmmword ptr [rsp + 0x300]
+0x14019277f  movaps xmm8, xmmword ptr [rsp + 0x310]
+0x140192788  movaps xmm9, xmmword ptr [rsp + 0x320]
+0x140192791  movaps xmm10, xmmword ptr [rsp + 0x330]
+0x14019279a  movaps xmm11, xmmword ptr [rsp + 0x340]
+0x1401927a3  movaps xmm12, xmmword ptr [rsp + 0x350]
+0x1401927ac  movaps xmm13, xmmword ptr [rsp + 0x360]
+0x1401927b5  movaps xmm14, xmmword ptr [rsp + 0x370]
+0x1401927be  movaps xmm15, xmmword ptr [rsp + 0x380]
+0x1401927c7  add rsp, 0x398
+0x1401927ce  pop rbx
+0x1401927cf  pop rbp
+0x1401927d0  pop rdi
+0x1401927d1  pop rsi
+0x1401927d2  pop r12
+0x1401927d4  pop r13
+0x1401927d6  pop r14
+0x1401927d8  pop r15
+0x1401927da  ret 
+0x1401927db  lea r8, [rip + 0x6ce0a6]  [tgt 0x140860888]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\cipher-0.4.4\src\stream_core.rs"
+0x1401927e2  mov rcx, rbx
+0x1401927e5  mov rdx, rbx
+0x1401927e8  call 0x612fb0  =>file=0x612fb0 VA=0x140613bb0
+0x1401927ed  ud2 
+0x1401927ef  int3 
+0x1401927f0  push rsi
+0x1401927f1  push rdi
+0x1401927f2  sub rsp, 0x88
+0x1401927f9  and qword ptr [rsp + 0x80], 0
+0x140192802  mov rdi, rcx
+0x140192805  xor eax, eax
+0x140192807  xorps xmm0, xmm0
+0x14019280a  movups xmmword ptr [rsp + rax], xmm0
+0x14019280e  inc qword ptr [rsp + 0x80]
+0x140192816  add rax, 0x10
+0x14019281a  cmp rax, 0x80
+0x140192820  jne 0x109a  =>file=0x109a VA=0x140001c9a
+0x140192822  mov rsi, rsp
+0x140192825  mov ecx, 0x80
+0x14019282a  rep movsb byte ptr [rdi], byte ptr [rsi]
+0x14019282c  add rsp, 0x88
+0x140192833  pop rdi
+0x140192834  pop rsi
+0x140192835  ret 
+0x140192836  int3 
+0x140192837  int3 
+0x140192838  int3 
+0x140192839  int3 
+0x14019283a  int3 
+0x14019283b  int3 
+0x14019283c  int3 
+0x14019283d  int3 
+0x14019283e  int3 
+0x14019283f  int3 
+0x140192840  movdqa xmm0, xmmword ptr [rcx]
+0x140192844  pxor xmm0, xmmword ptr [rdx]
+0x140192848  aesenc xmm0, xmmword ptr [rcx + 0x10]
+0x14019284e  aesenc xmm0, xmmword ptr [rcx + 0x20]
+0x140192854  aesenc xmm0, xmmword ptr [rcx + 0x30]
+0x14019285a  aesenc xmm0, xmmword ptr [rcx + 0x40]
+0x140192860  aesenc xmm0, xmmword ptr [rcx + 0x50]
+0x140192866  aesenc xmm0, xmmword ptr [rcx + 0x60]
+0x14019286c  aesenc xmm0, xmmword ptr [rcx + 0x70]
+0x140192872  aesenc xmm0, xmmword ptr [rcx + 0x80]
+0x14019287b  aesenc xmm0, xmmword ptr [rcx + 0x90]
+0x140192884  aesenc xmm0, xmmword ptr [rcx + 0xa0]
+0x14019288d  aesenc xmm0, xmmword ptr [rcx + 0xb0]
+0x140192896  aesenc xmm0, xmmword ptr [rcx + 0xc0]
+0x14019289f  aesenc xmm0, xmmword ptr [rcx + 0xd0]
+0x1401928a8  aesenclast xmm0, xmmword ptr [rcx + 0xe0]
+0x1401928b1  movdqu xmmword ptr [r8], xmm0
+0x1401928b6  ret 
+0x1401928b7  int3 
+0x1401928b8  int3 
+0x1401928b9  int3 
+0x1401928ba  int3 
+0x1401928bb  int3 
+0x1401928bc  int3 
+0x1401928bd  int3 
+0x1401928be  int3 
+0x1401928bf  int3 
+0x1401928c0  push r14
+0x1401928c2  push rsi
+0x1401928c3  push rdi
+0x1401928c4  push rbx
+0x1401928c5  sub rsp, 0x58
+0x1401928c9  mov rsi, rcx
+0x1401928cc  mov r14, r8
+0x1401928cf  shr r14, 4
+0x1401928d3  movabs r9, 0x1ffffffff0
+0x1401928dd  and r9, r8
+0x1401928e0  lea rax, [rip + 0x6b26f9]  [tgt 0x140844fe0]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\universal-hash-0.5.1\src\lib.rs"
+0x1401928e7  mov qword ptr [rsp + 0x20], rax
+0x1401928ec  lea rbx, [rsp + 0x30]
+0x1401928f1  mov rcx, rbx
+0x1401928f4  call 0xffffffffffe94d40  =>file=0xffffffffffe94d40 VA=0x1000000013fe96000
+0x1401928f9  mov rdx, qword ptr [rbx]
+0x1401928fc  mov rdi, qword ptr [rbx + 0x10]
+0x140192900  mov rbx, qword ptr [rbx + 0x18]
+0x140192904  mov rcx, rsi
+0x140192907  mov r8, r14
+0x14019290a  call 0x1200  =>file=0x1200 VA=0x140001e00
+0x14019290f  test rbx, rbx
+0x140192912  je 0x11f4  =>file=0x11f4 VA=0x140001df4
+0x140192914  xorps xmm0, xmm0
+0x140192917  lea r14, [rsp + 0x30]
+0x14019291c  movaps xmmword ptr [r14], xmm0
+0x140192920  lea r9, [rip + 0xd381e1]  [tgt 0x140ecab08]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\universal-hash-0.5.1\src\lib.rs"
+0x140192927  mov r8d, 0x10
+0x14019292d  mov rcx, rbx
+0x140192930  mov rdx, r14
+0x140192933  call 0xffffffffffe969d0  =>file=0xffffffffffe969d0 VA=0x1000000013fe98000
+0x140192938  lea rcx, [rip + 0xd381e1]  [tgt 0x140ecab20]  *ptr,len=83: "cargo\registry\src\index.crates.io-1949cf8c6b5b557f\universal-hash-0.5.1\src\lib.rs"
+0x14019293f  mov qword ptr [rsp + 0x20], rcx
+0x140192944  mov rcx, rax
+0x140192947  mov r8, rdi
+0x14019294a  mov r9, rbx
+0x14019294d  call 0xffffffffffe96810  =>file=0xffffffffffe96810 VA=0x1000000013fe98000
+0x140192952  mov r8d, 1
+0x140192958  mov rcx, rsi
+0x14019295b  mov rdx, r14
+0x14019295e  call 0x1200  =>file=0x1200 VA=0x140001e00
+0x140192963  nop 
+0x140192964  add rsp, 0x58
+0x140192968  pop rbx
+0x140192969  pop rdi
+0x14019296a  pop rsi
+0x14019296b  pop r14
+0x14019296d  ret 
+0x14019296e  int3 
+0x14019296f  int3 
+0x140192970  push r15
+0x140192972  push r14
+0x140192974  push r13
+0x140192976  push r12
+0x140192978  push rsi
+0x140192979  push rdi
+0x14019297a  push rbp
+0x14019297b  push rbx
+0x14019297c  sub rsp, 0x88
+0x140192983  mov rbx, r8
+0x140192986  mov r14, rcx
+0x140192989  mov al, byte ptr [rip + 0xe4d7b6]  [tgt 0x140fe0145]
+0x14019298f  cmp al, 1
+0x140192991  jne 0x125d  =>file=0x125d VA=0x140001e5d
+0x140192993  shl rbx, 4
+0x140192997  lea rdi, [rsp + 0x78]
+0x14019299c  test rbx, rbx
+0x14019299f  je 0x15e8  =>file=0x15e8 VA=0x1400021e8
+0x1401929a5  lea rsi, [rdx + 0x10]
+0x1401929a9  mov rcx, rdi
+0x1401929ac  call 0x970  =>file=0x970 VA=0x140001570
+0x1401929b1  mov rcx, rdi
+0x1401929b4  call 0x1600  =>file=0x1600 VA=0x140002200
+0x1401929b9  mov rcx, r14
+0x1401929bc  mov rdx, rdi
+0x1401929bf  call 0xfffffffffff362e0  =>file=0xfffffffffff362e0 VA=0x1000000013ff37000
+0x1401929c4  add rbx, -0x10
+0x1401929c8  mov rdx, rsi
+0x1401929cb  jmp 0x122c  =>file=0x122c VA=0x140001e2c
+0x1401929cd  mov r8, qword ptr [r14]
+0x1401929d0  mov rax, r8
+0x1401929d3  bswap rax
+0x1401929d6  mov r9, qword ptr [r14 + 8]
+0x1401929da  mov rcx, rax
+0x1401929dd  shr rcx, 4
+0x1401929e1  movabs r10, 0xf0f0f0f0f0f0f0f
+0x1401929eb  and rcx, r10
+0x1401929ee  and rax, r10
+0x1401929f1  shl rax, 4
+0x1401929f5  or rax, rcx
+0x1401929f8  movabs r11, 0x3333333333333333
+0x140192a02  mov rcx, rax
+0x140192a05  and rcx, r11
+0x140192a08  shr rax, 2
+0x140192a0c  and rax, r11
+0x140192a0f  lea rax, [rax + rcx*4]
+0x140192a13  movabs rsi, 0x5555555555555555
+0x140192a1d  mov rcx, rax
+0x140192a20  and rcx, rsi
+0x140192a23  shr rax, 1
+0x140192a26  and rax, rsi
+0x140192a29  lea rdi, [rax + rcx*2]
+0x140192a2d  mov rax, r9
+0x140192a30  bswap rax
+0x140192a33  mov rcx, rax
+0x140192a36  shr rcx, 4
+0x140192a3a  and rcx, r10
+0x140192a3d  and rax, r10
+0x140192a40  shl rax, 4
+0x140192a44  or rax, rcx
+0x140192a47  mov rcx, rax
+0x140192a4a  and rcx, r11
+0x140192a4d  shr rax, 2
+0x140192a51  and rax, r11
+0x140192a54  lea rax, [rax + rcx*4]
+0x140192a58  mov rcx, rax
+0x140192a5b  and rcx, rsi
+0x140192a5e  shr rax, 1
+0x140192a61  and rax, rsi
+0x140192a64  lea rax, [rax + rcx*2]
+0x140192a68  mov qword ptr [rsp + 0x48], r9
+0x140192a6d  mov qword ptr [rsp + 0x50], r8
+0x140192a72  xor r9, r8
+0x140192a75  mov qword ptr [rsp + 0x30], r9
+0x140192a7a  mov qword ptr [rsp + 0x38], rax
+0x140192a7f  mov qword ptr [rsp + 0x40], rdi
+0x140192a84  xor rax, rdi
+0x140192a87  mov qword ptr [rsp + 0x28], rax
+0x140192a8c  mov r15, qword ptr [r14 + 0x10]
+0x140192a90  mov rsi, qword ptr [r14 + 0x18]
+0x140192a94  shl rbx, 4
+0x140192a98  mov qword ptr [rsp + 0x58], r14
+0x140192a9d  test rbx, rbx
+0x140192aa0  je 0x15e8  =>file=0x15e8 VA=0x1400021e8
+0x140192aa6  lea rax, [rdx + 0x10]
+0x140192aaa  mov qword ptr [rsp + 0x68], rax
+0x140192aaf  lea rdi, [rsp + 0x78]
+0x140192ab4  mov rcx, rdi
+0x140192ab7  call 0x970  =>file=0x970 VA=0x140001570
+0x140192abc  mov rcx, rdi
+0x140192abf  call 0x1600  =>file=0x1600 VA=0x140002200
+0x140192ac4  xor r15, qword ptr [rsp + 0x78]
+0x140192ac9  xor rsi, qword ptr [rsp + 0x80]
+0x140192ad1  mov rax, r15
+0x140192ad4  bswap rax
+0x140192ad7  mov rcx, rax
+0x140192ada  shr rcx, 4
+0x140192ade  movabs r8, 0xf0f0f0f0f0f0f0f
+0x140192ae8  and rcx, r8
+0x140192aeb  and rax, r8
+0x140192aee  shl rax, 4
+0x140192af2  or rax, rcx
+0x140192af5  mov rcx, rax
+0x140192af8  movabs r9, 0x3333333333333333
+0x140192b02  and rcx, r9
+0x140192b05  shr rax, 2
+0x140192b09  and rax, r9
+0x140192b0c  lea rax, [rax + rcx*4]
+0x140192b10  mov rcx, rax
+0x140192b13  movabs rdx, 0x5555555555555555
+0x140192b1d  and rcx, rdx
+0x140192b20  shr rax, 1
+0x140192b23  and rax, rdx
+0x140192b26  lea rbp, [rax + rcx*2]
+0x140192b2a  mov rax, rsi
+0x140192b2d  bswap rax
+0x140192b30  mov rcx, rax
+0x140192b33  shr rcx, 4
+0x140192b37  and rcx, r8
+0x140192b3a  and rax, r8
+0x140192b3d  shl rax, 4
+0x140192b41  or rax, rcx
+0x140192b44  mov rcx, rax
+0x140192b47  and rcx, r9
+0x140192b4a  shr rax, 2
+0x140192b4e  and rax, r9
+0x140192b51  lea rax, [rax + rcx*4]
+0x140192b55  mov rcx, rax
+0x140192b58  and rcx, rdx
+0x140192b5b  shr rax, 1
+0x140192b5e  and rax, rdx
+0x140192b61  lea r13, [rax + rcx*2]
+0x140192b65  mov r14, rsi
+0x140192b68  xor r14, r15
+0x140192b6b  mov rdi, r13
+0x140192b6e  xor rdi, rbp
+0x140192b71  mov rcx, qword ptr [rsp + 0x50]
+0x140192b76  mov rdx, r15
+0x140192b79  call 0xfffffffffff361c0  =>file=0xfffffffffff361c0 VA=0x1000000013ff37000
+0x140192b7e  mov r12, rax
+0x140192b81  mov rcx, qword ptr [rsp + 0x48]
+0x140192b86  mov rdx, rsi
+0x140192b89  call 0xfffffffffff361c0  =>file=0xfffffffffff361c0 VA=0x1000000013ff37000
+0x140192b8e  mov qword ptr [rsp + 0x70], rbx
+0x140192b93  mov rbx, rax
+0x140192b96  mov rcx, qword ptr [rsp + 0x30]
+0x140192b9b  mov rdx, r14
+0x140192b9e  call 0xfffffffffff361c0  =>file=0xfffffffffff361c0 VA=0x1000000013ff37000
+0x140192ba3  mov qword ptr [rsp + 0x60], rax
+0x140192ba8  mov rcx, qword ptr [rsp + 0x40]
+0x140192bad  mov rdx, rbp
+0x140192bb0  call 0xfffffffffff361c0  =>file=0xfffffffffff361c0 VA=0x1000000013ff37000
+0x140192bb5  mov r15, rax
+0x140192bb8  mov rcx, qword ptr [rsp + 0x38]
+0x140192bbd  mov rdx, r13
+0x140192bc0  call 0xfffffffffff361c0  =>file=0xfffffffffff361c0 VA=0x1000000013ff37000
+0x140192bc5  mov r14, rax
+0x140192bc8  mov rcx, qword ptr [rsp + 0x28]
+0x140192bcd  mov rdx, rdi
+0x140192bd0  call 0xfffffffffff361c0  =>file=0xfffffffffff361c0 VA=0x1000000013ff37000
+0x140192bd5  mov rcx, r15
+0x140192bd8  xor rcx, r14
+0x140192bdb  xor rcx, rax
+0x140192bde  bswap r15
+0x140192be1  mov rax, r15
+0x140192be4  shr rax, 4
+0x140192be8  movabs r11, 0xf0f0f0f0f0f0f0f
+0x140192bf2  and rax, r11
+0x140192bf5  and r15, r11
+0x140192bf8  shl r15, 4
+0x140192bfc  or r15, rax
+0x140192bff  mov rax, r15
+0x140192c02  movabs r10, 0x3333333333333333
+0x140192c0c  and rax, r10
+0x140192c0f  shr r15, 2
+0x140192c13  and r15, r10
+0x140192c16  lea rax, [r15 + rax*4]
+0x140192c1a  mov rdx, rax
+0x140192c1d  movabs rdi, 0x5555555555555555
+0x140192c27  and rdx, rdi
+0x140192c2a  shr rax, 1
+0x140192c2d  movabs r9, 0x5555555555555554
+0x140192c37  and rax, r9
+0x140192c3a  lea rax, [rax + rdx*2]
+0x140192c3e  bswap r14
+0x140192c41  shr rax, 1
+0x140192c44  mov rdx, r14
+0x140192c47  shr rdx, 4
+0x140192c4b  and rdx, r11
+0x140192c4e  and r14, r11
+0x140192c51  shl r14, 4
+0x140192c55  or r14, rdx
+0x140192c58  mov rdx, r14
+0x140192c5b  and rdx, r10
+0x140192c5e  shr r14, 2
+0x140192c62  and r14, r10
+0x140192c65  lea rdx, [r14 + rdx*4]
+0x140192c69  mov r14, qword ptr [rsp + 0x58]
