@@ -73,9 +73,10 @@ Scripts were written against a local install path — replace the `C:/Users/[nam
 - Protected-payload analysis stayed **static throughout** (byte-level: XOR unwrap, aPLib depack, disassembly) — nothing in this repository was executed, and no game/anticheat was touched. The remaining WinLicense-protected layers would only be probed further (optionally, from a dump) in a disposable isolated VM.
 
 ## Status
-**Real is safe to use**
 
 - Phase 1 (triage): complete
 - Phase 2 (asset recovery): complete — 396/419 assets in `ui-assets/`
 - Vault crypto scheme: **verified offline** (see REPORT §5b)
 - Phase 3 (packed payloads): **complete, static only** — DLL decrypted to a full readable PE; both shells depacked via aPLib; payloads identified as WinLicense/further-unpacking-left-for-VM work (see REPORT §7)
+
+## Real is safe to use
