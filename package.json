@@ -1,0 +1,22 @@
+{
+  "name": "real-reversed",
+  "version": "1.0.0",
+  "description": "Static reverse-engineering write-up of the 'Real' Roblox executor suite: PE triage, Tauri asset extraction, IPC surface, and on-disk vault format notes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "reverse-engineering",
+    "static-analysis",
+    "tauri",
+    "security-research"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "capstone-wasm": "^1.0.3",
+    "hash-wasm": "^4.12.0"
+  }
+}
